@@ -64,6 +64,25 @@
       margin-bottom: 1rem;
     }
 
+    section {
+      max-width: 1000px;
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    details {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
     @media (max-width: 700px) {
       .about {
         flex-direction: column;
@@ -72,6 +91,10 @@
       }
 
       .about-text {
+        text-align: center;
+      }
+
+      section {
         text-align: center;
       }
     }
@@ -96,5 +119,31 @@
       </p>
     </div>
   </div>
+
+  <section>
+    <h3>Data Science Projects</h3>
+    <!-- You can add project content here -->
+    <p>Coming soon: Interactive dashboards, AI models, and geospatial tools.</p>
+
+    <h3>Publications</h3>
+    <!-- You can add publication links or lists here -->
+    <p>Coming soon: Peer-reviewed papers and white papers on sustainability, AI, and policy.</p>
+
+    <h3>More Information</h3>
+    <details>
+      <summary>Contact Information</summary>
+      <p>Email: jackie@example.com<br>Phone: +123 456 7890</p>
+    </details>
+
+    <details>
+      <summary>CV</summary>
+      <p><a href="your-cv-link.pdf" target="_blank">Download CV (PDF)</a></p>
+    </details>
+
+    <details>
+      <summary>LinkedIn</summary>
+      <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">View my LinkedIn profile</a></p>
+    </details>
+  </section>
 </body>
 </html>
