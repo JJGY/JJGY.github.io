@@ -15,8 +15,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: start;
-      min-height: 100vh;
       padding: 40px 20px;
       box-sizing: border-box;
       text-align: center;
@@ -39,10 +37,43 @@
       margin-bottom: 1rem;
     }
 
-    p {
-      max-width: 800px;
+    .about {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1000px;
+      gap: 20px;
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    .about img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .about-text {
+      max-width: 700px;
+    }
+
+    .about-text p {
       line-height: 1.6;
       margin-bottom: 1rem;
+    }
+
+    @media (max-width: 700px) {
+      .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-text {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -51,20 +82,19 @@
   <h2>Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</h2>
 
   <h3>About Me</h3>
-  <p>
-    Dynamic economist and data scientist, specialized in environment, rural development, and climate change with nearly two decades of international experience.
-  </p>
-  <p>
-    My expertise spans the United Nations (UNEP, UNODC) and academia, focusing on climate change mitigation, impact assessment, and integrating advanced data analytics into sustainable development strategies.
-  </p>
-  <p>
-    I have successfully led multi-million-dollar projects, guided cross-disciplinary teams, and driven data-driven insights for policy development.
-  </p>
-  <p>
-    I transform complex datasets into intuitive dashboards, interactive maps, and impactful visual stories. I help organizations uncover patterns, spot opportunities, and make data-driven decisions with confidence.
-  </p>
-  <p>
-    Whether I’m building scalable reporting tools, creating informed data visuals, or simplifying survey results for diverse audiences, I specialize in making meaning out of metrics and turning raw information into real-world impact.
-  </p>
+  <div class="about">
+    <img src="profile.jpg" alt="Jackie Garcia-Yi" />
+    <div class="about-text">
+      <p>
+        Dynamic data scientist with nearly 20 years of international experience, specializing in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.
+      </p>
+      <p>
+        I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.
+      </p>
+      <p>
+        I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
