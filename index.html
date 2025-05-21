@@ -6,283 +6,98 @@
   <title>Jackie Garcia-Yi</title>
   <meta name="description" content="Portfolio of Jackie Garcia-Yi">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-      box-sizing: border-box;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      color: #555;
-      margin-bottom: 2rem;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .about {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: center;
-      max-width: 1000px;
-      gap: 20px;
-      text-align: left;
-      margin-top: 2rem;
-    }
-
-    .about img {
-      width: 180px;
-      height: auto;
-      border-radius: 12px;
-    }
-
-    .about-text {
-      max-width: 700px;
-    }
-
-    .about-text p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    section {
-      max-width: 1000px;
-      text-align: left;
-      margin-top: 2rem;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-
-    .project, .report {
-      background: #fff;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      flex: 1 1 calc(50% - 20px);
-      box-sizing: border-box;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 1px solid #ccc;
-      margin: 0.5rem 0;
-    }
-
-    .report img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 0.5rem 0;
-    }
-
-    .report-title {
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .report-description {
-      margin-bottom: 0.5rem;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #666;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a.button:hover {
-      background-color: #444;
-    }
-
-    .more-info {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      margin-top: 2rem;
-    }
-
-    .more-info img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .info-details {
-      flex: 1 1 300px;
-    }
-
-    details {
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      background: #fff;
-    }
-
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    footer {
-      margin-top: 4rem;
-      padding: 2rem 0;
-      text-align: center;
-      border-top: 1px solid #ccc;
-      width: 100%;
-    }
-
-    .icons {
-      margin-top: 0.5rem;
-    }
-
-    .icons a {
-      margin: 0 10px;
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-    }
-
-    .icons svg {
-      width: 30px;
-      height: 30px;
-      fill: #555;
-      transition: fill 0.2s;
-    }
-
-    .icons a:hover svg {
-      fill: #000;
-    }
-
-    @media (max-width: 768px) {
-      .project, .report {
-        flex: 1 1 100%;
-      }
-
-      iframe {
-        height: 250px;
-      }
-
-      .more-info {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .info-details {
-        text-align: center;
-      }
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; text-align: center; }
+    h1, h2, h3, h4 { margin: 1rem 0; }
+    .about { max-width: 900px; margin: auto; padding: 2rem; text-align: left; }
+    .grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 2rem; }
+    .project, .report { background: white; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; width: calc(50% - 20px); box-sizing: border-box; }
+    iframe { width: 100%; height: 300px; border: none; margin-top: 10px; }
+    .report img { width: 100%; height: auto; border-radius: 8px; margin: 10px 0; }
+    .button { background: #666; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+    .button:hover { background: #444; }
+    .more-info { max-width: 900px; margin: auto; padding: 2rem; display: flex; flex-wrap: wrap; gap: 20px; text-align: left; justify-content: center; }
+    .more-info img { width: 250px; border-radius: 8px; }
+    .info-text { flex: 1 1 300px; }
+    footer { margin-top: 3rem; padding: 2rem; background: #eaeaea; text-align: center; }
+    .icons a { margin: 0 10px; display: inline-block; }
+    .icons svg { width: 24px; height: 24px; fill: #333; transition: fill 0.3s; }
+    .icons a:hover svg { fill: #000; }
+    @media (max-width: 768px) { .project, .report { width: 100%; } }
   </style>
 </head>
 <body>
   <h1>Jackie Garcia-Yi</h1>
   <h2>Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</h2>
 
-  <h3>About Me</h3>
-  <div class="about">
-    <img src="profile-pic.png" alt="Jackie Garcia-Yi" />
-    <div class="about-text">
-      <p>
-        Dynamic data scientist with nearly 20 years of international experience, specialized in environment, rural development, and climate change...
-      </p>
-      <!-- trimmed for brevity — restore full text if needed -->
-    </div>
-  </div>
+  <section class="about">
+    <h3>About Me</h3>
+    <p>Dynamic data scientist with nearly 20 years of international experience, specializing in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.</p>
+    <p>I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.</p>
+    <p>I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.</p>
+  </section>
 
   <section>
     <h3>Data Science Projects</h3>
     <div class="grid">
       <div class="project">
-        <strong>Time Series Prediction of Outbreak of Infectious Diseases</strong><br>
-        Models: SMA, ARMA, RNN, LSTM
+        <h4>Time Series Prediction of Outbreak of Infectious Diseases</h4>
+        <p>This project explores time series and deep learning models—SMA, ARMA, RNN, and LSTM—to predict infectious disease outbreaks using digital data such as Google search trends. Using data from states like New York and California, models were trained to forecast COVID-19 cases for early detection.</p>
         <iframe src="projects/project1.html"></iframe>
       </div>
-
       <div class="project">
-        <strong>Impact of COVID in Education</strong><br>
-        Models: Linear, Lasso, k-NN, Trees, Bagging, RF, Adaboost
+        <h4>Impact of COVID on Education: A Data-Driven Analysis</h4>
+        <p>This project uses regression models (Linear, Lasso, k-NN, Decision Trees, Bagging, Random Forest, Adaboost) to estimate how COVID-19 impacted global primary education rates using economic indicators. Adaboost achieved top accuracy (R² = 0.81).</p>
         <iframe src="projects/project2.html"></iframe>
       </div>
     </div>
+  </section>
 
+  <section>
     <h3>Reports</h3>
     <div class="grid">
       <div class="report">
-        <div class="report-title">Strategic Maps for Drug Control</div>
-        <img src="reports/strategic-map.jpg" alt="Strategic Maps" />
-        <div class="report-description">Using spatial lag and error models</div>
-        <a class="button" href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">Open Report</a>
-      </div>
-
-      <div class="report">
-        <div class="report-title">UN World Drug Report Contribution</div>
-        <img src="reports/unodc-report.jpg" alt="UN Report" />
-        <div class="report-description">Featured in UNODC's flagship report</div>
+        <h4>UN World Drug Report 2020: In Focus – Alternative Development</h4>
+        <img src="reports/unodc-report.jpg" alt="UNODC Report Cover">
+        <p>The 2020 report promotes "Alternative Development" as a strategy to address illicit crop cultivation. Based on 53 projects across several countries, it evaluates sustainable development initiatives beyond eradication, emphasizing gender inclusion, land titling, and long-term investment.</p>
         <a class="button" href="reports/Garcia-Yi_UN_WorldDrugReport.pdf" target="_blank">Open Report</a>
       </div>
-
       <div class="report">
-        <div class="report-title">Remote Sensing Imagery</div>
-        <img src="reports/remote-sensing.jpg" alt="Remote Sensing" />
-        <div class="report-description">Quantitative spatial analysis</div>
+        <h4>Strategic Maps for Drug Control</h4>
+        <img src="reports/strategic-map.jpg" alt="Strategic Map">
+        <p>Predictions using spatial lag and spatial error models to support drug control decision-making. Geospatial techniques are used to visualize and assess opium poppy cultivation risk zones.</p>
+        <a class="button" href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">Open Report</a>
+      </div>
+      <div class="report">
+        <h4>Quantitative Analysis of Remote Sensing Imagery</h4>
+        <img src="reports/remote-sensing.jpg" alt="Remote Sensing">
+        <p>This report covers statistical analysis of multispectral satellite images, focusing on vegetation indices and classification algorithms for land use assessment.</p>
         <a class="button" href="reports/ProjectReport_13122019.pdf" target="_blank">Open Report</a>
       </div>
-
       <div class="report">
-        <div class="report-title">NLP on Biodiversity Speeches</div>
-        <img src="reports/nlp-biodiversity.jpg" alt="NLP" />
-        <div class="report-description">Applying NLP to environmental topics</div>
+        <h4>NLP for Biodiversity Speeches</h4>
+        <img src="reports/nlp-biodiversity.jpg" alt="NLP Biodiversity">
+        <p>Applies natural language processing to analyze speeches on biodiversity at international conferences. Techniques include topic modeling and sentiment analysis.</p>
         <a class="button" href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">Open Report</a>
       </div>
     </div>
+  </section>
 
-    <h3>More Information</h3>
-    <div class="more-info">
-      <img src="profile-pic.png" alt="More Info Image" />
-      <div class="info-details">
-        <details>
-          <summary>Contact Information</summary>
-          <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
-        </details>
-        <details>
-          <summary>CV</summary>
-          <p><a href="CV_ImpactPool.pdf" target="_blank">Download CV (PDF)</a></p>
-        </details>
-        <details>
-          <summary>LinkedIn</summary>
-          <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View my LinkedIn profile</a></p>
-        </details>
-      </div>
+  <section class="more-info">
+    <img src="profile-pic.png" alt="Jackie Garcia-Yi">
+    <div class="info-text">
+      <h3>More Information</h3>
+      <details>
+        <summary>Contact Information</summary>
+        <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
+      </details>
+      <details>
+        <summary>CV</summary>
+        <p><a href="your-cv-link.pdf" target="_blank">Download CV (PDF)</a></p>
+      </details>
+      <details>
+        <summary>LinkedIn</summary>
+        <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View LinkedIn Profile</a></p>
+      </details>
     </div>
   </section>
 
@@ -290,7 +105,7 @@
     <p>Jackie Garcia-Yi</p>
     <div class="icons">
       <a href="mailto:jackiegarciayi@gmail.com" title="Email">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
       </a>
       <a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank" title="LinkedIn">
         <svg viewBox="0 0 24 24"><path d="M6.94 6.75a1.69 1.69 0 1 1 0-3.38 1.69 1.69 0 0 1 0 3.38zM3.5 20.5V8.5h6.88v12H3.5zM14.12 20.5v-6.45c0-1.5-.54-2.53-1.88-2.53-.89 0-1.42.6-1.65 1.17-.08.2-.1.47-.1.74v7.07h-3V13.5s.04-2.62 0-4.88h3v1.65c.4-.61 1.12-1.48 2.73-1.48 2 0 3.5 1.31 3.5 4.12v7.59h-3z"/></svg>
