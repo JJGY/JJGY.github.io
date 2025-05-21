@@ -39,7 +39,6 @@
 
     .about {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
       justify-content: center;
@@ -70,42 +69,40 @@
       margin-top: 2rem;
     }
 
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .project, .report {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      flex: 1 1 calc(50% - 20px);
+      box-sizing: border-box;
+    }
+
     iframe {
       width: 100%;
-      height: 600px;
+      height: 300px;
       border: 1px solid #ccc;
-      margin: 1rem 0;
-    }
-
-    details {
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      background: #fff;
-    }
-
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .report {
-      margin-bottom: 2rem;
+      margin: 0.5rem 0;
     }
 
     .report img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
-      border-radius: 10px;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
+      border-radius: 8px;
+      margin: 0.5rem 0;
     }
 
     .report-title {
       font-weight: bold;
       font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
     }
 
     .report-description {
@@ -126,23 +123,26 @@
       background-color: #003e91;
     }
 
-    @media (max-width: 700px) {
-      .about {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
+    details {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background: #fff;
+    }
 
-      .about-text {
-        text-align: center;
-      }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-      section {
-        text-align: center;
+    @media (max-width: 768px) {
+      .project, .report {
+        flex: 1 1 100%;
       }
 
       iframe {
-        height: 400px;
+        height: 250px;
       }
     }
   </style>
@@ -156,7 +156,7 @@
     <img src="profile-pic.png" alt="Jackie Garcia-Yi" />
     <div class="about-text">
       <p>
-        Dynamic data scientist with nearly 20 years of international experience, specialized in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I have focused on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.
+        Dynamic data scientist with nearly 20 years of international experience, specialized in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.
       </p>
       <p>
         I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.
@@ -169,47 +169,49 @@
 
   <section>
     <h3>Data Science Projects</h3>
+    <div class="grid">
+      <div class="project">
+        <strong>Time Series Prediction of Outbreak of Infectious Diseases</strong><br>
+        Models: Simple Moving Average, ARMA, RNN, LSTM
+        <iframe src="projects/project1.html"></iframe>
+      </div>
 
-    <div class="project">
-      <strong>Time Series Prediction of Outbreak of Infectious Diseases</strong><br>
-      Models: Simple Moving Average, ARMA, RNN, LSTM
-      <iframe src="projects/project1.html"></iframe>
-    </div>
-
-    <div class="project">
-      <strong>Analysis of the Impact of COVID in Education</strong><br>
-      Models: Linear Regression, Lasso, k-NN, Decision Tree, Bagging, Random Forest, Adaboost
-      <iframe src="projects/project2.html"></iframe>
+      <div class="project">
+        <strong>Analysis of the Impact of COVID in Education</strong><br>
+        Models: Linear Regression, Lasso, k-NN, Decision Tree, Bagging, Random Forest, Adaboost
+        <iframe src="projects/project2.html"></iframe>
+      </div>
     </div>
 
     <h3>Reports</h3>
+    <div class="grid">
+      <div class="report">
+        <div class="report-title">Spacio Temporal Models (Strategic Maps)</div>
+        <img src="reports/strategic-map.jpg" alt="Spacio Temporal Models" />
+        <div class="report-description">Predictions using spatial lag and spatial error models</div>
+        <a class="button" href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">Open Report</a>
+      </div>
 
-    <div class="report">
-      <div class="report-title">Spacio Temporal Models (Strategic Maps)</div>
-      <img src="reports/strategic-map.jpg" alt="Spacio Temporal Models" />
-      <div class="report-description">Predictions using spatial lag and spatial error models</div>
-      <a class="button" href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">Open Report</a>
-    </div>
+      <div class="report">
+        <div class="report-title">Impact Assessment – UN World Drug Report</div>
+        <img src="reports/unodc-report.jpg" alt="UNODC Report" />
+        <div class="report-description">Published in the UNODC flagship report</div>
+        <a class="button" href="reports/Garcia-Yi_UN_WorldDrugReport.pdf" target="_blank">Open Report</a>
+      </div>
 
-    <div class="report">
-      <div class="report-title">Impact Assessment – UN World Drug Report</div>
-      <img src="reports/unodc-report.jpg" alt="UNODC Report" />
-      <div class="report-description">Published in the UNODC flagship report</div>
-      <a class="button" href="reports/Garcia-Yi_UN_WorldDrugReport.pdf" target="_blank">Open Report</a>
-    </div>
+      <div class="report">
+        <div class="report-title">Quantitative Analysis of Remote Sensing Imagery</div>
+        <img src="reports/remote-sensing.jpg" alt="Remote Sensing" />
+        <div class="report-description">Exploring spatial analysis with remote sensing imagery</div>
+        <a class="button" href="reports/ProjectReport_13122019.pdf" target="_blank">Open Report</a>
+      </div>
 
-    <div class="report">
-      <div class="report-title">Quantitative Analysis of Remote Sensing Imagery</div>
-      <img src="reports/remote-sensing.jpg" alt="Remote Sensing" />
-      <div class="report-description">Exploring spatial analysis with remote sensing imagery</div>
-      <a class="button" href="reports/ProjectReport_13122019.pdf" target="_blank">Open Report</a>
-    </div>
-
-    <div class="report">
-      <div class="report-title">NLP for Biodiversity Speeches</div>
-      <img src="reports/nlp-biodiversity.jpg" alt="NLP Report" />
-      <div class="report-description">Natural Language Processing applied to UN biodiversity discussions</div>
-      <a class="button" href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">Open Report</a>
+      <div class="report">
+        <div class="report-title">NLP for Biodiversity Speeches</div>
+        <img src="reports/nlp-biodiversity.jpg" alt="NLP Report" />
+        <div class="report-description">Natural Language Processing applied to UN biodiversity discussions</div>
+        <a class="button" href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">Open Report</a>
+      </div>
     </div>
 
     <h3>More Information</h3>
@@ -220,7 +222,7 @@
 
     <details>
       <summary>CV</summary>
-      <p><a href="CV_ImpactPool.pdf" target="_blank">Download CV (PDF)</a></p>
+      <p><a href="your-cv-link.pdf" target="_blank">Download CV (PDF)</a></p>
     </details>
 
     <details>
