@@ -8,13 +8,14 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; text-align: center; }
     h1, h2, h3, h4 { margin: 1rem 0; }
+    h3 { font-size: 2.5rem; }
     .about { max-width: 900px; margin: auto; padding: 2rem; display: flex; flex-wrap: wrap; gap: 20px; text-align: left; align-items: flex-start; }
     .about img { width: 180px; border-radius: 12px; }
     .about-text { flex: 1; }
     .grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 2rem; }
     .project, .report { background: white; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; width: calc(50% - 20px); box-sizing: border-box; }
-    iframe { width: 100%; height: 300px; border: none; margin-top: 10px; }
-    .report img { width: 100%; height: auto; border-radius: 8px; margin: 10px 0; }
+    .project h4, .report h4 { margin-top: 0; }
+    .project p, .report p { text-align: left; }
     .button { background: #666; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
     .button:hover { background: #444; }
     .more-info { max-width: 900px; margin: auto; padding: 2rem; display: flex; flex-wrap: wrap; gap: 20px; text-align: left; justify-content: center; }
@@ -37,40 +38,38 @@
 
   <section class="about">
     <img src="profile-pic.png" alt="Jackie Garcia-Yi">
-    <div class="about-text"></div>
+    <div class="about-text">
+      <h3>About Me</h3>
+      <p>
+        Dynamic data scientist with nearly 20 years of international experience, specializing in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.
+      </p>
+      <p>
+        I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.
+      </p>
+      <p>
+        I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.
+      </p>
+    </div>
   </section>
 
-  <section class="about">
-    <h3>About Me</h3>
-    <p>
-      Dynamic data scientist with nearly 20 years of international experience, specializing in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.
-    </p>
-    <p>
-      I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.
-    </p>
-    <p>
-      I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.
-    </p>
-  </section>
-  
   <section>
     <h3>Data Science Projects</h3>
     <div class="grid">
       <div class="project">
         <h4>Time Series Prediction of Outbreak of Infectious Diseases</h4>
         <p>This project explores the use of time series and deep learning models—specifically SMA, ARMA, RNN, and LSTM—to predict the outbreak of infectious diseases like COVID-19 using digital stream data, such as Google search trends. Traditional disease surveillance systems often fail to deliver timely warnings, so this work aims to enhance early detection capabilities. Using data from states like New York and California, models were trained and validated to forecast COVID-19 cases.</p>
-        <iframe src="projects/project1.html"></iframe>
+        <a class="button" href="projects/project1.html" target="_blank">Open Notebook</a>
       </div>
       <div class="project">
         <h4>Impact of COVID on Education: A Data-Driven Analysis Using Regression Models</h4>
-        <p>This project examines the impact of COVID-19 on global primary education completion rates using regression models such as Linear, Lasso, k-NN, and Adaboost. Using UNESCO and World Bank data, it estimates 2020 outcomes without the pandemic and compares them to actual values. Adaboost showed the highest accuracy (R² = 0.81), with predictions differing by less than 1%. Variables for geography and development status helped account for contextual factors. The findings offer valuable insights for policymakers to assess educational resilience and better target future interventions in times of crisis. </p>
-        <iframe src="projects/project2.html"></iframe>
+        <p>This project examines the impact of COVID-19 on global primary education completion rates using regression models such as Linear, Lasso, k-NN, and Adaboost. Using UNESCO and World Bank data, it estimates 2020 outcomes without the pandemic and compares them to actual values. Adaboost showed the highest accuracy (R² = 0.81), with predictions differing by less than 1%. Variables for geography and development status helped account for contextual factors. The findings offer valuable insights for policymakers to assess educational resilience and better target future interventions in times of crisis.</p>
+        <a class="button" href="projects/project2.html" target="_blank">Open Notebook</a>
       </div>
     </div>
   </section>
 
   <section>
-    <h3>Reports</h3>
+    <h1>Reports</h1>
     <div class="grid">
       <div class="report">
         <h4>UN World Drug Report 2020: In Focus – Alternative Development</h4>
@@ -102,7 +101,7 @@
   <section class="more-info">
     <img src="profile-pic.png" alt="Jackie Garcia-Yi">
     <div class="info-text">
-      <h3>More Information</h3>
+      <h1>More Information</h1>
       <details>
         <summary>Contact Information</summary>
         <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
