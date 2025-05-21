@@ -36,26 +36,21 @@
   <h2>Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</h2>
 
   <section class="about">
-    <div class="about-text">
-      <h3>About Me</h3>
-      <p>Dynamic data scientist with nearly 20 years of international experience, specializing in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.</p>
-      <p>I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.</p>
-      <p>I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.</p>
-    </div>
     <img src="profile-pic.png" alt="Jackie Garcia-Yi">
+    <div class="about-text"></div>
   </section>
-
+  
   <section>
     <h3>Data Science Projects</h3>
     <div class="grid">
       <div class="project">
         <h4>Time Series Prediction of Outbreak of Infectious Diseases</h4>
-        <p>This project explores time series and deep learning models—SMA, ARMA, RNN, and LSTM—to predict infectious disease outbreaks using digital data such as Google search trends. Using data from states like New York and California, models were trained to forecast COVID-19 cases for early detection.</p>
+        <p>This project explores the use of time series and deep learning models—specifically SMA, ARMA, RNN, and LSTM—to predict the outbreak of infectious diseases like COVID-19 using digital stream data, such as Google search trends. Traditional disease surveillance systems often fail to deliver timely warnings, so this work aims to enhance early detection capabilities. Using data from states like New York and California, models were trained and validated to forecast COVID-19 cases.</p>
         <iframe src="projects/project1.html"></iframe>
       </div>
       <div class="project">
-        <h4>Impact of COVID on Education: A Data-Driven Analysis</h4>
-        <p>This project uses regression models (Linear, Lasso, k-NN, Decision Trees, Bagging, Random Forest, Adaboost) to estimate how COVID-19 impacted global primary education rates using economic indicators. Adaboost achieved top accuracy (R² = 0.81).</p>
+        <h4>Impact of COVID on Education: A Data-Driven Analysis Using Regression Models</h4>
+        <p>This project investigates the impact of COVID-19 on global primary education completion rates using regression-based machine learning models, including Linear, Lasso, k-NN, Decision Trees, Bagging, Random Forest, and Adaboost. Drawing on pre- and post-COVID data from UNESCO and the World Bank, the analysis leverages key economic predictors such as GDP growth, inflation, and mobile penetration to model what 2020 completion rates might have been without the pandemic. The gap between predicted and actual values is interpreted as the effect of COVID. Despite challenges in data quality and coverage, Adaboost achieved the highest predictive accuracy (R² = 0.81), with its 2020 prediction differing by less than 1% from actual rates—suggesting limited observable pandemic impact on this specific educational metric within the first year. Variables for geography and development status helped account for contextual factors. </p>
         <iframe src="projects/project2.html"></iframe>
       </div>
     </div>
@@ -67,25 +62,25 @@
       <div class="report">
         <h4>UN World Drug Report 2020: In Focus – Alternative Development</h4>
         <img src="reports/unodc-report.jpg" alt="UNODC Report Cover">
-        <p>The 2020 report promotes "Alternative Development" as a strategy to address illicit crop cultivation. Based on 53 projects across several countries, it evaluates sustainable development initiatives beyond eradication, emphasizing gender inclusion, land titling, and long-term investment.</p>
+        <p>The UN World Drug Report spotlights "Alternative Development" as a long-term, development-focused strategy to address the root causes of illicit crop cultivation—primarily poverty, lack of infrastructure, and weak governance. Rather than relying solely on eradication, alternative development aims to create sustainable livelihoods for communities vulnerable to growing crops like opium poppy and coca. Drawing on data from 53 projects across Afghanistan, Colombia, Peru, Bolivia, and Myanmar (2013–2017), the report highlights both successes and challenges. While many interventions showed promise—especially those supporting women's income, land titling, and high-value crop alternatives—impact assessments revealed that short-term gains can quickly reverse if structural issues remain unresolved. The report underscores that sustainable results require multi-year investment, rigorous monitoring, and context-sensitive approaches. Despite a gradual increase in project funding, particularly in Colombia following the FARC peace agreement, emerging areas of illicit cultivation and gaps in household-level data remain critical blind spots. </p>
         <a class="button" href="reports/Garcia-Yi_UN_WorldDrugReport.pdf" target="_blank">Open Report</a>
       </div>
       <div class="report">
-        <h4>Strategic Maps for Drug Control</h4>
+        <h4>Strategic Maps for Decision-Making on Opium Poppy Cultivation in Afghanistan</h4>
         <img src="reports/strategic-map.jpg" alt="Strategic Map">
-        <p>Predictions using spatial lag and spatial error models to support drug control decision-making. Geospatial techniques are used to visualize and assess opium poppy cultivation risk zones.</p>
+        <p>This research explores the geographic, socioeconomic, and market-driven factors that statistically influence opium poppy cultivation across Afghanistan's districts, where over 80% of global cultivation occured. Using spatial econometric models, the study finds that cultivation is significantly more likely in districts with limited accessibility, large rural populations, availability of "advanced money" (pre-financing from traffickers), prior cultivation history, and warmer nighttime temperatures. Surprisingly, common assumptions—such as the influence of security conditions, poverty levels, or farm-gate opium prices—were not statistically significant. The model, focused on 2017 data to predict 2018 outcomes, achieved 86% accuracy but may have been impacted by that year’s severe drought. These findings highlight the complexity and regional specificity of illicit crop cultivation and underscore the need for tailored, evidence-based policy interventions. </p>
         <a class="button" href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">Open Report</a>
       </div>
       <div class="report">
-        <h4>Quantitative Analysis of Remote Sensing Imagery</h4>
+        <h4>Analysis of Remote Sensing Imagery: Identifying Opium Poppy</h4>
         <img src="reports/remote-sensing.jpg" alt="Remote Sensing">
-        <p>This report covers statistical analysis of multispectral satellite images, focusing on vegetation indices and classification algorithms for land use assessment.</p>
+        <p>This project explores the feasibility of identifying opium poppy cultivation in Afghanistan using medium-resolution satellite imagery (Landsat 8), as high-resolution images are often unavailable. Opium poppy plots are typically very small—often smaller than a single Landsat pixel—and share similar NDVI values with other crops like wheat, making detection difficult. Additional challenges include varying crop calendars due to elevation, inconsistent climate conditions, and mixed pixels from intercropping. </p>
         <a class="button" href="reports/ProjectReport_13122019.pdf" target="_blank">Open Report</a>
       </div>
       <div class="report">
-        <h4>NLP for Biodiversity Speeches</h4>
+        <h4>Analysis of Political Speeches Using NLP: Case Study of the United Nations Biodiversity Conference</h4>
         <img src="reports/nlp-biodiversity.jpg" alt="NLP Biodiversity">
-        <p>Applies natural language processing to analyze speeches on biodiversity at international conferences. Techniques include topic modeling and sentiment analysis.</p>
+        <p>This project applies Natural Language Processing (NLP) and Structural Topic Modeling (STM) to analyze over 5,000 pages of speeches and decisions from the 2024 UN Biodiversity Conference and past conferences dating back to 1994. In response to the global biodiversity crisis, where up to one million species face extinction, this analysis aims to identify key themes, regional discourse differences, and evolving trends in international biodiversity policy. Three core topics emerged from the 2024 statements: biosafety and benefit-sharing, biodiversity as a national commitment, and inclusive development with indigenous rights. The analysis found regional variation, with African nations emphasizing inclusivity and biosafety more than Western countries. Over the 30-year span, these findings underscore NLP's potential to track policy evolution at scale and inform more balanced, data-driven biodiversity strategies moving forward.</p>
         <a class="button" href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">Open Report</a>
       </div>
     </div>
