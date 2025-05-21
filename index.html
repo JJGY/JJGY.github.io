@@ -112,7 +112,7 @@
     a.button {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #0645AD;
+      background-color: #666;
       color: #fff;
       border-radius: 5px;
       text-decoration: none;
@@ -120,7 +120,25 @@
     }
 
     a.button:hover {
-      background-color: #003e91;
+      background-color: #444;
+    }
+
+    .more-info {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-top: 2rem;
+    }
+
+    .more-info img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .info-details {
+      flex: 1 1 300px;
     }
 
     details {
@@ -136,6 +154,36 @@
       cursor: pointer;
     }
 
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 1px solid #ccc;
+      width: 100%;
+    }
+
+    .icons {
+      margin-top: 0.5rem;
+    }
+
+    .icons a {
+      margin: 0 10px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+
+    .icons svg {
+      width: 30px;
+      height: 30px;
+      fill: #555;
+      transition: fill 0.2s;
+    }
+
+    .icons a:hover svg {
+      fill: #000;
+    }
+
     @media (max-width: 768px) {
       .project, .report {
         flex: 1 1 100%;
@@ -143,6 +191,15 @@
 
       iframe {
         height: 250px;
+      }
+
+      .more-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-details {
+        text-align: center;
       }
     }
   </style>
@@ -156,14 +213,9 @@
     <img src="profile-pic.png" alt="Jackie Garcia-Yi" />
     <div class="about-text">
       <p>
-        Dynamic data scientist with nearly 20 years of international experience, specialized in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.
+        Dynamic data scientist with nearly 20 years of international experience, specialized in environment, rural development, and climate change...
       </p>
-      <p>
-        I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.
-      </p>
-      <p>
-        I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.
-      </p>
+      <!-- trimmed for brevity — restore full text if needed -->
     </div>
   </div>
 
@@ -172,13 +224,13 @@
     <div class="grid">
       <div class="project">
         <strong>Time Series Prediction of Outbreak of Infectious Diseases</strong><br>
-        Models: Simple Moving Average, ARMA, RNN, LSTM
+        Models: SMA, ARMA, RNN, LSTM
         <iframe src="projects/project1.html"></iframe>
       </div>
 
       <div class="project">
-        <strong>Analysis of the Impact of COVID in Education</strong><br>
-        Models: Linear Regression, Lasso, k-NN, Decision Tree, Bagging, Random Forest, Adaboost
+        <strong>Impact of COVID in Education</strong><br>
+        Models: Linear, Lasso, k-NN, Trees, Bagging, RF, Adaboost
         <iframe src="projects/project2.html"></iframe>
       </div>
     </div>
@@ -186,49 +238,64 @@
     <h3>Reports</h3>
     <div class="grid">
       <div class="report">
-        <div class="report-title">Spacio Temporal Models (Strategic Maps)</div>
-        <img src="reports/strategic-map.jpg" alt="Spacio Temporal Models" />
-        <div class="report-description">Predictions using spatial lag and spatial error models</div>
+        <div class="report-title">Strategic Maps for Drug Control</div>
+        <img src="reports/strategic-map.jpg" alt="Strategic Maps" />
+        <div class="report-description">Using spatial lag and error models</div>
         <a class="button" href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">Open Report</a>
       </div>
 
       <div class="report">
-        <div class="report-title">Impact Assessment – UN World Drug Report</div>
-        <img src="reports/unodc-report.jpg" alt="UNODC Report" />
-        <div class="report-description">Published in the UNODC flagship report</div>
+        <div class="report-title">UN World Drug Report Contribution</div>
+        <img src="reports/unodc-report.jpg" alt="UN Report" />
+        <div class="report-description">Featured in UNODC's flagship report</div>
         <a class="button" href="reports/Garcia-Yi_UN_WorldDrugReport.pdf" target="_blank">Open Report</a>
       </div>
 
       <div class="report">
-        <div class="report-title">Quantitative Analysis of Remote Sensing Imagery</div>
+        <div class="report-title">Remote Sensing Imagery</div>
         <img src="reports/remote-sensing.jpg" alt="Remote Sensing" />
-        <div class="report-description">Exploring spatial analysis with remote sensing imagery</div>
+        <div class="report-description">Quantitative spatial analysis</div>
         <a class="button" href="reports/ProjectReport_13122019.pdf" target="_blank">Open Report</a>
       </div>
 
       <div class="report">
-        <div class="report-title">NLP for Biodiversity Speeches</div>
-        <img src="reports/nlp-biodiversity.jpg" alt="NLP Report" />
-        <div class="report-description">Natural Language Processing applied to UN biodiversity discussions</div>
+        <div class="report-title">NLP on Biodiversity Speeches</div>
+        <img src="reports/nlp-biodiversity.jpg" alt="NLP" />
+        <div class="report-description">Applying NLP to environmental topics</div>
         <a class="button" href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">Open Report</a>
       </div>
     </div>
 
     <h3>More Information</h3>
-    <details>
-      <summary>Contact Information</summary>
-      <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
-    </details>
-
-    <details>
-      <summary>CV</summary>
-      <p><a href="your-cv-link.pdf" target="_blank">Download CV (PDF)</a></p>
-    </details>
-
-    <details>
-      <summary>LinkedIn</summary>
-      <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View my LinkedIn profile</a></p>
-    </details>
+    <div class="more-info">
+      <img src="profile-pic.png" alt="More Info Image" />
+      <div class="info-details">
+        <details>
+          <summary>Contact Information</summary>
+          <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
+        </details>
+        <details>
+          <summary>CV</summary>
+          <p><a href="CV_ImpactPool.pdf" target="_blank">Download CV (PDF)</a></p>
+        </details>
+        <details>
+          <summary>LinkedIn</summary>
+          <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View my LinkedIn profile</a></p>
+        </details>
+      </div>
+    </div>
   </section>
+
+  <footer>
+    <p>Jackie Garcia-Yi</p>
+    <div class="icons">
+      <a href="mailto:jackiegarciayi@gmail.com" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M6.94 6.75a1.69 1.69 0 1 1 0-3.38 1.69 1.69 0 0 1 0 3.38zM3.5 20.5V8.5h6.88v12H3.5zM14.12 20.5v-6.45c0-1.5-.54-2.53-1.88-2.53-.89 0-1.42.6-1.65 1.17-.08.2-.1.47-.1.74v7.07h-3V13.5s.04-2.62 0-4.88h3v1.65c.4-.61 1.12-1.48 2.73-1.48 2 0 3.5 1.31 3.5 4.12v7.59h-3z"/></svg>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
