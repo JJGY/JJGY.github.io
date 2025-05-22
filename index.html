@@ -31,13 +31,21 @@
     }
 
     .button.primary {
-      background: #49bf9d;
+      background-color: #49bf9d;
+      color: white;
+      padding: 0.6em 1.2em;
       border: none;
-      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-
+    
     .button.primary:hover {
-      background: #3ea385;
+      background-color: #3ea385;
     }
 
     summary {
@@ -120,6 +128,17 @@
     .image.more-info-image {
       margin-top: 4em;
     }
+    ul.actions {
+      list-style: none;
+      padding: 0;
+      margin: 1em 0;
+    }
+    
+    ul.actions li {
+      display: inline-block;
+      margin-right: 1em;
+    }
+
   </style>
 </head>
 <body class="is-preload">
