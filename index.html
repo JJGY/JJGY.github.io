@@ -103,6 +103,22 @@
       border-bottom: none !important;
       outline: none;
     }
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    
+    #wrapper {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    
+    section.spotlight,
+    article.post,
+    #main {
+      box-sizing: border-box;
+    }
     
   </style>
 </head>
@@ -129,7 +145,7 @@
     <article class="post">
       <header class="major" id="about" style="text-align: center;"> 
         <h1 style="color: black;">Jackie Garcia-Yi</h1>
-        <p>Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</p>
+        <p style="color: black; font-size: 1.5em; font-weight: normal;">Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</p>
       </header>
 
       <section class="spotlight" style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap;">
@@ -203,9 +219,12 @@
         </article>
       </section>
 
-      <h2 id="info" style="margin-top: 4em; color: black; font-size: 2em;">More Information</h2>
-      <section class="spotlight" style="display: flex; flex-direction: column; align-items: center; gap: 2em;">
-        <div class="content" style="max-width: 600px; text-align: center;">
+      <h2 id="info" style="margin-top: 4em; color: black; font-size: 2em; text-align: right;">More Information</h2>
+      <section class="spotlight" style="display: flex; align-items: flex-start; gap: 2em; flex-wrap: wrap;">
+        <div class="image" style="flex: 1 1 300px; max-width: 300px;">
+          <img src="profile-pic.png" alt="Jackie Garcia-Yi" />
+        </div>
+        <div class="content" style="flex: 2 1 500px;">
           <details>
             <summary>Contact Information</summary>
             <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
@@ -219,8 +238,8 @@
             <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View LinkedIn Profile</a></p>
           </details>
         </div>
-        <div class="image" style="max-width: 300px;"><img src="profile-pic.png" alt="Jackie Garcia-Yi" /></div>
       </section>
+
 
     </article>
   </div>
