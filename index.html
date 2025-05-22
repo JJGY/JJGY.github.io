@@ -103,22 +103,30 @@
       border-bottom: none !important;
       outline: none;
     }
-    body, html {
+   
+
+    html, body {
       margin: 0;
       padding: 0;
+      max-width: 100%;
       overflow-x: hidden;
     }
     
-    #wrapper {
+    img {
       max-width: 100%;
-      box-sizing: border-box;
+      height: auto;
+      display: block;
     }
     
-    section.spotlight,
-    article.post,
-    #main {
-      box-sizing: border-box;
+    #wrapper {
+      overflow-x: hidden;
     }
+    
+    section.spotlight, #main, article.post {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
     #footer p {
       padding-left: 1em;
     }
