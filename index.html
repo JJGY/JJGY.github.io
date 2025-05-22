@@ -94,6 +94,16 @@
       text-decoration: none;
     }
 
+    header nav a.nav-link,
+    header nav a.nav-link:visited,
+    header nav a.nav-link:hover,
+    header nav a.nav-link:focus,
+    header nav a.nav-link:active {
+      text-decoration: none !important;
+      border-bottom: none !important;
+      outline: none;
+    }
+    
   </style>
 </head>
 <body class="is-preload">
@@ -194,9 +204,8 @@
       </section>
 
       <h2 id="info" style="margin-top: 4em; color: black; font-size: 2em;">More Information</h2>
-      <section class="spotlight" style="display: flex; flex-direction: column-reverse; align-items: center; gap: 2em;">
-        <div class="image" style="flex: 1 1 300px; max-width: 300px;"><img src="profile-pic.png" alt="Jackie Garcia-Yi" /></div>
-        <div class="content" style="flex: 2 1 500px;">
+      <section class="spotlight" style="display: flex; flex-direction: column; align-items: center; gap: 2em;">
+        <div class="content" style="max-width: 600px; text-align: center;">
           <details>
             <summary>Contact Information</summary>
             <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
@@ -210,7 +219,9 @@
             <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View LinkedIn Profile</a></p>
           </details>
         </div>
+        <div class="image" style="max-width: 300px;"><img src="profile-pic.png" alt="Jackie Garcia-Yi" /></div>
       </section>
+
     </article>
   </div>
 
