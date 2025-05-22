@@ -71,6 +71,10 @@
         font-size: 1em;
         line-height: 1.6em;
       }
+      
+      .posts article {
+        flex: 1 1 100%;
+      }
     }
 
     nav a.nav-link {
@@ -166,6 +170,19 @@
       border-radius: 10px;
       display: block;
       margin: 1em auto;
+    }
+
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+    }
+    
+    .posts article {
+      flex: 1 1 calc(50% - 2em);
+      max-width: 500px;
+      box-sizing: border-box;
     }
 
   </style>
