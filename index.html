@@ -10,6 +10,12 @@
     body.is-preload *, body.is-preload *:before, body.is-preload *:after {
       transition: none !important;
     }
+    #main {
+      padding: 4em 4em 2em 4em;
+    }
+    header.major h1 {
+      font-size: 3em;
+    }
     .spotlight img {
       width: 100%;
       max-width: 300px;
@@ -27,6 +33,9 @@
       font-weight: bold;
       cursor: pointer;
     }
+    #sidebar {
+      display: block;
+    }
   </style>
 </head>
 <body class="is-preload">
@@ -34,10 +43,25 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
+  <!-- Sidebar -->
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#reports">Reports</a></li>
+          <li><a href="#info">More Info</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
   <!-- Main -->
   <div id="main">
     <article class="post">
-      <header class="major">
+      <header class="major" id="about">
         <h1>Jackie Garcia-Yi</h1>
         <p>Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</p>
       </header>
@@ -52,7 +76,7 @@
         </div>
       </section>
 
-      <h2>Data Science Projects</h2>
+      <h2 id="projects">Data Science Projects</h2>
       <section class="posts">
         <article>
           <h3>Time Series Prediction of Outbreak of Infectious Diseases</h3>
@@ -73,7 +97,7 @@
         </article>
       </section>
 
-      <h2>Reports</h2>
+      <h2 id="reports">Reports</h2>
       <section class="posts">
         <article>
           <h3>UN World Drug Report 2020</h3>
@@ -112,7 +136,7 @@
         </article>
       </section>
 
-      <h2>More Information</h2>
+      <h2 id="info">More Information</h2>
       <section class="spotlight">
         <div class="image"><img src="profile-pic.png" alt="Jackie Garcia-Yi" /></div>
         <div class="content">
