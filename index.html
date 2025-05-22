@@ -73,6 +73,21 @@
     }
     article.post p {
       word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+    body:before {
+      display: block;
+      background: #49bf9d;
+      color: white;
+      content: "Menu";
+      text-align: center;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+    body.is-preload #header {
+      display: block !important;
     }
     @media screen and (max-width: 1280px) {
       #sidebar {
@@ -96,7 +111,7 @@
 <div id="wrapper">
 
   <!-- Sidebar -->
-  <section id="sidebar" style="position: fixed; right: 0; top: 0; height: 100%; width: 250px; background: #f7f7f7; box-shadow: -2px 0 5px rgba(0,0,0,0.1); z-index: 1000; overflow-y: auto;">
+  <section id="sidebar" style="position: fixed; right: 0; top: 0; height: 100%; width: 250px; background: #49bf9d; box-shadow: -2px 0 5px rgba(0,0,0,0.1); z-index: 1000; overflow-y: auto;">
   <div class="inner">
     <nav>
       <ul>
