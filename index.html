@@ -17,18 +17,21 @@
       font-size: 3em;
       color: #49bf9d;
     }
+    h2 {
+      color: #49bf9d;
+    }
     .spotlight img {
       width: 100%;
       max-width: 300px;
       border-radius: 12px;
     }
     .button.primary {
-      background: #666;
+      background: #49bf9d;
       border: none;
       color: #fff;
     }
     .button.primary:hover {
-      background: #444;
+      background: #3ea385;
     }
     summary {
       font-weight: bold;
@@ -56,11 +59,20 @@
       margin: 1.5em 0;
     }
     #sidebar nav ul li a {
-      color: white;
+      color: #333;
       text-decoration: none;
       font-size: 1.25em;
       text-align: center;
       display: block;
+      transition: color 0.3s ease;
+    }
+    #sidebar nav ul li a:hover {
+      color: #49bf9d;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    article.post p {
+      word-wrap: break-word;
     }
     @media screen and (max-width: 1280px) {
       #sidebar {
@@ -70,6 +82,10 @@
     @media screen and (max-width: 736px) {
       #main {
         padding: 2em 1em;
+      }
+      article.post p {
+        font-size: 1em;
+        line-height: 1.6em;
       }
     }
   </style>
