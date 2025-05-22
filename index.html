@@ -4,210 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jackie Garcia-Yi</title>
-  <meta name="description" content="Portfolio of Jackie Garcia-Yi">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://html5up.net/uploads/demos/read-only/assets/css/main.css" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; text-align: center; }
-    h1, h2, h3, h4 { margin: 1rem 0; }
-    h3 { font-size: 2.5rem; }
-    
-    .about {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      text-align: left;
-      align-items: center; /* This aligns the image and text vertically */
+    body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+      transition: none !important;
     }
-
-    .about img {
-      width: 180px;
+    .spotlight img {
+      width: 100%;
+      max-width: 300px;
       border-radius: 12px;
-      height: auto;
-      object-fit: cover;
     }
-
-    .about-text { flex: 1; }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      padding: 2rem;
-    }
-
-    .project, .report {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      width: calc(50% - 20px);
-      box-sizing: border-box;
-    }
-
-    .project h4, .report h4 { margin-top: 0; }
-    .project p, .report p { text-align: left; }
-
-    .button {
+    .button.primary {
       background: #666;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 10px;
+      border: none;
+      color: #fff;
     }
-
-    .button:hover { background: #444; }
-
-    .more-info {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      text-align: left;
-      justify-content: center;
+    .button.primary:hover {
+      background: #444;
     }
-
-    .more-info img {
-      width: 250px;
-      border-radius: 8px;
-    }
-
-    .info-text { flex: 1 1 300px; }
-
-    footer {
-      margin-top: 3rem;
-      padding: 2rem;
-      background: #eaeaea;
-      text-align: center;
-    }
-
-    .icons a { margin: 0 10px; display: inline-block; }
-
-    .icons svg {
-      width: 24px;
-      height: 24px;
-      fill: #333;
-      transition: fill 0.3s;
-    }
-
-    .icons a:hover svg { fill: #000; }
-
-    @media (max-width: 768px) {
-      .about {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .about-text { width: 100%; }
-      .project, .report { width: 100%; }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
-<body>
-  <h1>JACKIE GARCIA-YI</h1>
-  <h2>Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</h2>
+<body class="is-preload">
 
-  <section class="about">
-    <img src="profile-pic.png" alt="Jackie Garcia-Yi">
-    <div class="about-text">
-      <h1>About Me</h1>
-      <p>
-        Dynamic data scientist with nearly 20 years of international experience, specialized in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.
-      </p>
-      <p>
-        I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.
-      </p>
-      <p>
-        I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.
-      </p>
-    </div>
-  </section>
+<!-- Wrapper -->
+<div id="wrapper">
 
-  <section>
-    <h1>Data Science Projects</h1>
-    <div class="grid">
-      <div class="project">
-        <h4>Time Series Prediction of Outbreak of Infectious Diseases</h4>
-        <img src="images/project1-image.jpg" alt="Time series model visualization" style="width:100%; max-width:500px; margin: 10px 0;">
-        <p>This project explores the policy potential of predictive modeling for infectious disease outbreaks using time series methods, including SMA, ARMA, RNN, and LSTM models. We leveraged digital stream data, particularly Google search trends. Deep learning models outperformed traditional baselines in forecasting COVID-19 cases. Accurate outbreak prediction can empower governments to act swiftly, implement targeted interventions, and avoid unnecessary lockdowns. The findings underscore the value of integrating advanced predictive tools into public health policy for more responsive and data-driven crisis management.</p>
-        <a class="button" href="projects/Project1.html" target="_blank">Open Notebook</a>
-      </div>
-    
-      <div class="project">
-        <h4>Impact of COVID on Education: A Data-Driven Analysis Using Regression Models</h4>
-        <img src="images/project2-image.jpg" alt="Education impact analysis chart" style="width:100%; max-width:500px; margin: 10px 0;">
-        <p>This project examines the impact of COVID-19 on global primary education completion rates using regression models such as Linear, Lasso, k-NN, and Adaboost. Using UNESCO and World Bank data, it estimates 2020 outcomes without the pandemic and compares them to actual values. Adaboost showed the highest accuracy (R² = 0.81), with predictions differing by less than 1%. Variables for geography and development status helped account for contextual factors. The findings offer valuable insights for policymakers to assess educational resilience and better target future interventions in times of crisis.</p>
-        <a class="button" href="projects/Project2.html" target="_blank">Open Notebook</a>
-      </div>
-    </div>
-  </section>
+  <!-- Main -->
+  <div id="main">
+    <article class="post">
+      <header class="major">
+        <h1>Jackie Garcia-Yi</h1>
+        <p>Data Scientist and AI | Sustainability Expert | Bio-Acoustic Monitoring</p>
+      </header>
 
-  <section>
-    <h1>Reports</h1>
-    <div class="grid">
-      <div class="report">
-        <h4>UN World Drug Report 2020: In Focus – Alternative Development</h4>
-        <img src="reports/unodc-report.jpg" alt="UNODC Report Cover">
-        <p>The UN World Drug Report spotlights "Alternative Development" as a long-term, development-focused strategy to address the root causes of illicit crop cultivation—primarily poverty, lack of infrastructure, and weak governance. Rather than relying solely on eradication, alternative development aims to create sustainable livelihoods for communities vulnerable to growing crops like opium poppy and coca. Drawing on data from 53 projects across Afghanistan, Colombia, Peru, Bolivia, and Myanmar (2013–2017), the report highlights both successes and challenges. While many interventions showed promise—especially those supporting women's income, land titling, and high-value crop alternatives—impact assessments revealed that short-term gains can quickly reverse if structural issues remain unresolved. The report underscores that sustainable results require multi-year investment, rigorous monitoring, and context-sensitive approaches. Despite a gradual increase in project funding, particularly in Colombia following the FARC peace agreement, emerging areas of illicit cultivation and gaps in household-level data remain critical blind spots. </p>
-        <a class="button" href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf" target="_blank">Open Report</a>
-      </div>
-      <div class="report">
-        <h4>Strategic Maps for Decision-Making on Opium Poppy Cultivation in Afghanistan</h4>
-        <img src="reports/strategic-map.jpg" alt="Strategic Map">
-        <p>This research explores the geographic, socioeconomic, and market-driven factors that statistically influence opium poppy cultivation across Afghanistan's districts, where over 80% of global cultivation occured. Using spatial econometric models, the study finds that cultivation is significantly more likely in districts with limited accessibility, large rural populations, availability of "advanced money" (pre-financing from traffickers), prior cultivation history, and warmer nighttime temperatures. Surprisingly, common assumptions—such as the influence of security conditions, poverty levels, or farm-gate opium prices—were not statistically significant. The model, focused on 2017 data to predict 2018 outcomes, achieved 86% accuracy but may have been impacted by that year’s severe drought. These findings highlight the complexity and regional specificity of illicit crop cultivation and underscore the need for tailored, evidence-based policy interventions. </p>
-        <a class="button" href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">Open Report</a>
-      </div>
-      <div class="report">
-        <h4>Analysis of Remote Sensing Imagery: Identifying Opium Poppy</h4>
-        <img src="reports/remote-sensing.jpg" alt="Remote Sensing">
-        <p>This project explores the feasibility of identifying opium poppy cultivation in Afghanistan using medium-resolution satellite imagery (Landsat 8), as high-resolution images are often unavailable. Opium poppy plots are typically very small—often smaller than a single Landsat pixel—and share similar NDVI values with other crops like wheat, making detection difficult. Additional challenges include varying crop calendars due to elevation, inconsistent climate conditions, and mixed pixels from intercropping. </p>
-        <a class="button" href="reports/ProjectReport_13122019.pdf" target="_blank">Open Report</a>
-      </div>
-      <div class="report">
-        <h4>Analysis of Political Speeches Using NLP: Case Study of the United Nations Biodiversity Conference</h4>
-        <img src="reports/nlp-biodiversity.jpg" alt="NLP Biodiversity">
-        <p>This project applies Natural Language Processing (NLP) and Structural Topic Modeling (STM) to analyze over 5,000 pages of speeches and decisions from the 2024 UN Biodiversity Conference and past conferences dating back to 1994. In response to the global biodiversity crisis, where up to one million species face extinction, this analysis aims to identify key themes, regional discourse differences, and evolving trends in international biodiversity policy. Three core topics emerged from the 2024 statements: biosafety and benefit-sharing, biodiversity as a national commitment, and inclusive development with indigenous rights. The analysis found regional variation, with African nations emphasizing inclusivity and biosafety more than Western countries. Over the 30-year span, these findings underscore NLP's potential to track policy evolution at scale and inform more balanced, data-driven biodiversity strategies moving forward.</p>
-        <a class="button" href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">Open Report</a>
-      </div>
-    </div>
-  </section>
+      <section class="spotlight">
+        <div class="image"><img src="profile-pic.png" alt="Jackie Garcia-Yi" /></div>
+        <div class="content">
+          <h2>About Me</h2>
+          <p>Dynamic data scientist with nearly 20 years of international experience, specialized in environment, rural development, and climate change. My career spans the United Nations (UNEP, UNODC) and German academia, where I focus on climate change mitigation, impact assessment, and the application of advanced data analytics to sustainable development.</p>
+          <p>I have overseen multi-million-dollar initiatives, led cross-functional teams, and delivered data-driven insights that inform global policy and programming.</p>
+          <p>I develop predictive models, design AI-driven tools, and build intelligent systems—from scalable reporting pipelines to LLM-powered agents—that extract meaning from complex datasets. My work enables organizations to automate analysis, enhance decision-making, and apply cutting-edge data science to real-world sustainability challenges.</p>
+        </div>
+      </section>
 
-  <section class="more-info">
-    <img src="profile-pic.png" alt="Jackie Garcia-Yi">
-    <div class="info-text">
-      <h1>More Information</h1>
-      <details>
-        <summary>Contact Information</summary>
-        <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
-      </details>
-      <details>
-        <summary>CV</summary>
-        <p><a href="your-cv-link.pdf" target="_blank">Download CV (PDF)</a></p>
-      </details>
-      <details>
-        <summary>LinkedIn</summary>
-        <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View LinkedIn Profile</a></p>
-      </details>
-    </div>
-  </section>
+      <h2>Data Science Projects</h2>
+      <section class="posts">
+        <article>
+          <h3>Time Series Prediction of Outbreak of Infectious Diseases</h3>
+          <img src="images/project1-image.jpg" alt="Time series model visualization">
+          <p>This project explores the policy potential of predictive modeling for infectious disease outbreaks using time series methods, including SMA, ARMA, RNN, and LSTM models. We leveraged digital stream data, particularly Google search trends. Deep learning models outperformed traditional baselines in forecasting COVID-19 cases. Accurate outbreak prediction can empower governments to act swiftly, implement targeted interventions, and avoid unnecessary lockdowns.</p>
+          <ul class="actions">
+            <li><a href="projects/Project1.html" target="_blank" class="button primary">Open Notebook</a></li>
+          </ul>
+        </article>
 
-  <footer>
-    <p>Jackie Garcia-Yi</p>
-    <div class="icons">
-      <a href="mailto:jackiegarciayi@gmail.com" title="Email">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank" title="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M6.94 6.75a1.69 1.69 0 1 1 0-3.38 1.69 1.69 0 0 1 0 3.38zM3.5 20.5V8.5h6.88v12H3.5zM14.12 20.5v-6.45c0-1.5-.54-2.53-1.88-2.53-.89 0-1.42.6-1.65 1.17-.08.2-.1.47-.1.74v7.07h-3V13.5s.04-2.62 0-4.88h3v1.65c.4-.61 1.12-1.48 2.73-1.48 2 0 3.5 1.31 3.5 4.12v7.59h-3z"/></svg>
-      </a>
-    </div>
+        <article>
+          <h3>Impact of COVID on Education</h3>
+          <img src="images/project2-image.jpg" alt="Education impact analysis chart">
+          <p>This project examines the impact of COVID-19 on global primary education completion rates using regression models such as Linear, Lasso, k-NN, and Adaboost. Using UNESCO and World Bank data, it estimates 2020 outcomes without the pandemic and compares them to actual values. Adaboost showed the highest accuracy (R² = 0.81).</p>
+          <ul class="actions">
+            <li><a href="projects/Project2.html" target="_blank" class="button primary">Open Notebook</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <h2>Reports</h2>
+      <section class="posts">
+        <article>
+          <h3>UN World Drug Report 2020</h3>
+          <img src="reports/unodc-report.jpg" alt="UNODC Report Cover">
+          <p>The UN World Drug Report spotlights "Alternative Development" as a long-term strategy to address illicit crop cultivation. Drawing on data from 53 projects, it highlights both successes and challenges, stressing sustainable investments and rigorous monitoring.</p>
+          <ul class="actions">
+            <li><a href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf" target="_blank" class="button primary">Open Report</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Strategic Maps for Decision-Making</h3>
+          <img src="reports/strategic-map.jpg" alt="Strategic Map">
+          <p>This research models opium poppy cultivation likelihood across Afghanistan using spatial econometrics. Findings highlight key factors such as inaccessibility, rural population size, and climatic variables while debunking some commonly assumed drivers.</p>
+          <ul class="actions">
+            <li><a href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank" class="button primary">Open Report</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Remote Sensing for Poppy Detection</h3>
+          <img src="reports/remote-sensing.jpg" alt="Remote Sensing">
+          <p>This report evaluates the use of Landsat 8 imagery for identifying opium poppy crops in Afghanistan. Challenges included pixel resolution, similar NDVI patterns across crops, and elevation-driven calendar variations.</p>
+          <ul class="actions">
+            <li><a href="reports/ProjectReport_13122019.pdf" target="_blank" class="button primary">Open Report</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>NLP for UN Biodiversity Speeches</h3>
+          <img src="reports/nlp-biodiversity.jpg" alt="NLP Biodiversity">
+          <p>Applies Structural Topic Modeling and NLP to over 5,000 pages of UN biodiversity policy speeches. The analysis identifies key thematic shifts and regional discourse variation between 1994 and 2024 conferences.</p>
+          <ul class="actions">
+            <li><a href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank" class="button primary">Open Report</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <h2>More Information</h2>
+      <section class="spotlight">
+        <div class="image"><img src="profile-pic.png" alt="Jackie Garcia-Yi" /></div>
+        <div class="content">
+          <details>
+            <summary>Contact Information</summary>
+            <p>Email: jackiegarciayi@gmail.com<br>Phone: +43-6701889288</p>
+          </details>
+          <details>
+            <summary>CV</summary>
+            <p><a href="your-cv-link.pdf" target="_blank">Download CV (PDF)</a></p>
+          </details>
+          <details>
+            <summary>LinkedIn</summary>
+            <p><a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">View LinkedIn Profile</a></p>
+          </details>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p class="copyright">
+      &copy; Jackie Garcia-Yi &bull;
+      <a href="mailto:jackiegarciayi@gmail.com">jackiegarciayi@gmail.com</a> &bull;
+      <a href="https://www.linkedin.com/in/jaqueline-garcia-yi/" target="_blank">LinkedIn</a>
+    </p>
   </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://html5up.net/uploads/demos/read-only/assets/js/jquery.min.js"></script>
+<script src="https://html5up.net/uploads/demos/read-only/assets/js/browser.min.js"></script>
+<script src="https://html5up.net/uploads/demos/read-only/assets/js/breakpoints.min.js"></script>
+<script src="https://html5up.net/uploads/demos/read-only/assets/js/util.js"></script>
+<script src="https://html5up.net/uploads/demos/read-only/assets/js/main.js"></script>
+
 </body>
 </html>
