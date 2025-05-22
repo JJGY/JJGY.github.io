@@ -37,20 +37,7 @@
       font-weight: bold;
       cursor: pointer;
     }
-    #sidebar {
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 250px;
-      background: #49bf9d;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-      overflow-y: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    
     #sidebar nav ul {
       list-style: none;
       padding: 0;
@@ -72,23 +59,13 @@
       border-radius: 5px;
     }
     article.post p {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      hyphens: auto;
-    }
-    body:before {
-      display: block;
-      background: #49bf9d;
-      color: white;
-      content: "Menu";
-      text-align: center;
-      padding: 1em;
-      font-weight: bold;
-      font-size: 1.25em;
-    }
-    body.is-preload #header {
-      display: block !important;
-    }
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+    
+    
     @media screen and (max-width: 1280px) {
       #sidebar {
         display: block !important;
@@ -110,20 +87,17 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
-  <!-- Sidebar -->
-  <section id="sidebar" style="position: fixed; right: 0; top: 0; height: 100%; width: 250px; background: #49bf9d; box-shadow: -2px 0 5px rgba(0,0,0,0.1); z-index: 1000; overflow-y: auto;">
-  <div class="inner">
-    <nav>
-      <ul>
-        <li><a href="#main">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#reports">Reports</a></li>
-        <li><a href="#info">More Info</a></li>
-      </ul>
-    </nav>
-  </div>
-</section>
+  <!-- Top Navigation Bar -->
+<header style="background-color: #49bf9d; padding: 1em; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000;">
+  <nav style="text-align: center;">
+    <a href="#main" style="margin: 0 1em; color: white; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="#about" style="margin: 0 1em; color: white; text-decoration: none; font-weight: bold;">About Me</a>
+    <a href="#projects" style="margin: 0 1em; color: white; text-decoration: none; font-weight: bold;">Projects</a>
+    <a href="#reports" style="margin: 0 1em; color: white; text-decoration: none; font-weight: bold;">Reports</a>
+    <a href="#info" style="margin: 0 1em; color: white; text-decoration: none; font-weight: bold;">More Info</a>
+  </nav>
+</header>
+<div style="height: 70px;"></div>
 
   <!-- Main -->
   <div id="main">
