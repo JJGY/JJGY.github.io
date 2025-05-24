@@ -200,33 +200,30 @@
         padding: 2em 1em;
       }
     
-      article.post p {
-        font-size: 1em;
-        line-height: 1.6em;
-      }
-    
       .posts {
-        flex-direction: column !important;  /* 🔐 Force column stacking */
+        display: flex;
+        flex-direction: column;
         padding: 0 1em;
+        gap: 2em;
       }
     
       .posts article {
         flex: 1 1 100% !important;
         max-width: 100% !important;
-        padding: 0.5em !important;
-        margin: 0 !important;
-        text-align: left !important;
+        padding: 0;
+        margin: 0;
+        text-align: left;
       }
     
       .posts article p {
-        max-width: 700px;  /* ✅ Limit width of the paragraph for readability */
-        margin-left: 0;
-        margin-right: auto;
+        max-width: 700px; /* ✅ Prevent full-screen text sprawl */
+        margin: 0;
       }
     
-      .posts-wrapper {
-        display: flex;
-        justify-content: center;
+      .posts article h3,
+      .posts article img {
+        max-width: 700px;
+        margin: 0;
       }
     }
 
