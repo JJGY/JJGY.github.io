@@ -188,10 +188,17 @@
       }
 
       .posts article {
-        flex: 1 1 45%;
+        flex: 1 1 100% !important;
         box-sizing: border-box;
         text-align: left; /* 👈 Ensures left alignment of text globally */
       }
+    }
+    .posts article {
+      text-align: left; /* Ensure all articles are left-aligned */
+    }
+    
+    .posts article p {
+      text-align: left; /* Ensure paragraphs inside article are also left-aligned */
     }
   </style>
 
