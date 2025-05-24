@@ -168,7 +168,7 @@
       object-fit: contain;
       border-radius: 10px;
       display: block;
-      margin: 1em auto;
+      margin: 1em 0;
     }
   
     .posts a img:hover {
@@ -186,9 +186,11 @@
         font-size: 1em;
         line-height: 1.6em;
       }
-  
+
       .posts article {
-        flex: 1 1 100% !important;
+        flex: 1 1 45%;
+        box-sizing: border-box;
+        text-align: left; /* 👈 Ensures left alignment of text globally */
       }
     }
   </style>
@@ -304,7 +306,7 @@
         </article>
 
         <article>
-          <h3>Other Reports on Monitoring of Illicit Crops (UNODC, 2015-2020)</h3>
+          <h3>List of Other Reports on Monitoring of Illicit Crops (UNODC, 2015-2020):</h3>
           <ul style="padding-left: 1.5em; font-size: 1.1em; line-height: 1.7em;">
             <li><a href="reports/Bolivia_Coca_2020.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2020</a></li>
             <li><a href="reports/Colombia_Coca_2020.pdf" target="_blank">Illicit Crop Cultivation Colombia 2020</a></li>
