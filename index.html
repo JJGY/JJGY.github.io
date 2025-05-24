@@ -199,25 +199,37 @@
       #main {
         padding: 2em 1em;
       }
-  
+    
       article.post p {
         font-size: 1em;
         line-height: 1.6em;
       }
+    
       .posts {
-        padding: 0 0.5em; /* 🧩 Reduces left/right margin for tighter mobile layout */
+        flex-direction: column !important;  /* 🔐 Force column stacking */
+        padding: 0 1em;
       }
+    
       .posts article {
         flex: 1 1 100% !important;
-        max-width: 100%;
-        padding: 0.5em;
+        max-width: 100% !important;
+        padding: 0.5em !important;
+        margin: 0 !important;
+        text-align: left !important;
       }
+    
+      .posts article p {
+        max-width: 700px;  /* ✅ Limit width of the paragraph for readability */
+        margin-left: 0;
+        margin-right: auto;
+      }
+    
       .posts-wrapper {
         display: flex;
         justify-content: center;
       }
-      
     }
+
   </style>
 
 </head>
@@ -358,7 +370,7 @@
       
       <section class="spotlight" style="display: flex; align-items: flex-start; gap: 2em; flex-wrap: wrap; margin-top: 5em;">
         <div class="image more-info-image" style="flex: 1 1 300px; max-width: 300px; margin-top: 4em;">
-          <img src="profile-pic.png" alt="Jackie Garcia-Yi" />
+          <img src="moreinfo.jpg" alt="Jackie Garcia-Yi" />
         </div>
         <div class="content" style="flex: 2 1 500px;">
           <h2 id="info" class="section-anchor" style="color: black; font-size: 2em;">More Information</h2>
