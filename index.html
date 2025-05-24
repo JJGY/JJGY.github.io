@@ -18,11 +18,7 @@
       font-family: 'Source Sans Pro', sans-serif;
       overflow-x: hidden;
     }
-  
-    #main {
-      padding: 4em 2em 2em 2em;
-    }
-  
+    
     header.major h1 {
       font-size: 3em;
       color: #49bf9d;
@@ -93,23 +89,28 @@
   
     .posts article {
       flex: 1 1 45%;
-      padding: 1em;
       text-align: left;
       max-width: 45%;
     }
-  
+
+    .posts article h3,
+    .posts article p,
+    .posts article img {
+      max-width: 100%;
+      margin: 0;
+    }
+
     .posts article p {
       font-size: 1.15em;
       line-height: 1.75em;
-      max-width: 700px;
     }
   
     .posts img {
       width: 100%;
-      max-width: 400px;
       height: 250px;
       object-fit: contain;
       border-radius: 10px;
+      display: block;
       margin: 1em 0;
     }
   
@@ -125,14 +126,14 @@
   
       .posts {
         flex-direction: column;
-        padding: 0;
-        margin: 0;
+        padding: 0 1em;
+        gap: 1.5em;
       }
   
       .posts article {
-        flex: 1 1 100%;
-        max-width: 100%;
-        padding: 0.5em;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        padding: 0;
       }
   
       .posts article p,
@@ -140,6 +141,10 @@
       .posts article img {
         max-width: 100%;
         margin-left: 0;
+      }
+      
+      #main {
+        padding: 2em 1em;
       }
     }
   </style>
