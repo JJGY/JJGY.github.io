@@ -153,13 +153,13 @@
       display: flex;
       flex-wrap: wrap;
       gap: 2em;
-      justify-content: center; 
-      max-width: 1200px;        
+      justify-content: flex-start; 
+      padding: 0 1em;
       width: 100%;
     }
   
     .posts article {
-      flex: 1 1 45%;
+      flex: 1 1 calc(50% - 1em);
       margin: 0;
       box-sizing: border-box;
       text-align: left;
@@ -204,11 +204,12 @@
         font-size: 1em;
         line-height: 1.6em;
       }
-  
+      .posts {
+        padding: 0 0.5em; /* 🧩 Reduces left/right margin for tighter mobile layout */
+      }
       .posts article {
         flex: 1 1 100% !important;
         max-width: 100%;
-        margin: 0;
         padding: 0.5em;
       }
       .posts-wrapper {
