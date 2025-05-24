@@ -158,7 +158,15 @@
   
     .posts article {
       flex: 1 1 45%;
+      max-width: 600px;
+      margin: 0 auto;
       box-sizing: border-box;
+      text-align: left;
+      padding: 1em;
+    }
+  
+    .posts article p {
+      text-align: left;
     }
   
     .posts img {
@@ -186,19 +194,13 @@
         font-size: 1em;
         line-height: 1.6em;
       }
-
+  
       .posts article {
         flex: 1 1 100% !important;
-        box-sizing: border-box;
-        text-align: left; /* 👈 Ensures left alignment of text globally */
+        max-width: 100%;
+        margin: 0;
+        padding: 0.5em;
       }
-    }
-    .posts article {
-      text-align: left; /* Ensure all articles are left-aligned */
-    }
-    
-    .posts article p {
-      text-align: left; /* Ensure paragraphs inside article are also left-aligned */
     }
   </style>
 
