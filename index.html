@@ -159,7 +159,7 @@
     .posts article {
       flex: 1 1 45%;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0;
       box-sizing: border-box;
       text-align: left;
       padding: 1em;
@@ -201,6 +201,11 @@
         margin: 0;
         padding: 0.5em;
       }
+      .posts-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      
     }
   </style>
 
@@ -239,103 +244,106 @@
       </section>
 
       <h2 id="projects" class="section-anchor" style="margin-top: 2em; color: black; font-size: 2em;">Data Science Projects</h2>
-      <section class="posts">
-        <article>
-          <h3>AI-Powered Bird Species Identification for Ecotourism and Conservation</h3>
-          <a href="https://github.com/jgaryi/E115_BirdWatchingApp" target="_blank">
-            <img src="images/birdwatching.jpg" alt="Birdwatching" />
-          </a>          
-          <p>This project presents an AI-powered birdwatching app designed to enhance ecotourism in remote biodiverse regions. It identifies general bird species from audio using a hybrid BirdNET and local and endemic species using our own transfer learning model, supports users with an interactive LLM assistant, and offers educational tools like species galleries and ecological maps. Built with scalable cloud infrastructure, the app aims to enrich visitor experiences, support conservation, and promote citizen science.</p>
-        </article>        
-        <article>
-          <h3>Time Series Prediction of Outbreak of Infectious Diseases</h3>
-          <a href="projects/Project1.html" target="_blank">
-            <img src="images/project1-image.jpg" alt="Time series model visualization" />
-          </a>          
-          <p>This project explores the policy potential of predictive modeling for infectious disease outbreaks using time series methods, including SMA, ARMA, RNN, and LSTM models. We leveraged digital stream data, particularly Google search trends. Deep learning models outperformed traditional baselines in forecasting COVID-19 cases. Accurate outbreak prediction can empower governments to act swiftly, implement targeted interventions, and avoid unnecessary lockdowns.</p>
-        </article>
-
-        <article>
-          <h3>Impact of COVID on Education</h3>
-          <a href="projects/Project2.html" target="_blank">
-            <img src="images/project2-image.jpg" alt="Education impact analysis chart" />
-          </a>          
-          <p>This project examines the impact of COVID-19 on global primary education completion rates using regression models such as Linear, Lasso, k-NN, and Adaboost. Using UNESCO and World Bank data, it estimates 2020 outcomes without the pandemic and compares them to actual values. Adaboost showed the highest accuracy (R² = 0.81).</p>
-        </article>
-      </section>
+      <div class="posts-wrapper">
+        <section class="posts">
+          <article>
+            <h3>AI-Powered Bird Species Identification for Ecotourism and Conservation</h3>
+            <a href="https://github.com/jgaryi/E115_BirdWatchingApp" target="_blank">
+              <img src="images/birdwatching.jpg" alt="Birdwatching" />
+            </a>          
+            <p>This project presents an AI-powered birdwatching app designed to enhance ecotourism in remote biodiverse regions. It identifies general bird species from audio using a hybrid BirdNET and local and endemic species using our own transfer learning model, supports users with an interactive LLM assistant, and offers educational tools like species galleries and ecological maps. Built with scalable cloud infrastructure, the app aims to enrich visitor experiences, support conservation, and promote citizen science.</p>
+          </article>        
+          <article>
+            <h3>Time Series Prediction of Outbreak of Infectious Diseases</h3>
+            <a href="projects/Project1.html" target="_blank">
+              <img src="images/project1-image.jpg" alt="Time series model visualization" />
+            </a>          
+            <p>This project explores the policy potential of predictive modeling for infectious disease outbreaks using time series methods, including SMA, ARMA, RNN, and LSTM models. We leveraged digital stream data, particularly Google search trends. Deep learning models outperformed traditional baselines in forecasting COVID-19 cases. Accurate outbreak prediction can empower governments to act swiftly, implement targeted interventions, and avoid unnecessary lockdowns.</p>
+          </article>
+  
+          <article>
+            <h3>Impact of COVID on Education</h3>
+            <a href="projects/Project2.html" target="_blank">
+              <img src="images/project2-image.jpg" alt="Education impact analysis chart" />
+            </a>          
+            <p>This project examines the impact of COVID-19 on global primary education completion rates using regression models such as Linear, Lasso, k-NN, and Adaboost. Using UNESCO and World Bank data, it estimates 2020 outcomes without the pandemic and compares them to actual values. Adaboost showed the highest accuracy (R² = 0.81).</p>
+          </article>
+        </section>
+      </div>
 
       <h2 id="reports" class="section-anchor" style="margin-top: 4em; color: black; font-size: 2em;">Reports</h2>
-      <section class="posts">
-        <article>
-          <h3>NLP for UN Biodiversity Speeches</h3>
-          <a href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">
-            <img src="images/nlp-biodiversity.jpg" alt="NLP Biodiversity" />
-          </a>    
-          <p>Applies Structural Topic Modeling and NLP to over 5,000 pages of UN biodiversity policy speeches. The analysis identifies key thematic shifts and regional discourse variation between 1994 and 2024 conferences.</p>
-        </article>
- 
-        <article>
-          <h3>Sustainable Income from Alternative Development</h3>
-          <a href="reports/Brief_income_livelihoods.pdf" target="_blank">
-            <img src="images/livelihoods.jpg" alt="livelihoods" />
-          </a>    
-          <p> This report shows that effective alternative development (AD) initiatives reduce reliance on illicit crop cultivation by improving rural livelihoods through integrated support—such as cash assistance, food security, market access, and training. These measures often boost incomes, particularly for women and vulnerable groups, while helping to reduce inequality.</p>
-        </article>
-        
-        <article>
-          <h3>UN World Drug Report. In Focus: Alternative Development</h3>
-          <a href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf" target="_blank">
-            <img src="images/unodc-report.jpg" alt="UNODC Report Cover" />
-          </a>                
-          <p>The UN World Drug Report spotlights "Alternative Development" as a long-term strategy to address illicit crop cultivation. Drawing on data from 53 projects, it highlights both successes and challenges, stressing sustainable investments and rigorous monitoring.</p>
-        </article>
-
-        <article>
-          <h3>Strategic Maps for Decision-Making</h3>
-          <a href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">
-            <img src="images/strategic-map.jpg" alt="Strategic Map" />
-          </a>             
-          <p>This research models opium poppy cultivation likelihood across Afghanistan using spatial econometrics. Findings highlight key factors such as inaccessibility, rural population size, and climatic variables while debunking some commonly assumed drivers.</p>
-        </article>
-
-        <article>
-          <h3>Remote Sensing for Poppy Detection</h3>
-          <a href="reports/ProjectReport_13122019.pdf" target="_blank">
-            <img src="images/remote-sensing.jpg" alt="Remote Sensing" />
-          </a>                       
-          <p>This report evaluates the use of Landsat 8 imagery for identifying opium poppy crops in Afghanistan. Challenges included pixel resolution, similar NDVI patterns across crops, and elevation-driven calendar variations.</p>
-        </article>
-
-        <article>
-          <h3> Global Overview of Alternative Development Projects </h3>
-          <a href="reports/Research_brief_Overview_of_AD.pdf" target="_blank">
-            <img src="images/alternativedev.jpg" alt="Overview alternative development" />
-          </a>    
-          <p> Alternative development (AD) offers a sustainable solution by improving rural livelihoods, but limited coordination, weak data, and short project durations hinder impact. From 2013–2017, 53 AD projects aimed to reach 550,000 households, with most funding going to long-term efforts.</p>
-        </article>
-
-        <article>
-          <h3>List of Other Reports on Monitoring of Illicit Crops (UNODC, 2015-2020):</h3>
-          <ul style="padding-left: 1.5em; font-size: 1.1em; line-height: 1.7em;">
-            <li><a href="reports/Bolivia_Coca_2020.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2020</a></li>
-            <li><a href="reports/Colombia_Coca_2020.pdf" target="_blank">Illicit Crop Cultivation Colombia 2020</a></li>
-            <li><a href="reports/Bolivia_Coca_2019.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2019</a></li>
-            <li><a href="reports/Colombia_Coca_2019.pdf" target="_blank">Illicit Crop Cultivation Colombia 2019</a></li>
-            <li><a href="reports/Bolivia_Coca_2018.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2018</a></li>
-            <li><a href="reports/Bolivia_Informe_Monitoreo_Coca_2017_final.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2017</a></li>
-            <li><a href="reports/Myanmar_Opium_Survey_2017_web.pdf" target="_blank">Illicit Crop Cultivation Myanmar 2017</a></li>
-            <li><a href="reports/Peru_Monitoreo_de_Cultivos_de_Coca_2017_web.pdf" target="_blank">Illicit Crop Cultivation Peru 2017</a></li>
-            <li><a href="reports/Afghanistan_Opium_2016.pdf" target="_blank">Illicit Crop Cultivation Afghanistan 2016</a></li>
-            <li><a href="reports/2016_Bolivia_Informe_Monitoreo_Coca.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2016</a></li>
-            <li><a href="reports/Colombia_Coca_2016.pdf" target="_blank">Illicit Crop Cultivation Colombia 2016</a></li>
-            <li><a href="reports/Peru_Monitoreo_de_coca_2016_web.pdf" target="_blank">Illicit Crop Cultivation Peru 2016</a></li>
-            <li><a href="reports/Bolivia_Coca_2015.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2015</a></li>
-            <li><a href="reports/Colombia_Coca_2015.pdf" target="_blank">Illicit Crop Cultivation Colombia 2015</a></li>
-            <li><a href="reports/Peru_Coca_2015.pdf" target="_blank">Illicit Crop Cultivation Peru 2015</a></li>
-          </ul>
-        </article>
-
-     </section>
+      <div class="posts-wrapper">
+        <section class="posts">
+          <article>
+            <h3>NLP for UN Biodiversity Speeches</h3>
+            <a href="reports/FinalProjectReport_JGarciaYi.pdf" target="_blank">
+              <img src="images/nlp-biodiversity.jpg" alt="NLP Biodiversity" />
+            </a>    
+            <p>Applies Structural Topic Modeling and NLP to over 5,000 pages of UN biodiversity policy speeches. The analysis identifies key thematic shifts and regional discourse variation between 1994 and 2024 conferences.</p>
+          </article>
+   
+          <article>
+            <h3>Sustainable Income from Alternative Development</h3>
+            <a href="reports/Brief_income_livelihoods.pdf" target="_blank">
+              <img src="images/livelihoods.jpg" alt="livelihoods" />
+            </a>    
+            <p> This report shows that effective alternative development (AD) initiatives reduce reliance on illicit crop cultivation by improving rural livelihoods through integrated support—such as cash assistance, food security, market access, and training. These measures often boost incomes, particularly for women and vulnerable groups, while helping to reduce inequality.</p>
+          </article>
+          
+          <article>
+            <h3>UN World Drug Report. In Focus: Alternative Development</h3>
+            <a href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf" target="_blank">
+              <img src="images/unodc-report.jpg" alt="UNODC Report Cover" />
+            </a>                
+            <p>The UN World Drug Report spotlights "Alternative Development" as a long-term strategy to address illicit crop cultivation. Drawing on data from 53 projects, it highlights both successes and challenges, stressing sustainable investments and rigorous monitoring.</p>
+          </article>
+  
+          <article>
+            <h3>Strategic Maps for Decision-Making</h3>
+            <a href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf" target="_blank">
+              <img src="images/strategic-map.jpg" alt="Strategic Map" />
+            </a>             
+            <p>This research models opium poppy cultivation likelihood across Afghanistan using spatial econometrics. Findings highlight key factors such as inaccessibility, rural population size, and climatic variables while debunking some commonly assumed drivers.</p>
+          </article>
+  
+          <article>
+            <h3>Remote Sensing for Poppy Detection</h3>
+            <a href="reports/ProjectReport_13122019.pdf" target="_blank">
+              <img src="images/remote-sensing.jpg" alt="Remote Sensing" />
+            </a>                       
+            <p>This report evaluates the use of Landsat 8 imagery for identifying opium poppy crops in Afghanistan. Challenges included pixel resolution, similar NDVI patterns across crops, and elevation-driven calendar variations.</p>
+          </article>
+  
+          <article>
+            <h3> Global Overview of Alternative Development Projects </h3>
+            <a href="reports/Research_brief_Overview_of_AD.pdf" target="_blank">
+              <img src="images/alternativedev.jpg" alt="Overview alternative development" />
+            </a>    
+            <p> Alternative development (AD) offers a sustainable solution by improving rural livelihoods, but limited coordination, weak data, and short project durations hinder impact. From 2013–2017, 53 AD projects aimed to reach 550,000 households, with most funding going to long-term efforts.</p>
+          </article>
+  
+          <article>
+            <h3>List of Other Reports on Monitoring of Illicit Crops (UNODC, 2015-2020):</h3>
+            <ul style="padding-left: 1.5em; font-size: 1.1em; line-height: 1.7em;">
+              <li><a href="reports/Bolivia_Coca_2020.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2020</a></li>
+              <li><a href="reports/Colombia_Coca_2020.pdf" target="_blank">Illicit Crop Cultivation Colombia 2020</a></li>
+              <li><a href="reports/Bolivia_Coca_2019.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2019</a></li>
+              <li><a href="reports/Colombia_Coca_2019.pdf" target="_blank">Illicit Crop Cultivation Colombia 2019</a></li>
+              <li><a href="reports/Bolivia_Coca_2018.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2018</a></li>
+              <li><a href="reports/Bolivia_Informe_Monitoreo_Coca_2017_final.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2017</a></li>
+              <li><a href="reports/Myanmar_Opium_Survey_2017_web.pdf" target="_blank">Illicit Crop Cultivation Myanmar 2017</a></li>
+              <li><a href="reports/Peru_Monitoreo_de_Cultivos_de_Coca_2017_web.pdf" target="_blank">Illicit Crop Cultivation Peru 2017</a></li>
+              <li><a href="reports/Afghanistan_Opium_2016.pdf" target="_blank">Illicit Crop Cultivation Afghanistan 2016</a></li>
+              <li><a href="reports/2016_Bolivia_Informe_Monitoreo_Coca.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2016</a></li>
+              <li><a href="reports/Colombia_Coca_2016.pdf" target="_blank">Illicit Crop Cultivation Colombia 2016</a></li>
+              <li><a href="reports/Peru_Monitoreo_de_coca_2016_web.pdf" target="_blank">Illicit Crop Cultivation Peru 2016</a></li>
+              <li><a href="reports/Bolivia_Coca_2015.pdf" target="_blank">Illicit Crop Cultivation Bolivia 2015</a></li>
+              <li><a href="reports/Colombia_Coca_2015.pdf" target="_blank">Illicit Crop Cultivation Colombia 2015</a></li>
+              <li><a href="reports/Peru_Coca_2015.pdf" target="_blank">Illicit Crop Cultivation Peru 2015</a></li>
+            </ul>
+          </article>
+       </section>
+      </div>
       
       <section class="spotlight" style="display: flex; align-items: flex-start; gap: 2em; flex-wrap: wrap; margin-top: 5em;">
         <div class="image more-info-image" style="flex: 1 1 300px; max-width: 300px; margin-top: 4em;">
