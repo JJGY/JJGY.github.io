@@ -18,62 +18,15 @@
       font-family: 'Source Sans Pro', sans-serif;
       overflow-x: hidden;
     }
-    
-    header.major h1 {
-      font-size: 3em;
-      color: #49bf9d;
-    }
   
-    h2 {
-      color: #49bf9d;
-    }
-  
-    .spotlight img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 12px;
-    }
-  
-    .button.primary {
-      background-color: #49bf9d;
-      color: white;
-      padding: 0.6em 1.2em;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-  
-    .button.primary:hover {
-      background-color: #3ea385;
-    }
-  
-    nav a.nav-link {
-      color: white;
-      margin: 0 1em;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-  
-    nav a.nav-link:hover {
-      color: #49bf9d;
-    }
-  
-    #wrapper, #main, section.spotlight, article.post {
-      width: 100%;
-    }
-  
-    .section-anchor {
-      scroll-margin-top: 80px;
+    #main {
+      padding: 4em 2em 2em 2em;
     }
   
     .posts-wrapper {
-      display: flex;
-      justify-content: center;
+      width: 100%;
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
     }
   
     .posts {
@@ -81,25 +34,25 @@
       flex-wrap: wrap;
       gap: 2em;
       justify-content: flex-start;
-      width: 100%;
-      max-width: 1200px;
       padding: 0;
       margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
     }
   
     .posts article {
       flex: 1 1 45%;
-      text-align: left;
       max-width: 45%;
+      text-align: left;
     }
-
+  
     .posts article h3,
     .posts article p,
     .posts article img {
       max-width: 100%;
       margin: 0;
     }
-
+  
     .posts article p {
       font-size: 1.15em;
       line-height: 1.75em;
@@ -114,20 +67,11 @@
       margin: 1em 0;
     }
   
-    .posts a img:hover {
-      opacity: 0.85;
-      transition: opacity 0.3s;
-    }
-  
     @media screen and (max-width: 768px) {
-      #main {
-        padding: 2em 1em;
-      }
-  
       .posts {
         flex-direction: column;
-        padding: 0 1em;
         gap: 1.5em;
+        padding: 0 1em;
       }
   
       .posts article {
@@ -136,19 +80,18 @@
         padding: 0;
       }
   
-      .posts article p,
       .posts article h3,
+      .posts article p,
       .posts article img {
         max-width: 100%;
         margin-left: 0;
       }
-      
+  
       #main {
         padding: 2em 1em;
       }
     }
   </style>
-
 
 </head>
 <body class="is-preload">
