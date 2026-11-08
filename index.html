@@ -22,7 +22,6 @@
     content="Jackie Garcia-Yi is an Environmental Economist and Co-Founder of Ecosonus, working at the intersection of biodiversity, artificial intelligence, data science, and environmental decision-making."
   >
 
-  <!-- Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap"
     rel="stylesheet"
@@ -42,7 +41,7 @@
       --white: #ffffff;
     }
 
-    * ,
+    *,
     *::before,
     *::after {
       box-sizing: border-box;
@@ -57,11 +56,9 @@
       padding: 0;
       width: 100%;
       overflow-x: hidden;
-
       font-family: 'Inter', sans-serif;
       color: var(--ink);
       background: var(--white);
-
       font-size: 16px;
       line-height: 1.7;
     }
@@ -99,23 +96,17 @@
     }
 
 
-    /* ========================================
-       NAVIGATION
-       ======================================== */
+    /* NAVIGATION */
 
     #topbar {
       position: fixed;
       top: 0;
       left: 0;
-
       width: 100%;
       z-index: 1000;
-
       padding: 0.95rem 1.5rem;
-
       background: rgba(255, 255, 255, 0.96);
       border-bottom: 1px solid var(--line);
-
       backdrop-filter: blur(8px);
     }
 
@@ -124,18 +115,14 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-
       gap: 0.35rem 1.8rem;
     }
 
     #topbar a {
       color: #39433e;
-
       font-size: 0.88rem;
       font-weight: 500;
-
       letter-spacing: 0.015em;
-
       transition: color 0.2s ease;
     }
 
@@ -144,14 +131,11 @@
     }
 
 
-    /* ========================================
-       MAIN
-       ======================================== */
+    /* MAIN */
 
     #main {
       width: 100%;
       max-width: 1100px;
-
       margin: 0 auto;
       padding: 4.8rem 3rem 2rem;
     }
@@ -162,97 +146,72 @@
 
     .section-title {
       margin: 0 0 0.9rem;
-
       font-size: 2.3rem;
       line-height: 1.15;
-
       letter-spacing: -0.02em;
     }
 
     .section-subtitle {
       max-width: 720px;
-
       margin: 0 0 2.7rem;
-
       color: var(--muted);
-
       font-size: 0.98rem;
       line-height: 1.65;
     }
 
 
-    /* ========================================
-       HERO
-       ======================================== */
+    /* HERO */
 
     .hero {
       min-height: 390px;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       text-align: center;
-
       padding: 4.5rem 1rem 3rem;
       margin-bottom: 4rem;
     }
 
     .hero h1 {
       margin: 0 0 0.8rem;
-
       font-size: 4rem;
       line-height: 1;
-
       letter-spacing: -0.035em;
     }
 
     .hero-role {
       margin: 0 0 0.7rem;
-
       color: #354039;
-
       font-size: 1.28rem;
       font-weight: 500;
     }
 
     .hero-focus {
       margin: 0;
-
       color: var(--sage);
-
       font-size: 0.82rem;
       font-weight: 500;
-
       letter-spacing: 0.15em;
       text-transform: uppercase;
     }
 
     .hero::after {
       content: "";
-
       display: block;
-
       width: 48px;
       height: 2px;
-
       margin-top: 1.9rem;
-
       background: var(--forest);
     }
 
 
-    /* ========================================
-       ABOUT
-       ======================================== */
+    /* ABOUT */
 
     .about {
       display: flex;
       align-items: center;
-
       gap: 4.5rem;
-
       max-width: 970px;
       margin: 0 auto 6rem;
     }
@@ -264,9 +223,7 @@
     .about-photo img {
       width: 255px;
       height: 255px;
-
       object-fit: cover;
-
       border-radius: 2px;
     }
 
@@ -280,17 +237,12 @@
     }
 
 
-    /* ========================================
-       ECOSONUS
-       ======================================== */
+    /* ECOSONUS */
 
     .ecosonus {
       position: relative;
-
       padding: 3rem 3.5rem;
-
       background: var(--cream);
-
       border-left: 4px solid var(--forest);
     }
 
@@ -301,12 +253,9 @@
 
     .ecosonus-tagline {
       margin: 0 0 1.5rem;
-
       color: var(--forest);
-
       font-size: 0.95rem;
       font-weight: 600;
-
       letter-spacing: 0.02em;
     }
 
@@ -320,13 +269,11 @@
 
     .recognition {
       max-width: 850px;
-
       margin-top: 2.3rem;
     }
 
     .recognition h3 {
       margin: 0 0 1rem;
-
       font-size: 1.35rem;
     }
 
@@ -337,17 +284,13 @@
 
     .recognition li {
       margin-bottom: 0.7rem;
-
       color: #3e4943;
-
       font-size: 0.96rem;
       line-height: 1.55;
     }
 
 
-    /* ========================================
-       CURRENT ROLES
-       ======================================== */
+    /* CURRENT ROLES */
 
     .roles {
       margin-bottom: 6rem;
@@ -355,64 +298,51 @@
 
     .role-grid {
       display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 2.6rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.8rem 3rem;
     }
 
     .role-card {
       padding-top: 1.3rem;
-
       border-top: 2px solid var(--forest);
     }
 
     .role-card h3 {
       margin: 0 0 0.3rem;
-
       font-size: 1.25rem;
     }
 
     .role-card .organization {
       margin-bottom: 0.75rem;
-
       color: var(--forest);
-
       font-size: 0.9rem;
       font-weight: 600;
+      line-height: 1.5;
     }
 
     .role-card p {
       margin: 0;
-
       color: var(--muted);
-
       font-size: 0.92rem;
       line-height: 1.6;
     }
 
 
-    /* ========================================
-       SELECTED WORK
-       ======================================== */
+    /* SELECTED WORK */
 
     .featured-grid {
       display: grid;
-
       grid-template-columns: repeat(2, minmax(0, 1fr));
-
       gap: 3rem;
     }
 
     .feature-card {
       padding-top: 1.4rem;
-
       border-top: 2px solid var(--forest);
     }
 
     .feature-card h3 {
       margin: 0 0 1rem;
-
       font-size: 1.42rem;
       line-height: 1.3;
     }
@@ -420,11 +350,8 @@
     .feature-card img {
       width: 100%;
       height: 245px;
-
       margin-bottom: 1.3rem;
-
       object-fit: contain;
-
       background: var(--soft);
     }
 
@@ -438,44 +365,34 @@
 
     .feature-card p {
       margin: 0 0 0.8rem;
-
       color: #48534d;
-
       font-size: 0.95rem;
       line-height: 1.65;
     }
 
     .feature-card ul {
       padding-left: 1.25rem;
-
       color: #48534d;
-
       font-size: 0.94rem;
       line-height: 1.65;
     }
 
 
-    /* ========================================
-       RESEARCH
-       ======================================== */
+    /* RESEARCH */
 
     .research-grid {
       display: grid;
-
       grid-template-columns: repeat(3, minmax(0, 1fr));
-
       gap: 2.5rem;
     }
 
     .research-card {
       padding-top: 1.2rem;
-
       border-top: 1px solid var(--line);
     }
 
     .research-card h3 {
       margin: 0 0 0.9rem;
-
       font-size: 1.23rem;
       line-height: 1.3;
     }
@@ -483,42 +400,31 @@
     .research-card img {
       width: 100%;
       height: 185px;
-
       margin-bottom: 1rem;
-
       object-fit: contain;
-
       background: var(--soft);
     }
 
     .research-card p {
       margin: 0;
-
       color: #4b554f;
-
       font-size: 0.9rem;
       line-height: 1.6;
     }
 
 
-    /* ========================================
-       COLLAPSIBLE CONTENT
-       ======================================== */
+    /* COLLAPSIBLE */
 
     details.more-content {
       margin-top: 2.6rem;
-
       padding: 1.2rem 0;
-
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
 
     details.more-content summary {
       cursor: pointer;
-
       color: var(--ink);
-
       font-size: 0.98rem;
       font-weight: 600;
     }
@@ -529,23 +435,18 @@
 
     .expanded-grid {
       display: grid;
-
       grid-template-columns: repeat(2, minmax(0, 1fr));
-
       gap: 2.5rem;
-
       margin-top: 2rem;
     }
 
     .expanded-item {
       padding-bottom: 1.5rem;
-
       border-bottom: 1px solid var(--line);
     }
 
     .expanded-item h3 {
       margin-top: 0;
-
       font-size: 1.15rem;
       line-height: 1.35;
     }
@@ -553,9 +454,7 @@
     .expanded-item img {
       width: 100%;
       height: 190px;
-
       margin: 1rem 0;
-
       object-fit: contain;
     }
 
@@ -566,29 +465,22 @@
 
     .report-list {
       margin-top: 1.5rem;
-
       columns: 2;
       column-gap: 3rem;
     }
 
     .report-list li {
       margin-bottom: 0.45rem;
-
       break-inside: avoid;
-
       font-size: 0.92rem;
     }
 
 
-    /* ========================================
-       CV & LINKS
-       ======================================== */
+    /* CV & LINKS */
 
     .links-section {
       padding: 3.2rem;
-
       text-align: center;
-
       background: var(--cream);
     }
 
@@ -598,9 +490,7 @@
 
     .links-section p {
       margin: 0;
-
       color: var(--muted);
-
       font-size: 0.95rem;
     }
 
@@ -608,42 +498,31 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-
       gap: 0.8rem;
-
       margin-top: 1.8rem;
     }
 
     .link-button {
       display: inline-block;
-
       padding: 0.68rem 1.3rem;
-
       color: var(--forest);
-
       font-size: 0.88rem;
       font-weight: 500;
-
       border: 1px solid var(--forest);
       border-radius: 2px;
-
       transition: all 0.2s ease;
     }
 
     .link-button:hover {
       color: white;
-
       background: var(--forest);
     }
 
 
-    /* ========================================
-       CONTACT
-       ======================================== */
+    /* CONTACT */
 
     .contact {
       max-width: 650px;
-
       margin-left: auto;
       margin-right: auto;
     }
@@ -662,19 +541,13 @@
     .contact input,
     .contact textarea {
       width: 100%;
-
       padding: 0.85rem 1rem;
-
       color: var(--ink);
-
       font-family: 'Inter', sans-serif;
       font-size: 0.92rem;
-
       background: white;
-
       border: 1px solid #d5d9d6;
       border-radius: 2px;
-
       transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease;
@@ -683,38 +556,29 @@
     .contact input:focus,
     .contact textarea:focus {
       outline: none;
-
       border-color: var(--forest);
-
       box-shadow: 0 0 0 3px rgba(49, 91, 77, 0.08);
     }
 
     .form-actions {
       display: flex;
       justify-content: center;
-
       gap: 0.8rem;
-
       margin-top: 1.3rem;
     }
 
     button {
       padding: 0.72rem 1.4rem;
-
       font-family: 'Inter', sans-serif;
       font-size: 0.88rem;
       font-weight: 500;
-
       border-radius: 2px;
-
       cursor: pointer;
     }
 
     .button-primary {
       color: white;
-
       background: var(--forest);
-
       border: 1px solid var(--forest);
     }
 
@@ -724,34 +588,24 @@
 
     .button-secondary {
       color: #555;
-
       background: white;
-
       border: 1px solid #aaa;
     }
 
 
-    /* ========================================
-       FOOTER
-       ======================================== */
+    /* FOOTER */
 
     #footer {
       margin-top: 6rem;
-
       padding: 2.3rem 1rem;
-
       text-align: center;
-
       background: var(--cream);
-
       border-top: 1px solid var(--line);
     }
 
     #footer p {
       margin: 0;
-
       color: var(--muted);
-
       font-size: 0.82rem;
     }
 
@@ -764,9 +618,7 @@
     }
 
 
-    /* ========================================
-       TABLET / MOBILE
-       ======================================== */
+    /* TABLET */
 
     @media screen and (max-width: 850px) {
 
@@ -780,9 +632,7 @@
 
       .hero {
         min-height: 360px;
-
         padding: 3.5rem 1rem 2.5rem;
-
         margin-bottom: 3rem;
       }
 
@@ -800,9 +650,7 @@
 
       .about {
         flex-direction: column;
-
         gap: 2.3rem;
-
         margin-bottom: 5rem;
       }
 
@@ -820,7 +668,6 @@
 
       .role-grid {
         grid-template-columns: 1fr;
-
         gap: 2rem;
       }
 
@@ -845,6 +692,8 @@
       }
     }
 
+
+    /* MOBILE */
 
     @media screen and (max-width: 560px) {
 
@@ -897,9 +746,8 @@
 
 <body>
 
-  <!-- ========================================
-       NAVIGATION
-       ======================================== -->
+
+  <!-- NAVIGATION -->
 
   <header id="topbar">
 
@@ -908,6 +756,7 @@
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#ecosonus">Ecosonus</a>
+      <a href="#roles">Roles</a>
       <a href="#work">Work</a>
       <a href="#research">Research</a>
       <a href="#cv">CV</a>
@@ -921,13 +770,16 @@
   <main id="main">
 
 
-    <!-- ========================================
-         HERO
-         ======================================== -->
+    <!-- HERO -->
 
-    <header class="hero section-anchor" id="home">
+    <header
+      class="hero section-anchor"
+      id="home"
+    >
 
-      <h1>Jackie Garcia-Yi</h1>
+      <h1>
+        Jackie Garcia-Yi
+      </h1>
 
       <p class="hero-role">
         Environmental Economist &amp; Co-Founder, Ecosonus
@@ -940,11 +792,12 @@
     </header>
 
 
-    <!-- ========================================
-         ABOUT
-         ======================================== -->
+    <!-- ABOUT -->
 
-    <section class="about section-anchor" id="about">
+    <section
+      class="about section-anchor"
+      id="about"
+    >
 
       <div class="about-photo">
 
@@ -972,16 +825,16 @@
           I bring extensive international experience from the United Nations,
           where I managed multi-million-dollar environmental and development
           portfolios, led complex international programmes, mobilized resources,
-          and worked with governments, international organizations, and
-          multidisciplinary teams across countries.
+          and worked with governments, international organizations,
+          and multidisciplinary teams across countries.
         </p>
 
         <p>
           My background combines Environmental Economics, Data Science,
           Ecology, and Food Technology &amp; Engineering. Today, I apply
-          this interdisciplinary expertise to develop scalable solutions for
-          biodiversity, climate resilience, sustainable food systems, and
-          responsible AI.
+          this interdisciplinary expertise to develop scalable solutions
+          for biodiversity, climate resilience, sustainable food systems,
+          and responsible AI.
         </p>
 
       </div>
@@ -989,9 +842,7 @@
     </section>
 
 
-    <!-- ========================================
-         ECOSONUS
-         ======================================== -->
+    <!-- ECOSONUS -->
 
     <section
       class="ecosonus section-anchor"
@@ -1011,15 +862,16 @@
 
         <p>
           I co-founded Ecosonus, a nature-tech initiative developing
-          AI-powered solutions for biodiversity monitoring and environmental
-          decision-making.
+          AI-powered solutions for biodiversity monitoring
+          and environmental decision-making.
         </p>
 
         <p>
-          Our work combines bioacoustics, remote sensing, geospatial modelling,
-          artificial intelligence, and ecological data to generate actionable
-          insights for conservation, ecosystem management, climate resilience,
-          and nature-based tourism.
+          Our work combines bioacoustics, remote sensing,
+          geospatial modelling, artificial intelligence,
+          and ecological data to generate actionable insights
+          for conservation, ecosystem management,
+          climate resilience, and nature-based tourism.
         </p>
 
       </div>
@@ -1057,13 +909,17 @@
           </li>
 
           <li>
-            <strong>Second Place, 2nd Copernicus Latin America Hackathon</strong>,
+            <strong>
+              Second Place, 2nd Copernicus Latin America Hackathon
+            </strong>,
             European Union — August 2025.
           </li>
 
           <li>
             Selected among the leading submissions to the
-            <strong>United Nations AI for Good – EW4All Innovation Challenge</strong>,
+            <strong>
+              United Nations AI for Good – EW4All Innovation Challenge
+            </strong>,
             resulting in a feature in the Solutions Spotlight
             of the EW4All AI Subgroup — August 2025.
           </li>
@@ -1075,11 +931,12 @@
     </section>
 
 
-    <!-- ========================================
-         CURRENT ROLES
-         ======================================== -->
+    <!-- CURRENT & RECENT ROLES -->
 
-    <section class="roles">
+    <section
+      class="roles section-anchor"
+      id="roles"
+    >
 
       <h2 class="section-title">
         Current &amp; Recent Roles
@@ -1088,6 +945,30 @@
 
       <div class="role-grid">
 
+
+        <!-- ECOSONUS -->
+
+        <article class="role-card">
+
+          <h3>
+            Co-Founder
+          </h3>
+
+          <div class="organization">
+            Ecosonus
+          </div>
+
+          <p>
+            Lead the development of AI-powered Nature Tech solutions
+            combining bioacoustics, remote sensing, geospatial modelling,
+            and ecological data for biodiversity monitoring
+            and environmental decision-making.
+          </p>
+
+        </article>
+
+
+        <!-- FAIR LAC -->
 
         <article class="role-card">
 
@@ -1100,13 +981,16 @@
           </div>
 
           <p>
-            Lead Junior Fellows in responsible AI assessments for startups,
-            including AI governance, risk assessment, data practices,
-            evaluation, monitoring, and implementation roadmaps.
+            Lead Junior Fellows in responsible AI assessments
+            for startups, covering AI governance, risk assessment,
+            data practices, evaluation, monitoring,
+            and implementation roadmaps.
           </p>
 
         </article>
 
+
+        <!-- UNIVERSIDAD DE LIMA -->
 
         <article class="role-card">
 
@@ -1119,13 +1003,16 @@
           </div>
 
           <p>
-            Teach Ethics &amp; Sustainable Development, integrating
-            sustainability strategy, ESG, climate and nature-related risks,
-            biodiversity, impact assessment, and responsible AI.
+            Teach Ethics &amp; Sustainable Development,
+            integrating sustainability strategy, ESG,
+            climate and nature-related risks, biodiversity,
+            impact assessment, and responsible AI.
           </p>
 
         </article>
 
+
+        <!-- UN -->
 
         <article class="role-card">
 
@@ -1138,10 +1025,11 @@
           </div>
 
           <p>
-            Led international environmental and development programmes, 
-            managed multi-million-dollar portfolios, mobilized resources, 
-            and worked across research, impact assessment, 
-            data-driven decision-making, and policy engagement.
+            Led international environmental and development programmes,
+            managed multi-million-dollar portfolios,
+            mobilized resources, and worked across research,
+            impact assessment, data-driven decision-making,
+            and policy engagement.
           </p>
 
         </article>
@@ -1152,9 +1040,7 @@
     </section>
 
 
-    <!-- ========================================
-         SELECTED WORK
-         ======================================== -->
+    <!-- SELECTED WORK -->
 
     <section
       class="section-anchor"
@@ -1199,15 +1085,15 @@
 
           <p>
             This project links forest conservation with disaster risk reduction
-            in Peru’s Yanachaga-Chemillén National Park and surrounding
-            communities.
+            in Peru’s Yanachaga-Chemillén National Park
+            and surrounding communities.
           </p>
 
           <p>
             Using Google AlphaEarth and Sentinel satellite data,
             it identifies and monitors forest areas that help reduce
-            landslide and flood risks and integrates ecosystem and
-            risk information into decision-support tools.
+            landslide and flood risks and integrates ecosystem
+            and risk information into decision-support tools.
           </p>
 
           <p>
@@ -1291,9 +1177,9 @@
             </a>
 
             <p>
-              Predictive modelling of infectious disease outbreaks using
-              SMA, ARMA, RNN, and LSTM models together with digital-stream
-              data such as Google search trends.
+              Predictive modelling of infectious disease outbreaks
+              using SMA, ARMA, RNN, and LSTM models together
+              with digital-stream data such as Google search trends.
             </p>
 
             <p>
@@ -1323,14 +1209,15 @@
             </a>
 
             <p>
-              Analysis of the impact of COVID-19 on global primary education
-              completion rates using Linear, Lasso, k-NN, and AdaBoost
-              regression models.
+              Analysis of the impact of COVID-19
+              on global primary education completion rates
+              using Linear, Lasso, k-NN, and AdaBoost regression models.
             </p>
 
             <p>
-              UNESCO and World Bank data were used to estimate
-              counterfactual 2020 outcomes without the pandemic.
+              UNESCO and World Bank data were used
+              to estimate counterfactual 2020 outcomes
+              without the pandemic.
             </p>
 
           </article>
@@ -1343,9 +1230,7 @@
     </section>
 
 
-    <!-- ========================================
-         RESEARCH
-         ======================================== -->
+    <!-- RESEARCH -->
 
     <section
       class="section-anchor"
@@ -1448,7 +1333,8 @@
           <p>
             Spatial econometric modelling of opium poppy cultivation
             likelihood across Afghanistan, examining accessibility,
-            population, climatic variables, and other potential drivers.
+            population, climatic variables,
+            and other potential drivers.
           </p>
 
         </article>
@@ -1488,9 +1374,10 @@
             </a>
 
             <p>
-              Examines how alternative development initiatives can reduce
-              reliance on illicit crop cultivation through improved rural
-              livelihoods, food security, market access, and training.
+              Examines how alternative development initiatives
+              can reduce reliance on illicit crop cultivation
+              through improved rural livelihoods,
+              food security, market access, and training.
             </p>
 
           </article>
@@ -1515,9 +1402,9 @@
             </a>
 
             <p>
-              Evaluation of Landsat 8 imagery for identifying opium poppy
-              crops in Afghanistan, including spatial resolution and
-              crop-signature challenges.
+              Evaluation of Landsat 8 imagery for identifying
+              opium poppy crops in Afghanistan,
+              including spatial resolution and crop-signature challenges.
             </p>
 
           </article>
@@ -1543,8 +1430,8 @@
 
             <p>
               Global analysis of Alternative Development initiatives,
-              including coordination, data, project duration, funding,
-              and long-term rural livelihood challenges.
+              including coordination, data, project duration,
+              funding, and long-term rural livelihood challenges.
             </p>
 
           </article>
@@ -1570,9 +1457,10 @@
             </a>
 
             <p>
-              Analysis of infrastructure, governance, food security,
-              market access, environmental pressures, and livelihood
-              vulnerability in Shan State.
+              Analysis of infrastructure, governance,
+              food security, market access,
+              environmental pressures,
+              and livelihood vulnerability in Shan State.
             </p>
 
           </article>
@@ -1581,8 +1469,8 @@
           <article class="expanded-item">
 
             <h3>
-              Sustainable Development Challenges of Opium Poppy
-              Cultivation in Afghanistan
+              Sustainable Development Challenges
+              of Opium Poppy Cultivation in Afghanistan
             </h3>
 
             <a
@@ -1598,9 +1486,10 @@
             </a>
 
             <p>
-              Examination of the relationship between opium poppy
-              cultivation, rural livelihoods, and sustainable development
-              challenges in Afghanistan.
+              Examination of the relationship between
+              opium poppy cultivation,
+              rural livelihoods,
+              and sustainable development challenges in Afghanistan.
             </p>
 
           </article>
@@ -1643,125 +1532,21 @@
 
         <ul class="report-list">
 
-          <li>
-            <a href="reports/Bolivia_Coca_2020.pdf" target="_blank">
-              Bolivia 2020
-            </a>
-          </li>
-
-          <li>
-            <a href="reports/Colombia_Coca_2020.pdf" target="_blank">
-              Colombia 2020
-            </a>
-          </li>
-
-          <li>
-            <a href="reports/Bolivia_Coca_2019.pdf" target="_blank">
-              Bolivia 2019
-            </a>
-          </li>
-
-          <li>
-            <a href="reports/Colombia_Coca_2019.pdf" target="_blank">
-              Colombia 2019
-            </a>
-          </li>
-
-          <li>
-            <a href="reports/Bolivia_Coca_2018.pdf" target="_blank">
-              Bolivia 2018
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Bolivia_Informe_Monitoreo_Coca_2017_final.pdf"
-              target="_blank"
-            >
-              Bolivia 2017
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Myanmar_Opium_Survey_2017_web.pdf"
-              target="_blank"
-            >
-              Myanmar 2017
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Peru_Monitoreo_de_Cultivos_de_Coca_2017_web.pdf"
-              target="_blank"
-            >
-              Peru 2017
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Afghanistan_Opium_2016.pdf"
-              target="_blank"
-            >
-              Afghanistan 2016
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/2016_Bolivia_Informe_Monitoreo_Coca.pdf"
-              target="_blank"
-            >
-              Bolivia 2016
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Colombia_Coca_2016.pdf"
-              target="_blank"
-            >
-              Colombia 2016
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Peru_Monitoreo_de_coca_2016_web.pdf"
-              target="_blank"
-            >
-              Peru 2016
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Bolivia_Coca_2015.pdf"
-              target="_blank"
-            >
-              Bolivia 2015
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Colombia_Coca_2015.pdf"
-              target="_blank"
-            >
-              Colombia 2015
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="reports/Peru_Coca_2015.pdf"
-              target="_blank"
-            >
-              Peru 2015
-            </a>
-          </li>
+          <li><a href="reports/Bolivia_Coca_2020.pdf" target="_blank">Bolivia 2020</a></li>
+          <li><a href="reports/Colombia_Coca_2020.pdf" target="_blank">Colombia 2020</a></li>
+          <li><a href="reports/Bolivia_Coca_2019.pdf" target="_blank">Bolivia 2019</a></li>
+          <li><a href="reports/Colombia_Coca_2019.pdf" target="_blank">Colombia 2019</a></li>
+          <li><a href="reports/Bolivia_Coca_2018.pdf" target="_blank">Bolivia 2018</a></li>
+          <li><a href="reports/Bolivia_Informe_Monitoreo_Coca_2017_final.pdf" target="_blank">Bolivia 2017</a></li>
+          <li><a href="reports/Myanmar_Opium_Survey_2017_web.pdf" target="_blank">Myanmar 2017</a></li>
+          <li><a href="reports/Peru_Monitoreo_de_Cultivos_de_Coca_2017_web.pdf" target="_blank">Peru 2017</a></li>
+          <li><a href="reports/Afghanistan_Opium_2016.pdf" target="_blank">Afghanistan 2016</a></li>
+          <li><a href="reports/2016_Bolivia_Informe_Monitoreo_Coca.pdf" target="_blank">Bolivia 2016</a></li>
+          <li><a href="reports/Colombia_Coca_2016.pdf" target="_blank">Colombia 2016</a></li>
+          <li><a href="reports/Peru_Monitoreo_de_coca_2016_web.pdf" target="_blank">Peru 2016</a></li>
+          <li><a href="reports/Bolivia_Coca_2015.pdf" target="_blank">Bolivia 2015</a></li>
+          <li><a href="reports/Colombia_Coca_2015.pdf" target="_blank">Colombia 2015</a></li>
+          <li><a href="reports/Peru_Coca_2015.pdf" target="_blank">Peru 2015</a></li>
 
         </ul>
 
@@ -1770,9 +1555,7 @@
     </section>
 
 
-    <!-- ========================================
-         CV & PROFESSIONAL LINKS
-         ======================================== -->
+    <!-- CV & LINKS -->
 
     <section
       class="links-section section-anchor"
@@ -1820,9 +1603,7 @@
     </section>
 
 
-    <!-- ========================================
-         CONTACT
-         ======================================== -->
+    <!-- CONTACT -->
 
     <section
       class="contact section-anchor"
@@ -1931,9 +1712,7 @@
   </main>
 
 
-  <!-- ========================================
-       FOOTER
-       ======================================== -->
+  <!-- FOOTER -->
 
   <footer id="footer">
 
