@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKWS8SSE4G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TKWS8SSE4G');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jackie Garcia-Yi | Economista Ambiental & Nature Tech</title>
+
+  <meta
+    name="description"
+    content="Jackie Garcia-Yi es Economista Ambiental y Cofundadora de Ecosonus, y trabaja en la intersección entre biodiversidad, inteligencia artificial, ciencia de datos y toma de decisiones ambientales."
+  >
+
+  <link
+    rel="canonical"
+    href="https://jackiegarcia-yi.com/es.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="https://jackiegarcia-yi.com/"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="es"
+    href="https://jackiegarcia-yi.com/es.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://jackiegarcia-yi.com/"
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root {
+      --ink: #1f2924;
+      --forest: #315b4d;
+      --forest-dark: #23473a;
+      --sage: #77877f;
+      --cream: #f7f6f1;
+      --soft: #fbfbf8;
+      --muted: #68736d;
+      --line: #e3e6e2;
+      --white: #ffffff;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+
+      font-family: 'Inter', sans-serif;
+      color: var(--ink);
+      background: var(--white);
+
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: var(--forest);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--forest-dark);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Source Serif 4', serif;
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    .section-anchor {
+      scroll-margin-top: 105px;
+    }
+
+
+    /* NAVIGATION */
+
+    #topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      z-index: 1000;
+
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-shell {
+      max-width: 1240px;
+
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+
+      align-items: center;
+      gap: 1rem;
+    }
+
+    #topbar nav {
+      grid-column: 2;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      gap: 0.35rem 1.55rem;
+    }
+
+    #topbar nav a {
+      color: #39433e;
+
+      font-size: 0.87rem;
+      font-weight: 500;
+
+      letter-spacing: 0.015em;
+
+      white-space: nowrap;
+    }
+
+    #topbar nav a:hover {
+      color: var(--forest);
+    }
+
+    .language-switcher {
+      grid-column: 3;
+      justify-self: end;
+
+      display: flex;
+      align-items: center;
+
+      gap: 0.45rem;
+
+      font-size: 0.76rem;
+      font-weight: 600;
+
+      letter-spacing: 0.08em;
+    }
+
+    .language-switcher a {
+      color: var(--muted);
+    }
+
+    .language-switcher a:hover {
+      color: var(--forest);
+    }
+
+    .active-language {
+      color: var(--forest);
+    }
+
+    .language-divider {
+      color: #c4c9c5;
+    }
+
+
+    /* MAIN */
+
+    #main {
+      width: 100%;
+      max-width: 1100px;
+
+      margin: 0 auto;
+      padding: 5rem 3rem 2rem;
+    }
+
+    section {
+      margin-bottom: 5.8rem;
+    }
+
+    .section-title {
+      margin: 0 0 0.9rem;
+
+      font-size: 2.3rem;
+      line-height: 1.15;
+
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      max-width: 720px;
+
+      margin: 0 0 2.7rem;
+
+      color: var(--muted);
+
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      min-height: 390px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      padding: 4.5rem 1rem 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .hero h1 {
+      margin: 0 0 0.8rem;
+
+      font-size: 4rem;
+      line-height: 1;
+
+      letter-spacing: -0.035em;
+    }
+
+    .hero-role {
+      margin: 0 0 0.7rem;
+
+      color: #354039;
+
+      font-size: 1.28rem;
+      font-weight: 500;
+    }
+
+    .hero-focus {
+      margin: 0;
+
+      color: var(--sage);
+
+      font-size: 0.82rem;
+      font-weight: 500;
+
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .hero::after {
+      content: "";
+
+      display: block;
+
+      width: 48px;
+      height: 2px;
+
+      margin-top: 1.9rem;
+
+      background: var(--forest);
+    }
+
+
+    /* ABOUT */
+
+    .about {
+      display: flex;
+      align-items: center;
+
+      gap: 4.5rem;
+
+      max-width: 970px;
+
+      margin: 0 auto 6rem;
+    }
+
+    .about-photo {
+      flex: 0 0 255px;
+    }
+
+    .about-photo img {
+      width: 255px;
+      height: 255px;
+
+      object-fit: cover;
+
+      border-radius: 2px;
+    }
+
+    .about-content {
+      flex: 1;
+
+      max-width: 640px;
+    }
+
+    .about-content p {
+      margin: 0 0 1rem;
+    }
+
+
+    /* ECOSONUS */
+
+    .ecosonus {
+      position: relative;
+
+      padding: 3rem 3.5rem;
+
+      background: var(--cream);
+
+      border-left: 4px solid var(--forest);
+    }
+
+    .ecosonus h2 {
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+    }
+
+    .ecosonus-tagline {
+      margin: 0 0 1.5rem;
+
+      color: var(--forest);
+
+      font-size: 0.95rem;
+      font-weight: 600;
+
+      letter-spacing: 0.02em;
+    }
+
+    .ecosonus-description {
+      max-width: 800px;
+    }
+
+    .ecosonus-description p {
+      margin: 0 0 1rem;
+    }
+
+    .recognition {
+      max-width: 850px;
+
+      margin-top: 2.3rem;
+    }
+
+    .recognition h3 {
+      margin: 0 0 1rem;
+
+      font-size: 1.35rem;
+    }
+
+    .recognition ul {
+      margin: 0;
+
+      padding-left: 1.25rem;
+    }
+
+    .recognition li {
+      margin-bottom: 0.7rem;
+
+      color: #3e4943;
+
+      font-size: 0.96rem;
+      line-height: 1.55;
+    }
+
+
+    /* CURRENT ROLES */
+
+    .roles {
+      margin-bottom: 6rem;
+    }
+
+    .role-grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 2.8rem 3rem;
+    }
+
+    .role-card {
+      padding-top: 1.3rem;
+
+      border-top: 2px solid var(--forest);
+    }
+
+    .role-card h3 {
+      margin: 0 0 0.3rem;
+
+      font-size: 1.25rem;
+    }
+
+    .role-card .organization {
+      margin-bottom: 0.75rem;
+
+      color: var(--forest);
+
+      font-size: 0.9rem;
+      font-weight: 600;
+
+      line-height: 1.5;
+    }
+
+    .role-card p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+
+    /* SELECTED WORK */
+
+    .featured-grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      gap: 3rem;
+    }
+
+    .feature-card {
+      padding-top: 1.4rem;
+
+      border-top: 2px solid var(--forest);
+    }
+
+    .feature-card h3 {
+      margin: 0 0 1rem;
+
+      font-size: 1.42rem;
+      line-height: 1.3;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 245px;
+
+      margin-bottom: 1.3rem;
+
+      object-fit: contain;
+
+      background: var(--soft);
+    }
+
+    .feature-card p {
+      margin: 0 0 0.8rem;
+
+      color: #48534d;
+
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .feature-card ul {
+      padding-left: 1.25rem;
+
+      color: #48534d;
+
+      font-size: 0.94rem;
+      line-height: 1.65;
+    }
+
+
+    /* RESEARCH */
+
+    .research-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+
+      gap: 2.5rem;
+    }
+
+    .research-card {
+      padding-top: 1.2rem;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .research-card h3 {
+      margin: 0 0 0.9rem;
+
+      font-size: 1.23rem;
+      line-height: 1.3;
+    }
+
+    .research-card img {
+      width: 100%;
+      height: 185px;
+
+      margin-bottom: 1rem;
+
+      object-fit: contain;
+
+      background: var(--soft);
+    }
+
+    .research-card p {
+      margin: 0;
+
+      color: #4b554f;
+
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+
+    /* COLLAPSIBLE */
+
+    details.more-content {
+      margin-top: 2.6rem;
+
+      padding: 1.2rem 0;
+
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    details.more-content summary {
+      cursor: pointer;
+
+      color: var(--ink);
+
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    details.more-content summary:hover {
+      color: var(--forest);
+    }
+
+    .expanded-grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      gap: 2.5rem;
+
+      margin-top: 2rem;
+    }
+
+    .expanded-item {
+      padding-bottom: 1.5rem;
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .expanded-item h3 {
+      margin-top: 0;
+
+      font-size: 1.15rem;
+      line-height: 1.35;
+    }
+
+    .expanded-item img {
+      width: 100%;
+      height: 190px;
+
+      margin: 1rem 0;
+
+      object-fit: contain;
+    }
+
+    .expanded-item p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .report-list {
+      margin-top: 1.5rem;
+
+      columns: 2;
+      column-gap: 3rem;
+    }
+
+    .report-list li {
+      margin-bottom: 0.45rem;
+
+      break-inside: avoid;
+
+      font-size: 0.92rem;
+    }
+
+
+    /* CV */
+
+    .links-section {
+      padding: 3.2rem;
+
+      text-align: center;
+
+      background: var(--cream);
+    }
+
+    .links-section .section-title {
+      margin-bottom: 0.7rem;
+    }
+
+    .links-section p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 0.95rem;
+    }
+
+    .link-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      gap: 0.8rem;
+
+      margin-top: 1.8rem;
+    }
+
+    .link-button {
+      display: inline-block;
+
+      padding: 0.68rem 1.3rem;
+
+      color: var(--forest);
+
+      font-size: 0.88rem;
+      font-weight: 500;
+
+      border: 1px solid var(--forest);
+      border-radius: 2px;
+    }
+
+    .link-button:hover {
+      color: white;
+
+      background: var(--forest);
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+      max-width: 650px;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact .section-title,
+    .contact .section-subtitle {
+      text-align: center;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-field {
+      margin-bottom: 0.9rem;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+
+      padding: 0.85rem 1rem;
+
+      color: var(--ink);
+
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+
+      background: white;
+
+      border: 1px solid #d5d9d6;
+      border-radius: 2px;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: center;
+
+      gap: 0.8rem;
+
+      margin-top: 1.3rem;
+    }
+
+    button {
+      padding: 0.72rem 1.4rem;
+
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+
+      border-radius: 2px;
+
+      cursor: pointer;
+    }
+
+    .button-primary {
+      color: white;
+
+      background: var(--forest);
+
+      border: 1px solid var(--forest);
+    }
+
+    .button-secondary {
+      color: #555;
+
+      background: white;
+
+      border: 1px solid #aaa;
+    }
+
+
+    /* FOOTER */
+
+    #footer {
+      margin-top: 6rem;
+
+      padding: 2.3rem 1rem;
+
+      text-align: center;
+
+      background: var(--cream);
+
+      border-top: 1px solid var(--line);
+    }
+
+    #footer p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 0.82rem;
+    }
+
+
+    /* MOBILE */
+
+    @media screen and (max-width: 980px) {
+
+      .nav-shell {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        padding: 0.8rem 1rem;
+      }
+
+      #topbar nav {
+        grid-column: 1;
+      }
+
+      .language-switcher {
+        grid-column: 1;
+
+        justify-self: center;
+
+        margin-top: 0.2rem;
+      }
+
+      #main {
+        padding-top: 7rem;
+      }
+    }
+
+
+    @media screen and (max-width: 850px) {
+
+      #main {
+        padding: 7rem 1.4rem 2rem;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .about {
+        flex-direction: column;
+
+        gap: 2.3rem;
+      }
+
+      .role-grid,
+      .featured-grid,
+      .research-grid,
+      .expanded-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .report-list {
+        columns: 1;
+      }
+    }
+
+
+    @media screen and (max-width: 560px) {
+
+      #topbar nav {
+        gap: 0.25rem 0.8rem;
+      }
+
+      #topbar nav a {
+        font-size: 0.76rem;
+      }
+
+      #main {
+        padding-top: 8.2rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .about-photo img {
+        width: 225px;
+        height: 225px;
+      }
+
+      .form-actions {
+        flex-direction: column;
+      }
+
+      .form-actions button {
+        width: 100%;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <header id="topbar">
+
+    <div class="nav-shell">
+
+      <nav aria-label="Navegación principal">
+
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#ecosonus">Ecosonus</a>
+        <a href="#roles">Roles</a>
+        <a href="#work">Proyectos</a>
+        <a href="#research">Investigación</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contacto</a>
+
+      </nav>
+
+
+      <div class="language-switcher">
+
+        <a href="index.html">
+          EN
+        </a>
+
+        <span class="language-divider">
+          |
+        </span>
+
+        <span class="active-language">
+          ES
+        </span>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main id="main">
+
+
+    <!-- HERO -->
+
+    <header
+      class="hero section-anchor"
+      id="home"
+    >
+
+      <h1>
+        Jackie Garcia-Yi
+      </h1>
+
+      <p class="hero-role">
+        Economista Ambiental y Cofundadora de Ecosonus
+      </p>
+
+      <p class="hero-focus">
+        IA &nbsp;&middot;&nbsp; Biodiversidad &nbsp;&middot;&nbsp; Nature Tech
+      </p>
+
+    </header>
+
+
+    <!-- ABOUT -->
+
+    <section
+      class="about section-anchor"
+      id="about"
+    >
+
+      <div class="about-photo">
+
+        <img
+          src="profile-pic.png"
+          alt="Jackie Garcia-Yi"
+        >
+
+      </div>
+
+
+      <div class="about-content">
+
+        <h2 class="section-title">
+          Sobre mí
+        </h2>
+
+        <p>
+          Soy Economista Ambiental y Cofundadora de Ecosonus.
+          Trabajo en la intersección entre biodiversidad,
+          inteligencia artificial, ciencia de datos
+          y toma de decisiones ambientales.
+        </p>
+
+        <p>
+          Cuento con amplia experiencia internacional en las Naciones Unidas,
+          donde gestioné carteras multimillonarias de proyectos ambientales
+          y de desarrollo, lideré programas internacionales complejos,
+          movilicé recursos y trabajé con gobiernos,
+          organizaciones internacionales y equipos multidisciplinarios
+          en distintos países.
+        </p>
+
+        <p>
+          Mi formación combina Economía Ambiental, Ciencia de Datos,
+          Ecología e Ingeniería y Tecnología de Alimentos.
+          Actualmente aplico esta experiencia interdisciplinaria
+          al desarrollo de soluciones escalables para biodiversidad,
+          resiliencia climática, sistemas alimentarios sostenibles
+          e inteligencia artificial responsable.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ECOSONUS -->
+
+    <section
+      class="ecosonus section-anchor"
+      id="ecosonus"
+    >
+
+      <h2 class="section-title">
+        Ecosonus
+      </h2>
+
+      <p class="ecosonus-tagline">
+        Nature Tech para el monitoreo de biodiversidad
+        y la inteligencia ambiental
+      </p>
+
+
+      <div class="ecosonus-description">
+
+        <p>
+          Cofundé Ecosonus, una iniciativa de Nature Tech
+          que desarrolla soluciones basadas en inteligencia artificial
+          para el monitoreo de biodiversidad
+          y la toma de decisiones ambientales.
+        </p>
+
+        <p>
+          Nuestro trabajo combina bioacústica, teledetección,
+          modelamiento geoespacial, inteligencia artificial
+          y datos ecológicos para generar información accionable
+          para la conservación, la gestión de ecosistemas,
+          la resiliencia climática y el turismo basado en la naturaleza.
+        </p>
+
+      </div>
+
+
+      <div class="recognition">
+
+        <h3>
+          Reconocimientos y financiamiento
+        </h3>
+
+        <ul>
+
+          <li>
+            Financiamiento otorgado por
+            <strong>WILDLABS</strong>,
+            red global de tecnología para la conservación
+            — julio de 2026.
+          </li>
+
+          <li>
+            <strong>Segundo lugar, Concurso e-Turismo</strong>,
+            organizado por Incubagraria y MINCETUR,
+            incluyendo capital semilla
+            — julio de 2026.
+          </li>
+
+          <li>
+            Financiamiento otorgado por la
+            <strong>British Ecological Society</strong>
+            — mayo de 2026.
+          </li>
+
+          <li>
+            Seleccionada como una de 20 startups
+            para el <strong>Social Innovation Lab</strong>,
+            organizado por la University of Pennsylvania
+            y la University of Oxford
+            — noviembre de 2025.
+          </li>
+
+          <li>
+            <strong>
+              Segundo lugar,
+              2nd Copernicus Latin America Hackathon
+            </strong>,
+            Unión Europea
+            — agosto de 2025.
+          </li>
+
+          <li>
+            Seleccionada entre las propuestas destacadas del
+            <strong>
+              United Nations AI for Good –
+              EW4All Innovation Challenge
+            </strong>,
+            con una presentación posterior
+            en el Solutions Spotlight
+            del EW4All AI Subgroup
+            — agosto de 2025.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROLES -->
+
+    <section
+      class="roles section-anchor"
+      id="roles"
+    >
+
+      <h2 class="section-title">
+        Roles actuales y experiencia reciente
+      </h2>
+
+
+      <div class="role-grid">
+
+
+        <!-- ECOSONUS -->
+
+        <article class="role-card">
+
+          <h3>
+            Cofundadora
+          </h3>
+
+          <div class="organization">
+            Ecosonus
+          </div>
+
+          <p>
+            Lidero el desarrollo de soluciones de Nature Tech
+            basadas en inteligencia artificial
+            que combinan bioacústica, teledetección,
+            modelamiento geoespacial y datos ecológicos
+            para el monitoreo de biodiversidad
+            y la toma de decisiones ambientales.
+          </p>
+
+        </article>
+
+
+        <!-- FAIR LAC -->
+
+        <article class="role-card">
+
+          <h3>
+            Senior Fellow – IA Responsable
+          </h3>
+
+          <div class="organization">
+            fAIr LAC Network |
+            Iniciativa de emprendimiento liderada por IDB Lab
+          </div>
+
+          <p>
+            Lidero a Junior Fellows en evaluaciones
+            de inteligencia artificial responsable para startups,
+            incluyendo gobernanza de IA, evaluación de riesgos,
+            prácticas de datos, evaluación, monitoreo
+            y hojas de ruta de implementación.
+          </p>
+
+        </article>
+
+
+        <!-- UNIVERSIDAD DE LIMA -->
+
+        <article class="role-card">
+
+          <h3>
+            Docente de MBA
+          </h3>
+
+          <div class="organization">
+            Universidad de Lima
+          </div>
+
+          <p>
+            Dicto Ética y Desarrollo Sustentable,
+            integrando estrategia de sostenibilidad,
+            ESG, riesgos climáticos
+            y relacionados con la naturaleza,
+            biodiversidad, evaluación de impacto
+            e inteligencia artificial responsable.
+          </p>
+
+        </article>
+
+
+        <!-- UNITED NATIONS -->
+
+        <article class="role-card">
+
+          <h3>
+            Liderazgo de Programas de Naciones Unidas
+          </h3>
+
+          <div class="organization">
+            PNUMA &amp; UNODC
+          </div>
+
+          <p>
+            Lideré programas internacionales ambientales
+            y de desarrollo, gestioné carteras multimillonarias,
+            movilicé recursos y trabajé en investigación,
+            evaluación de impacto,
+            toma de decisiones basada en datos
+            y procesos de política pública.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- SELECTED WORK -->
+
+    <section
+      class="section-anchor"
+      id="work"
+    >
+
+      <h2 class="section-title">
+        Proyectos seleccionados
+      </h2>
+
+      <p class="section-subtitle">
+        Proyectos seleccionados en la intersección
+        de biodiversidad, clima, inteligencia artificial,
+        análisis geoespacial
+        y toma de decisiones ambientales.
+      </p>
+
+
+      <div class="featured-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="feature-card">
+
+          <h3>
+            Fortalecimiento de la resiliencia climática
+            mediante la reducción del riesgo
+            basada en bosques en el Perú
+          </h3>
+
+          <a
+            href="https://taikai.network/copernicuslac-panama/hackathons/reduccion-del-riesgo-de-desastres-2025/projects/cmctxjg3n01iort56tg7qk3co/idea"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/yanachaga.jpg"
+              alt="Proyecto de resiliencia climática en Yanachaga-Chemillén"
+            >
+
+          </a>
+
+          <p>
+            Este proyecto vincula la conservación de bosques
+            con la reducción del riesgo de desastres
+            en el Parque Nacional Yanachaga-Chemillén
+            y las comunidades de su entorno.
+          </p>
+
+          <p>
+            Utilizando datos satelitales de Google AlphaEarth
+            y Sentinel, identifica y monitorea áreas de bosque
+            que contribuyen a reducir riesgos de deslizamientos
+            e inundaciones e integra información
+            de ecosistemas y riesgo
+            en herramientas para la toma de decisiones.
+          </p>
+
+          <p>
+            <strong>
+              Segundo lugar,
+              2nd Copernicus Latin America Hackathon,
+              Unión Europea — 2025.
+            </strong>
+          </p>
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article class="feature-card">
+
+          <h3>
+            IA multimodal para la identificación acústica
+            de especies de aves
+          </h3>
+
+          <a
+            href="https://github.com/jgaryi/E115_BirdWatchingApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/birdwatching.jpg"
+              alt="Aplicación de inteligencia artificial para identificar aves"
+            >
+
+          </a>
+
+          <p>
+            Aplicación multimodal de inteligencia artificial
+            diseñada para apoyar la conservación
+            de la biodiversidad y el turismo basado en la naturaleza
+            en ambientes remotos
+            y con alta riqueza de especies.
+          </p>
+
+          <ul>
+
+            <li>
+              Identificación de aves
+              mediante modelos basados en BirdNET
+            </li>
+
+            <li>
+              Transfer learning para especies locales y endémicas
+            </li>
+
+            <li>
+              Asistente de biodiversidad basado en LLM agentic
+            </li>
+
+            <li>
+              Integración de datos bioacústicos y ecológicos
+            </li>
+
+            <li>
+              Teledetección y visualización geoespacial
+            </li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+
+      <!-- EARLIER PROJECTS -->
+
+      <details class="more-content">
+
+        <summary>
+          Proyectos anteriores de Ciencia de Datos
+        </summary>
+
+
+        <div class="expanded-grid">
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Predicción de series de tiempo
+              de brotes de enfermedades infecciosas
+            </h3>
+
+            <a
+              href="projects/Project1.html"
+              target="_blank"
+            >
+
+              <img
+                src="images/project1-image.jpg"
+                alt="Modelo de predicción de series de tiempo"
+              >
+
+            </a>
+
+            <p>
+              Modelamiento predictivo de brotes
+              de enfermedades infecciosas
+              mediante modelos SMA, ARMA, RNN y LSTM,
+              junto con datos digitales
+              como tendencias de búsqueda de Google.
+            </p>
+
+            <p>
+              Los modelos de deep learning
+              superaron a los modelos tradicionales de referencia
+              en el pronóstico de casos de COVID-19.
+            </p>
+
+          </article>
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Impacto del COVID-19 en la educación
+            </h3>
+
+            <a
+              href="projects/Project2.html"
+              target="_blank"
+            >
+
+              <img
+                src="images/project2-image.jpg"
+                alt="Análisis del impacto en educación"
+              >
+
+            </a>
+
+            <p>
+              Análisis del impacto del COVID-19
+              sobre las tasas mundiales
+              de finalización de educación primaria
+              mediante modelos de regresión
+              Linear, Lasso, k-NN y AdaBoost.
+            </p>
+
+            <p>
+              Se utilizaron datos de UNESCO
+              y del Banco Mundial
+              para estimar resultados contrafactuales
+              para 2020 en ausencia de la pandemia.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </details>
+
+    </section>
+
+
+    <!-- RESEARCH -->
+
+    <section
+      class="section-anchor"
+      id="research"
+    >
+
+      <h2 class="section-title">
+        Investigación y publicaciones seleccionadas
+      </h2>
+
+      <p class="section-subtitle">
+        Investigación seleccionada en biodiversidad,
+        econometría espacial, desarrollo rural,
+        teledetección y políticas internacionales.
+      </p>
+
+
+      <div class="research-grid">
+
+
+        <!-- RESEARCH 1 -->
+
+        <article class="research-card">
+
+          <h3>
+            NLP aplicado a discursos
+            de biodiversidad de Naciones Unidas
+          </h3>
+
+          <a
+            href="reports/FinalProjectReport_JGarciaYi.pdf"
+            target="_blank"
+          >
+
+            <img
+              src="images/nlp-biodiversity.jpg"
+              alt="Análisis NLP de biodiversidad"
+            >
+
+          </a>
+
+          <p>
+            Structural Topic Modeling y NLP
+            aplicados a más de 5,000 páginas
+            de discursos de política de biodiversidad
+            de Naciones Unidas,
+            identificando cambios temáticos
+            y variación regional entre 1994 y 2024.
+          </p>
+
+        </article>
+
+
+        <!-- RESEARCH 2 -->
+
+        <article class="research-card">
+
+          <h3>
+            Informe Mundial sobre las Drogas de la ONU:
+            Desarrollo Alternativo
+          </h3>
+
+          <a
+            href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf"
+            target="_blank"
+          >
+
+            <img
+              src="images/unodc-report.jpg"
+              alt="Informe Mundial sobre las Drogas de Naciones Unidas"
+            >
+
+          </a>
+
+          <p>
+            Análisis del Desarrollo Alternativo
+            como estrategia de largo plazo
+            frente a los cultivos ilícitos,
+            basado en evidencia de programas internacionales
+            e intervenciones de desarrollo rural.
+          </p>
+
+        </article>
+
+
+        <!-- RESEARCH 3 -->
+
+        <article class="research-card">
+
+          <h3>
+            Mapas estratégicos para la toma de decisiones
+          </h3>
+
+          <a
+            href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf"
+            target="_blank"
+          >
+
+            <img
+              src="images/strategic-map.jpg"
+              alt="Mapa estratégico basado en econometría espacial"
+            >
+
+          </a>
+
+          <p>
+            Modelamiento econométrico espacial
+            de la probabilidad de cultivo de amapola
+            en Afganistán,
+            considerando accesibilidad, población,
+            variables climáticas
+            y otros posibles factores explicativos.
+          </p>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- ADDITIONAL RESEARCH -->
+
+      <details class="more-content">
+
+        <summary>
+          Investigación adicional
+          y publicaciones de Naciones Unidas
+        </summary>
+
+
+        <div class="expanded-grid">
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Ingresos sostenibles
+              a partir del Desarrollo Alternativo
+            </h3>
+
+            <a
+              href="reports/Brief_income_livelihoods.pdf"
+              target="_blank"
+            >
+
+              <img
+                src="images/livelihoods.jpg"
+                alt="Medios de vida y desarrollo alternativo"
+              >
+
+            </a>
+
+            <p>
+              Examina cómo las iniciativas
+              de desarrollo alternativo
+              pueden reducir la dependencia
+              de cultivos ilícitos
+              mediante mejoras en medios de vida rurales,
+              seguridad alimentaria,
+              acceso a mercados y capacitación.
+            </p>
+
+          </article>
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Teledetección para la detección de amapola
+            </h3>
+
+            <a
+              href="reports/ProjectReport_13122019.pdf"
+              target="_blank"
+            >
+
+              <img
+                src="images/remote-sensing.jpg"
+                alt="Investigación con teledetección"
+              >
+
+            </a>
+
+            <p>
+              Evaluación de imágenes Landsat 8
+              para identificar cultivos de amapola
+              en Afganistán,
+              incluyendo desafíos de resolución espacial
+              y firmas espectrales del cultivo.
+            </p>
+
+          </article>
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Panorama global
+              de proyectos de Desarrollo Alternativo
+            </h3>
+
+            <a
+              href="reports/Research_brief_Overview_of_AD.pdf"
+              target="_blank"
+            >
+
+              <img
+                src="images/alternativedev.jpg"
+                alt="Investigación sobre desarrollo alternativo"
+              >
+
+            </a>
+
+            <p>
+              Análisis global de iniciativas
+              de Desarrollo Alternativo,
+              incluyendo coordinación, datos,
+              duración de proyectos, financiamiento
+              y desafíos de largo plazo
+              para los medios de vida rurales.
+            </p>
+
+          </article>
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Barreras al desarrollo
+              en aldeas productoras de amapola
+              en Shan State, Myanmar
+            </h3>
+
+            <a
+              href="reports/Myanmar_Socio-economic_2019.pdf"
+              target="_blank"
+            >
+
+              <img
+                src="images/shanstate2.jpg"
+                alt="Desarrollo alternativo en Myanmar"
+              >
+
+            </a>
+
+            <p>
+              Análisis de infraestructura,
+              gobernanza, seguridad alimentaria,
+              acceso a mercados,
+              presiones ambientales
+              y vulnerabilidad de los medios de vida
+              en Shan State.
+            </p>
+
+          </article>
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Desafíos de desarrollo sostenible
+              asociados al cultivo de amapola
+              en Afganistán
+            </h3>
+
+            <a
+              href="reports/Afghanistan_SocioEconomic2016.pdf"
+              target="_blank"
+            >
+
+              <img
+                src="images/afghanistan.jpg"
+                alt="Desarrollo sostenible en Afganistán"
+              >
+
+            </a>
+
+            <p>
+              Examen de la relación
+              entre el cultivo de amapola,
+              los medios de vida rurales
+              y los desafíos de desarrollo sostenible
+              en Afganistán.
+            </p>
+
+          </article>
+
+
+          <article class="expanded-item">
+
+            <h3>
+              Socioeconomía del cultivo de amapola
+              en Shan State
+            </h3>
+
+            <a
+              href="reports/Myanmar_SocioEconomic2016.pdf"
+              target="_blank"
+            >
+
+              <img
+                src="images/shanstate.jpg"
+                alt="Socioeconomía en Myanmar"
+              >
+
+            </a>
+
+            <p>
+              Análisis basado en encuestas
+              sobre condiciones de vida,
+              infraestructura, atención de salud,
+              mercados y diferencias regionales
+              asociadas al cultivo de amapola.
+            </p>
+
+          </article>
+
+
+        </div>
+
+
+        <h3 style="margin-top: 2.5rem;">
+          Informes adicionales de monitoreo
+          de cultivos ilícitos de UNODC, 2015–2020
+        </h3>
+
+
+        <ul class="report-list">
+
+          <li>
+            <a
+              href="reports/Bolivia_Coca_2020.pdf"
+              target="_blank"
+            >
+              Bolivia 2020
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Colombia_Coca_2020.pdf"
+              target="_blank"
+            >
+              Colombia 2020
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Bolivia_Coca_2019.pdf"
+              target="_blank"
+            >
+              Bolivia 2019
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Colombia_Coca_2019.pdf"
+              target="_blank"
+            >
+              Colombia 2019
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Bolivia_Coca_2018.pdf"
+              target="_blank"
+            >
+              Bolivia 2018
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Bolivia_Informe_Monitoreo_Coca_2017_final.pdf"
+              target="_blank"
+            >
+              Bolivia 2017
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Myanmar_Opium_Survey_2017_web.pdf"
+              target="_blank"
+            >
+              Myanmar 2017
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Peru_Monitoreo_de_Cultivos_de_Coca_2017_web.pdf"
+              target="_blank"
+            >
+              Perú 2017
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Afghanistan_Opium_2016.pdf"
+              target="_blank"
+            >
+              Afganistán 2016
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/2016_Bolivia_Informe_Monitoreo_Coca.pdf"
+              target="_blank"
+            >
+              Bolivia 2016
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Colombia_Coca_2016.pdf"
+              target="_blank"
+            >
+              Colombia 2016
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Peru_Monitoreo_de_coca_2016_web.pdf"
+              target="_blank"
+            >
+              Perú 2016
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Bolivia_Coca_2015.pdf"
+              target="_blank"
+            >
+              Bolivia 2015
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Colombia_Coca_2015.pdf"
+              target="_blank"
+            >
+              Colombia 2015
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Peru_Coca_2015.pdf"
+              target="_blank"
+            >
+              Perú 2015
+            </a>
+          </li>
+
+        </ul>
+
+      </details>
+
+    </section>
+
+
+    <!-- CV -->
+
+    <section
+      class="links-section section-anchor"
+      id="cv"
+    >
+
+      <h2 class="section-title">
+        CV y enlaces profesionales
+      </h2>
+
+      <p>
+        Información adicional sobre mi experiencia profesional,
+        investigación y trabajo actual.
+      </p>
+
+
+      <div class="link-buttons">
+
+        <a
+          class="link-button"
+          href="CV_JGY_ES.pdf"
+          target="_blank"
+        >
+          Ver CV
+        </a>
+
+        <a
+          class="link-button"
+          href="https://www.linkedin.com/in/jaqueline-garcia-yi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="link-button"
+          href="mailto:jackiejgarciayi@gmail.com"
+        >
+          Email
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section
+      class="contact section-anchor"
+      id="contact"
+    >
+
+      <h2 class="section-title">
+        Contacto
+      </h2>
+
+      <p class="section-subtitle">
+        Para colaboraciones, investigación,
+        consultoría, alianzas
+        o invitaciones como ponente,
+        puedes escribirme aquí.
+      </p>
+
+
+      <form
+        action="https://formsubmit.co/jgaryi@hotmail.com"
+        method="POST"
+      >
+
+        <input
+          type="hidden"
+          name="_captcha"
+          value="false"
+        >
+
+        <input
+          type="hidden"
+          name="_template"
+          value="table"
+        >
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="Contacto desde sitio web – Español"
+        >
+
+
+        <div class="form-field">
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-field">
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-field">
+
+          <input
+            type="text"
+            name="subject"
+            placeholder="Asunto"
+          >
+
+        </div>
+
+
+        <div class="form-field">
+
+          <textarea
+            name="message"
+            placeholder="Mensaje"
+            rows="6"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <div class="form-actions">
+
+          <button
+            type="submit"
+            class="button-primary"
+          >
+            Enviar mensaje
+          </button>
+
+          <button
+            type="reset"
+            class="button-secondary"
+          >
+            Limpiar
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer id="footer">
+
+    <p>
+
+      &copy; Jackie Garcia-Yi
+
+      &nbsp;&middot;&nbsp;
+
+      <a href="mailto:jackiejgarciayi@gmail.com">
+        jackiejgarciayi@gmail.com
+      </a>
+
+      &nbsp;&middot;&nbsp;
+
+      <a
+        href="https://www.linkedin.com/in/jaqueline-garcia-yi/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+    </p>
+
+  </footer>
+
+
+</body>
+
+</html>
