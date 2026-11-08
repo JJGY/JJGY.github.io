@@ -12,47 +12,49 @@
     gtag('config', 'G-TKWS8SSE4G');
   </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Jackie Garcia-Yi | Environmental Economist & Nature Tech</title>
 
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta
+    name="description"
+    content="Jackie Garcia-Yi is an Environmental Economist and Co-Founder of Ecosonus, working at the intersection of biodiversity, artificial intelligence, data science, and environmental decision-making."
+  >
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
 
     :root {
       --green: #49bf9d;
-      --green-dark: #3ea385;
+      --green-dark: #34977d;
       --text: #222;
-      --muted: #666;
-      --light: #f6f7f7;
-      --border: #e6e6e6;
+      --muted: #6a6a6a;
+      --light: #f7f8f8;
+      --border: #e5e7e7;
+      --black: #111;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
     }
 
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      width: 100%;
-      overflow-x: hidden;
-      box-sizing: border-box;
       font-family: 'Source Sans Pro', sans-serif;
       color: var(--text);
-      background: #fff;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: inherit;
+      background: var(--white);
+      line-height: 1.6;
     }
 
     img {
@@ -61,343 +63,479 @@
       display: block;
     }
 
-    /* NAVIGATION */
-
-    #topbar {
-      background: #000;
-      padding: 1em;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
+    a {
+      color: var(--green-dark);
     }
 
-    #topbar nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.3em 1.6em;
-    }
-
-    #topbar a.nav-link {
-      color: white;
-      font-weight: 400;
-      text-decoration: none;
-      border: none;
-      transition: color 0.25s ease;
-    }
-
-    #topbar a.nav-link:hover {
+    a:hover {
       color: var(--green);
-    }
-
-    /* MAIN */
-
-    #main {
-      width: 100%;
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 5em 3em 3em;
-    }
-
-    article.post {
-      width: 100%;
-    }
-
-    article.post p {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      white-space: normal;
-      font-size: 1.12em;
-      line-height: 1.75em;
     }
 
     .section-anchor {
       scroll-margin-top: 90px;
     }
 
-    /* HERO */
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
+    #topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: #000;
+      padding: 1em;
+    }
+
+    #topbar nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4em 1.8em;
+    }
+
+    #topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.98em;
+      font-weight: 400;
+      transition: color 0.2s ease;
+    }
+
+    #topbar a:hover {
+      color: var(--green);
+    }
+
+
+    /* =========================
+       GENERAL
+       ========================= */
+
+    #main {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 5em 3em 2em;
+    }
+
+    section {
+      margin-bottom: 6em;
+    }
+
+    .section-title {
+      color: var(--black);
+      font-size: 2.15em;
+      line-height: 1.2;
+      margin: 0 0 0.65em;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.08em;
+      margin: 0 0 2.5em;
+    }
+
+    p {
+      font-size: 1.12em;
+      line-height: 1.75;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 2.5em 1em 3.3em;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 3em;
+      margin-bottom: 2em;
+      padding: 5em 1em 4em;
     }
 
     .hero h1 {
-      color: #111;
-      font-size: 3.5em;
-      line-height: 1.05;
+      color: var(--black);
+      font-size: 4.1em;
+      line-height: 1;
       margin: 0 0 0.35em;
       font-weight: 700;
     }
 
     .hero-role {
-      color: #222;
+      color: var(--black);
       font-size: 1.55em;
       font-weight: 500;
-      margin: 0 0 0.5em;
+      margin: 0 0 0.45em;
     }
 
     .hero-focus {
       color: var(--muted);
-      font-size: 1.05em;
-      font-weight: 400;
-      letter-spacing: 0.08em;
+      font-size: 1em;
+      letter-spacing: 0.13em;
       margin: 0;
     }
 
-    /* SECTION TITLES */
-
-    .section-title {
-      color: #111;
-      font-size: 2em;
-      margin: 0 0 1.2em;
-      text-align: center;
+    .hero::after {
+      content: "";
+      display: block;
+      width: 58px;
+      height: 3px;
+      background: var(--green);
+      margin-top: 2.2em;
     }
 
-    .section-intro {
-      max-width: 820px;
-      margin: -1em auto 2.5em;
-      text-align: center;
-      color: var(--muted);
-    }
 
-    /* ABOUT */
+    /* =========================
+       ABOUT
+       ========================= */
 
-    .about-section {
+    .about {
       display: flex;
       align-items: center;
-      gap: 4em;
-      margin-bottom: 5em;
+      gap: 4.5em;
     }
 
     .about-photo {
-      flex: 0 0 280px;
+      flex: 0 0 270px;
     }
 
     .about-photo img {
-      width: 280px;
-      height: 280px;
+      width: 270px;
+      height: 270px;
       object-fit: cover;
     }
 
     .about-content {
       flex: 1;
-    }
-
-    .about-content h2 {
-      color: #111;
-      font-size: 2em;
-      margin: 0 0 0.8em;
+      max-width: 690px;
     }
 
     .about-content p {
-      margin: 0 0 1.1em;
-    }
-
-    /* ECOSONUS */
-
-    .ecosonus-section {
-      background: var(--light);
-      border-radius: 12px;
-      padding: 3em;
-      margin: 0 0 5em;
-    }
-
-    .ecosonus-section h2 {
-      color: #111;
-      font-size: 2em;
       margin-top: 0;
-      text-align: center;
+      margin-bottom: 1.1em;
+    }
+
+
+    /* =========================
+       ECOSONUS
+       ========================= */
+
+    .ecosonus {
+      border-left: 4px solid var(--green);
+      padding: 0.5em 0 0.5em 2.4em;
+    }
+
+    .ecosonus h2 {
+      margin-top: 0;
     }
 
     .ecosonus-description {
-      max-width: 850px;
-      margin: 0 auto 2.5em;
-      text-align: center;
+      max-width: 800px;
     }
 
-    .recognition-box {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 2em 2.3em;
-    }
-
-    .recognition-box h3 {
-      margin-top: 0;
-      color: #111;
-      font-size: 1.4em;
-    }
-
-    .recognition-box ul {
-      margin-bottom: 0;
-      padding-left: 1.3em;
-    }
-
-    .recognition-box li {
-      margin: 0.75em 0;
-      line-height: 1.5em;
-    }
-
-    /* CURRENT ROLES */
-
-    .roles-section {
-      margin-bottom: 5em;
-    }
-
-    .role-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5em;
-    }
-
-    .role-card {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.7em;
-      background: #fff;
-    }
-
-    .role-card h3 {
-      color: #111;
-      margin: 0 0 0.35em;
-      font-size: 1.25em;
-    }
-
-    .role-card .organization {
+    .ecosonus-tagline {
       color: var(--green-dark);
+      font-size: 1.1em;
       font-weight: 600;
-      margin-bottom: 0.7em;
+      margin-top: -0.25em;
+      margin-bottom: 1.5em;
     }
 
-    .role-card p {
+    .recognition {
+      margin-top: 2.5em;
+      max-width: 850px;
+    }
+
+    .recognition h3 {
+      color: var(--black);
+      font-size: 1.35em;
+      margin-bottom: 0.8em;
+    }
+
+    .recognition ul {
+      padding-left: 1.25em;
+      margin: 0;
+    }
+
+    .recognition li {
+      margin-bottom: 0.75em;
+      line-height: 1.55;
+      font-size: 1.03em;
+    }
+
+
+    /* =========================
+       CURRENT ROLES
+       ========================= */
+
+    .roles {
+      margin-top: -1em;
+    }
+
+    .role-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75em;
+    }
+
+    .role-item {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.65em 1.1em;
+      font-size: 0.98em;
+      color: #444;
+    }
+
+    .role-item strong {
+      color: var(--black);
+    }
+
+
+    /* =========================
+       FEATURED WORK
+       ========================= */
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.5em;
+    }
+
+    .feature-card {
+      border-top: 3px solid var(--green);
+      padding-top: 1.5em;
+    }
+
+    .feature-card h3 {
+      font-size: 1.4em;
+      line-height: 1.3;
+      color: var(--black);
+      margin: 0 0 1em;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 265px;
+      object-fit: contain;
+      margin-bottom: 1.3em;
+      background: #fff;
+    }
+
+    .feature-card p {
+      font-size: 1.04em;
+      line-height: 1.65;
+    }
+
+    .feature-card ul {
+      padding-left: 1.25em;
+      font-size: 1.02em;
+      line-height: 1.65;
+    }
+
+    .feature-card a {
+      text-decoration: none;
+    }
+
+    .feature-card a img:hover {
+      opacity: 0.85;
+      transition: opacity 0.25s ease;
+    }
+
+
+    /* =========================
+       RESEARCH
+       ========================= */
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2em;
+    }
+
+    .research-card {
+      border-top: 1px solid var(--border);
+      padding-top: 1.4em;
+    }
+
+    .research-card h3 {
+      color: var(--black);
+      line-height: 1.35;
+      margin-top: 0;
+    }
+
+    .research-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin: 1em 0;
+    }
+
+    .research-card p {
       font-size: 1em;
-      line-height: 1.55em;
-      color: #555;
-      margin-bottom: 0;
+      line-height: 1.6;
     }
 
-    /* PROJECT / PUBLICATION CARDS */
 
-    .posts {
+    /* =========================
+       COLLAPSIBLE CONTENT
+       ========================= */
+
+    details.more-content {
+      margin-top: 2.5em;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 1.3em 0;
+    }
+
+    details.more-content summary {
+      cursor: pointer;
+      color: var(--black);
+      font-weight: 600;
+      font-size: 1.1em;
+      list-style-position: outside;
+    }
+
+    details.more-content summary:hover {
+      color: var(--green-dark);
+    }
+
+    .expanded-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 2em;
-      margin-bottom: 5em;
+      margin-top: 2em;
     }
 
-    .posts article {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.7em;
-      background: #fff;
+    .expanded-item {
+      padding-bottom: 1.5em;
+      border-bottom: 1px solid var(--border);
     }
 
-    .posts article h3 {
+    .expanded-item h3 {
+      color: var(--black);
+      line-height: 1.35;
       margin-top: 0;
-      color: #222;
-      line-height: 1.35em;
     }
 
-    .posts img {
+    .expanded-item img {
       width: 100%;
-      max-width: 420px;
-      height: 240px;
+      height: 210px;
       object-fit: contain;
-      border-radius: 6px;
-      display: block;
-      margin: 1em auto 1.4em;
+      margin: 1em 0;
     }
 
-    .posts a img:hover {
-      opacity: 0.85;
-      transition: opacity 0.3s;
-      cursor: pointer;
-    }
-
-    .posts ul {
-      padding-left: 1.4em;
-      font-size: 1.05em;
-      line-height: 1.65em;
-    }
-
-    /* MORE INFO */
-
-    .more-info-section {
-      display: flex;
-      align-items: center;
-      gap: 4em;
-      margin-top: 5em;
-      padding-top: 4em;
-      border-top: 1px solid var(--border);
-    }
-
-    .more-info-image {
-      flex: 0 0 360px;
-    }
-
-    .more-info-image img {
-      width: 360px;
-      border-radius: 8px;
-    }
-
-    .more-info-content {
-      flex: 1;
-    }
-
-    details {
-      margin: 0.8em 0;
-    }
-
-    details summary {
-      font-size: 1.2em;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    /* CONTACT */
-
-    .contact-section {
-      margin-top: 5em;
-    }
-
-    .contact-form {
-      max-width: 650px;
-      margin: 0 auto;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.85em;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: 'Source Sans Pro', sans-serif;
+    .expanded-item p {
       font-size: 1em;
+      line-height: 1.6;
+    }
+
+    .report-list {
+      margin-top: 2em;
+      columns: 2;
+      column-gap: 3em;
+    }
+
+    .report-list li {
+      margin-bottom: 0.5em;
+      break-inside: avoid;
+    }
+
+
+    /* =========================
+       CV & LINKS
+       ========================= */
+
+    .links-section {
+      background: var(--light);
+      padding: 3em;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .link-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 2em;
+    }
+
+    .link-button {
+      display: inline-block;
+      border: 1px solid var(--green-dark);
+      color: var(--green-dark);
+      text-decoration: none;
+      padding: 0.7em 1.4em;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .link-button:hover {
+      background: var(--green);
+      border-color: var(--green);
+      color: white;
+    }
+
+
+    /* =========================
+       CONTACT
+       ========================= */
+
+    .contact {
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact .section-title,
+    .contact .section-subtitle {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .form-field {
       margin-bottom: 1em;
     }
 
-    .form-actions {
-      display: flex;
-      gap: 1em;
-      justify-content: center;
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 0.9em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1em;
+      background: white;
     }
 
-    .button-primary,
-    .button-secondary {
-      color: white;
+    .contact input:focus,
+    .contact textarea:focus {
+      outline: none;
+      border-color: var(--green);
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1.2em;
+    }
+
+    button {
       border: none;
-      padding: 0.75em 1.5em;
-      border-radius: 5px;
+      padding: 0.8em 1.6em;
+      border-radius: 4px;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 1em;
       cursor: pointer;
@@ -405,6 +543,7 @@
 
     .button-primary {
       background: var(--green);
+      color: white;
     }
 
     .button-primary:hover {
@@ -413,37 +552,58 @@
 
     .button-secondary {
       background: #888;
+      color: white;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+       ========================= */
 
     #footer {
-      text-align: center;
-      padding: 2em 1em;
-      background: #f0f0f0;
       margin-top: 5em;
+      padding: 2.3em 1em;
+      text-align: center;
+      background: #f2f2f2;
+      color: #555;
     }
 
-    #footer .copyright {
-      margin: 0 auto;
-      max-width: 1200px;
-      color: #333;
+    #footer p {
+      margin: 0;
+      font-size: 0.95em;
     }
 
-    /* MOBILE */
+    #footer a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    #footer a:hover {
+      color: var(--green-dark);
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
 
     @media screen and (max-width: 850px) {
 
       #main {
-        padding: 4em 1.3em 2em;
+        padding: 5em 1.4em 2em;
+      }
+
+      section {
+        margin-bottom: 4.5em;
       }
 
       .hero {
-        padding-top: 1.5em;
+        min-height: 460px;
+        padding: 4em 0.5em 3em;
       }
 
       .hero h1 {
-        font-size: 2.7em;
+        font-size: 3em;
       }
 
       .hero-role {
@@ -452,76 +612,68 @@
 
       .hero-focus {
         font-size: 0.95em;
-        letter-spacing: 0.05em;
+        line-height: 1.8;
       }
 
-      .about-section {
+      .about {
         flex-direction: column;
-        gap: 2em;
-        text-align: center;
+        gap: 2.2em;
       }
 
       .about-photo {
-        flex-basis: auto;
+        flex: none;
       }
 
       .about-content {
-        text-align: left;
+        max-width: 100%;
       }
 
-      .about-content h2 {
+      .about-content .section-title {
         text-align: center;
       }
 
-      .role-grid {
+      .ecosonus {
+        padding-left: 1.5em;
+      }
+
+      .featured-grid {
         grid-template-columns: 1fr;
       }
 
-      .posts {
+      .research-grid {
         grid-template-columns: 1fr;
       }
 
-      .ecosonus-section {
-        padding: 2em 1.3em;
+      .expanded-grid {
+        grid-template-columns: 1fr;
       }
 
-      .recognition-box {
-        padding: 1.5em;
+      .report-list {
+        columns: 1;
       }
 
-      .more-info-section {
-        flex-direction: column;
-        gap: 2em;
-      }
-
-      .more-info-image {
-        flex-basis: auto;
-      }
-
-      .more-info-image img {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      article.post p {
-        font-size: 1.05em;
-        line-height: 1.65em;
+      .links-section {
+        padding: 2em 1.2em;
       }
     }
 
+
     @media screen and (max-width: 560px) {
 
-      #topbar nav {
-        gap: 0.25em 0.9em;
+      #topbar {
+        padding: 0.8em 0.6em;
       }
 
-      #topbar a.nav-link {
-        font-size: 0.9em;
+      #topbar nav {
+        gap: 0.25em 0.85em;
+      }
+
+      #topbar a {
+        font-size: 0.88em;
       }
 
       .hero h1 {
-        font-size: 2.25em;
+        font-size: 2.5em;
       }
 
       .hero-role {
@@ -529,11 +681,20 @@
       }
 
       .hero-focus {
-        line-height: 1.8em;
+        letter-spacing: 0.07em;
+      }
+
+      .role-item {
+        width: 100%;
+        border-radius: 5px;
       }
 
       .form-actions {
         flex-direction: column;
+      }
+
+      .form-actions button {
+        width: 100%;
       }
     }
 
@@ -544,701 +705,897 @@
 
 <body>
 
-<div id="wrapper">
-
-  <!-- NAVIGATION -->
+  <!-- =========================
+       NAVIGATION
+       ========================= -->
 
   <header id="topbar">
     <nav>
-      <a class="nav-link" href="#home">Home</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#ecosonus">Ecosonus</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#publications">Publications</a>
-      <a class="nav-link" href="#info">CV & Links</a>
-      <a class="nav-link" href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#ecosonus">Ecosonus</a>
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
 
   <main id="main">
 
-    <article class="post">
+    <!-- =========================
+         HERO
+         ========================= -->
 
-      <!-- HERO -->
+    <header class="hero" id="home">
 
-      <header class="hero section-anchor" id="home">
+      <h1>Jackie Garcia-Yi</h1>
 
-        <h1>Jackie Garcia-Yi</h1>
+      <p class="hero-role">
+        Environmental Economist &amp; Co-Founder, Ecosonus
+      </p>
 
-        <p class="hero-role">
-          Environmental Economist &amp; Co-Founder, Ecosonus
+      <p class="hero-focus">
+        AI &nbsp;&middot;&nbsp; Biodiversity &nbsp;&middot;&nbsp; Nature Tech
+      </p>
+
+    </header>
+
+
+    <!-- =========================
+         ABOUT
+         ========================= -->
+
+    <section class="about section-anchor" id="about">
+
+      <div class="about-photo">
+        <img src="profile-pic.png" alt="Jackie Garcia-Yi">
+      </div>
+
+      <div class="about-content">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+          I am an Environmental Economist and Co-Founder of Ecosonus,
+          working at the intersection of biodiversity, artificial intelligence,
+          data science, and environmental decision-making.
         </p>
 
-        <p class="hero-focus">
-          AI &nbsp;&middot;&nbsp; Biodiversity &nbsp;&middot;&nbsp; Nature Tech
+        <p>
+          I bring extensive international experience from the United Nations,
+          where I managed multi-million-dollar environmental and development
+          portfolios, led complex international programmes, mobilized resources,
+          and worked with governments, international organizations, and
+          multidisciplinary teams across countries.
         </p>
 
-      </header>
+        <p>
+          My background combines Environmental Economics, Data Science,
+          Ecology, and Food Technology &amp; Engineering. Today, I apply
+          this interdisciplinary expertise to develop scalable solutions for
+          biodiversity, climate resilience, sustainable food systems, and
+          responsible AI.
+        </p>
+
+      </div>
+
+    </section>
 
 
-      <!-- ABOUT -->
+    <!-- =========================
+         ECOSONUS
+         ========================= -->
 
-      <section class="about-section section-anchor" id="about">
+    <section class="ecosonus section-anchor" id="ecosonus">
 
-        <div class="about-photo">
-          <img src="profile-pic.png" alt="Jackie Garcia-Yi">
+      <h2 class="section-title">Ecosonus</h2>
+
+      <p class="ecosonus-tagline">
+        Nature Tech for biodiversity monitoring and environmental intelligence
+      </p>
+
+      <div class="ecosonus-description">
+
+        <p>
+          I co-founded Ecosonus, a nature-tech initiative developing
+          AI-powered solutions for biodiversity monitoring and environmental
+          decision-making.
+        </p>
+
+        <p>
+          Our work combines bioacoustics, remote sensing, geospatial modelling,
+          artificial intelligence, and ecological data to generate actionable
+          insights for conservation, ecosystem management, climate resilience,
+          and nature-based tourism.
+        </p>
+
+      </div>
+
+
+      <div class="recognition">
+
+        <h3>Recognition &amp; Funding</h3>
+
+        <ul>
+
+          <li>
+            Awarded funding from <strong>WILDLABS</strong>, a global
+            conservation technology network — July 2026.
+          </li>
+
+          <li>
+            <strong>Second Place, e-Tourism Competition</strong>,
+            organized by Incubagraria and MINCETUR, including seed funding
+            — July 2026.
+          </li>
+
+          <li>
+            Awarded funding from the
+            <strong>British Ecological Society</strong> — May 2026.
+          </li>
+
+          <li>
+            Selected as one of 20 startups to participate in the
+            <strong>Social Innovation Lab</strong>, organized by the
+            University of Pennsylvania and the University of Oxford
+            — November 2025.
+          </li>
+
+          <li>
+            <strong>Second Place, 2nd Copernicus Latin America Hackathon</strong>,
+            European Union — August 2025.
+          </li>
+
+          <li>
+            Selected among the leading submissions to the
+            <strong>United Nations AI for Good – EW4All Innovation Challenge</strong>,
+            resulting in a feature in the Solutions Spotlight of the
+            EW4All AI Subgroup — August 2025.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CURRENT / RECENT ROLES
+         ========================= -->
+
+    <section class="roles">
+
+      <h2 class="section-title">Current &amp; Recent Roles</h2>
+
+      <div class="role-strip">
+
+        <div class="role-item">
+          <strong>Co-Founder</strong> · Ecosonus
         </div>
 
-        <div class="about-content">
-
-          <h2>About Me</h2>
-
-          <p>
-            I am an Environmental Economist and Co-Founder of Ecosonus,
-            working at the intersection of biodiversity, artificial intelligence,
-            data science, and environmental decision-making.
-          </p>
-
-          <p>
-            I bring extensive international experience from the United Nations,
-            where I managed multi-million-dollar environmental and development
-            portfolios, led complex international programmes, mobilized resources,
-            and worked with governments, international organizations, and
-            multidisciplinary teams across countries.
-          </p>
-
-          <p>
-            My background combines Environmental Economics, Data Science,
-            Ecology, and Food Technology &amp; Engineering. Today, I apply
-            this interdisciplinary expertise to develop scalable solutions for
-            biodiversity, climate resilience, sustainable food systems, and
-            responsible AI.
-          </p>
-
+        <div class="role-item">
+          <strong>Senior Fellow</strong> · fAIr LAC Responsible AI Network
         </div>
 
-      </section>
-
-
-      <!-- ECOSONUS -->
-
-      <section class="ecosonus-section section-anchor" id="ecosonus">
-
-        <h2>Ecosonus</h2>
-
-        <div class="ecosonus-description">
-
-          <p>
-            I co-founded Ecosonus, a nature-tech initiative developing
-            AI-powered solutions for biodiversity monitoring and environmental
-            decision-making.
-          </p>
-
-          <p>
-            Our work combines bioacoustics, remote sensing, geospatial modelling,
-            artificial intelligence, and ecological data to generate actionable
-            insights for conservation, ecosystem management, climate resilience,
-            and nature-based tourism.
-          </p>
-
+        <div class="role-item">
+          <strong>MBA Professor</strong> · Universidad de Lima
         </div>
 
+        <div class="role-item">
+          <strong>Former UN Programme Manager</strong> · UNEP &amp; UNODC
+        </div>
 
-        <div class="recognition-box">
+      </div>
 
-          <h3>Recognition &amp; Funding</h3>
+    </section>
+
+
+    <!-- =========================
+         SELECTED WORK
+         ========================= -->
+
+    <section class="section-anchor" id="work">
+
+      <h2 class="section-title">Selected Work</h2>
+
+      <p class="section-subtitle">
+        Selected projects at the intersection of biodiversity, climate,
+        artificial intelligence, geospatial analysis, and environmental
+        decision-making.
+      </p>
+
+
+      <div class="featured-grid">
+
+        <!-- FEATURE 1 -->
+
+        <article class="feature-card">
+
+          <h3>
+            Strengthening Climate Resilience through Forest-Based
+            Risk Reduction in Peru
+          </h3>
+
+          <a
+            href="https://taikai.network/copernicuslac-panama/hackathons/reduccion-del-riesgo-de-desastres-2025/projects/cmctxjg3n01iort56tg7qk3co/idea"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/yanachaga.jpg"
+              alt="Yanachaga-Chemillén climate resilience project"
+            >
+
+          </a>
+
+          <p>
+            This project links forest conservation with disaster risk reduction
+            in Peru’s Yanachaga-Chemillén National Park and surrounding
+            communities.
+          </p>
+
+          <p>
+            Using Google AlphaEarth and Sentinel satellite data, it identifies
+            and monitors forest areas that help reduce landslide and flood risks
+            and integrates ecosystem and risk information into decision-support
+            tools.
+          </p>
+
+          <p>
+            <strong>Second Place, 2nd Copernicus Latin America Hackathon,
+            European Union — 2025.</strong>
+          </p>
+
+        </article>
+
+
+        <!-- FEATURE 2 -->
+
+        <article class="feature-card">
+
+          <h3>
+            Multimodal AI for Acoustic Bird Species Identification
+          </h3>
+
+          <a
+            href="https://github.com/jgaryi/E115_BirdWatchingApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/birdwatching.jpg"
+              alt="AI bird species identification application"
+            >
+
+          </a>
+
+          <p>
+            A multimodal AI application designed to support biodiversity
+            conservation and nature-based tourism in remote,
+            species-rich environments.
+          </p>
 
           <ul>
-
-            <li>
-              Awarded funding from <strong>WILDLABS</strong>, a global
-              conservation technology network — July 2026.
-            </li>
-
-            <li>
-              <strong>Second Place, e-Tourism Competition</strong>,
-              organized by Incubagraria and MINCETUR, including seed funding
-              — July 2026.
-            </li>
-
-            <li>
-              Awarded funding from the
-              <strong>British Ecological Society</strong> — May 2026.
-            </li>
-
-            <li>
-              Selected as one of 20 startups for the
-              <strong>Social Innovation Lab</strong>, organized by the
-              University of Pennsylvania and the University of Oxford
-              — November 2025.
-            </li>
-
-            <li>
-              <strong>Second Place, 2nd Copernicus Latin America Hackathon</strong>,
-              European Union — August 2025.
-            </li>
-
-            <li>
-              Selected among the leading submissions to the
-              <strong>United Nations AI for Good – EW4All Innovation Challenge</strong>,
-              resulting in a feature in the Solutions Spotlight of the
-              EW4All AI Subgroup — August 2025.
-            </li>
-
+            <li>Bird identification using BirdNET-based models</li>
+            <li>Transfer learning for local and endemic species</li>
+            <li>Agentic LLM biodiversity assistant</li>
+            <li>Bioacoustic and ecological data integration</li>
+            <li>Remote sensing and geospatial visualization</li>
           </ul>
 
-        </div>
+        </article>
 
-      </section>
-
-
-      <!-- CURRENT ROLES -->
-
-      <section class="roles-section">
-
-        <h2 class="section-title">Current Roles</h2>
-
-        <div class="role-grid">
-
-          <div class="role-card">
-            <h3>Co-Founder</h3>
-            <div class="organization">Ecosonus</div>
-            <p>
-              Nature Tech, biodiversity monitoring, AI, bioacoustics,
-              remote sensing, and environmental intelligence.
-            </p>
-          </div>
-
-          <div class="role-card">
-            <h3>Senior Fellow – Responsible AI</h3>
-            <div class="organization">fAIr LAC Network</div>
-            <p>
-              Lead Junior Fellows in responsible AI assessments for startups,
-              including AI governance, risk assessment, data practices,
-              evaluation, monitoring, and implementation roadmaps.
-            </p>
-          </div>
-
-          <div class="role-card">
-            <h3>MBA Professor</h3>
-            <div class="organization">Universidad de Lima</div>
-            <p>
-              Teach Ethics &amp; Sustainable Development, integrating
-              sustainability strategy, ESG, climate and nature-related risks,
-              biodiversity, impact assessment, and responsible AI.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
+      </div>
 
 
-      <!-- PROJECTS -->
+      <!-- EARLIER DATA SCIENCE PROJECTS -->
 
-      <section class="section-anchor" id="projects">
+      <details class="more-content">
 
-        <h2 class="section-title">Selected Projects</h2>
+        <summary>Earlier Data Science Projects</summary>
 
-        <div class="posts">
+        <div class="expanded-grid">
 
 
-          <article>
+          <article class="expanded-item">
 
             <h3>
-              Strengthening Climate Resilience through Forest-Based
-              Risk Reduction in Peru
+              Time Series Prediction of Outbreaks of Infectious Diseases
             </h3>
-
-            <a href="https://taikai.network/copernicuslac-panama/hackathons/reduccion-del-riesgo-de-desastres-2025/projects/cmctxjg3n01iort56tg7qk3co/idea"
-               target="_blank"
-               rel="noopener noreferrer">
-
-              <img src="images/yanachaga.jpg"
-                   alt="Yanachaga-Chemillén National Park project">
-
-            </a>
-
-            <p>
-              This project aims to enhance disaster and climate resilience in
-              Peru’s Yanachaga-Chemillén National Park and surrounding
-              communities by protecting forest ecosystems that naturally reduce
-              landslide and flood risks.
-            </p>
-
-            <p>
-              Using Google AlphaEarth and Sentinel satellite data, the project
-              identifies and monitors critical forest areas and integrates
-              risk and ecosystem data into decision-support tools.
-            </p>
-
-            <p>
-              The project won <strong>Second Place in the 2nd Copernicus
-              Latin America Hackathon</strong>, organized by the European Union
-              in August 2025.
-            </p>
-
-          </article>
-
-
-          <article>
-
-            <h3>
-              Multimodal AI for Acoustic Bird Species Identification
-              in Support of Ecotourism and Conservation
-            </h3>
-
-            <a href="https://github.com/jgaryi/E115_BirdWatchingApp"
-               target="_blank"
-               rel="noopener noreferrer">
-
-              <img src="images/birdwatching.jpg"
-                   alt="Birdwatching AI application">
-
-            </a>
-
-            <p>
-              This project develops a multimodal AI application supporting
-              ecotourism and biodiversity conservation in remote,
-              species-rich areas.
-            </p>
-
-            <ul>
-              <li>Bird identification using a hybrid BirdNET-based model</li>
-              <li>Custom transfer learning for local and endemic species</li>
-              <li>Agentic LLM biodiversity assistant</li>
-              <li>Species sound libraries and photo galleries</li>
-              <li>Ecological maps using remote sensing data</li>
-              <li>Scalable cloud infrastructure</li>
-            </ul>
-
-          </article>
-
-
-          <article>
-
-            <h3>Time Series Prediction of Outbreaks of Infectious Diseases</h3>
 
             <a href="projects/Project1.html" target="_blank">
 
-              <img src="images/project1-image.jpg"
-                   alt="Time series model visualization">
+              <img
+                src="images/project1-image.jpg"
+                alt="Time series prediction model"
+              >
 
             </a>
 
             <p>
-              This project explores predictive modelling for infectious
-              disease outbreaks using SMA, ARMA, RNN, and LSTM models together
-              with digital-stream data such as Google search trends.
+              Predictive modelling of infectious disease outbreaks using
+              SMA, ARMA, RNN, and LSTM models together with digital-stream
+              data such as Google search trends.
             </p>
 
             <p>
               Deep learning models outperformed traditional baselines in
-              forecasting COVID-19 cases, illustrating how predictive analytics
-              can support earlier and more targeted public policy interventions.
+              forecasting COVID-19 cases.
             </p>
 
           </article>
 
 
-          <article>
+          <article class="expanded-item">
 
             <h3>Impact of COVID-19 on Education</h3>
 
             <a href="projects/Project2.html" target="_blank">
 
-              <img src="images/project2-image.jpg"
-                   alt="Education impact analysis chart">
+              <img
+                src="images/project2-image.jpg"
+                alt="Education impact analysis"
+              >
 
             </a>
 
             <p>
-              This project examines the impact of COVID-19 on global primary
-              education completion rates using Linear, Lasso, k-NN, and
-              AdaBoost regression models.
+              Analysis of the impact of COVID-19 on global primary education
+              completion rates using Linear, Lasso, k-NN, and AdaBoost
+              regression models.
             </p>
 
             <p>
-              Using UNESCO and World Bank data, the analysis estimates
-              counterfactual 2020 outcomes without the pandemic and compares
-              them with observed results.
+              UNESCO and World Bank data were used to estimate
+              counterfactual 2020 outcomes without the pandemic.
             </p>
 
           </article>
 
         </div>
 
-      </section>
+      </details>
+
+    </section>
 
 
-      <!-- PUBLICATIONS -->
+    <!-- =========================
+         RESEARCH
+         ========================= -->
 
-      <section class="section-anchor" id="publications">
+    <section class="section-anchor" id="research">
 
-        <h2 class="section-title">Selected Research &amp; Publications</h2>
+      <h2 class="section-title">Selected Research &amp; Publications</h2>
 
-        <div class="posts">
-
-
-          <article>
-
-            <h3>NLP for UN Biodiversity Speeches</h3>
-
-            <a href="reports/FinalProjectReport_JGarciaYi.pdf"
-               target="_blank">
-
-              <img src="images/nlp-biodiversity.jpg"
-                   alt="NLP biodiversity analysis">
-
-            </a>
-
-            <p>
-              Applies Structural Topic Modeling and NLP to more than
-              5,000 pages of UN biodiversity policy speeches, identifying
-              thematic shifts and regional discourse variation across
-              conferences from 1994 to 2024.
-            </p>
-
-          </article>
+      <p class="section-subtitle">
+        Selected research spanning biodiversity, spatial econometrics,
+        rural development, remote sensing, and international policy.
+      </p>
 
 
-          <article>
+      <div class="research-grid">
+
+        <!-- RESEARCH 1 -->
+
+        <article class="research-card">
+
+          <h3>NLP for UN Biodiversity Speeches</h3>
+
+          <a
+            href="reports/FinalProjectReport_JGarciaYi.pdf"
+            target="_blank"
+          >
+
+            <img
+              src="images/nlp-biodiversity.jpg"
+              alt="NLP biodiversity analysis"
+            >
+
+          </a>
+
+          <p>
+            Structural Topic Modeling and NLP applied to more than
+            5,000 pages of UN biodiversity policy speeches, identifying
+            thematic shifts and regional variation from 1994 to 2024.
+          </p>
+
+        </article>
+
+
+        <!-- RESEARCH 2 -->
+
+        <article class="research-card">
+
+          <h3>UN World Drug Report: Alternative Development</h3>
+
+          <a
+            href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf"
+            target="_blank"
+          >
+
+            <img
+              src="images/unodc-report.jpg"
+              alt="UN World Drug Report"
+            >
+
+          </a>
+
+          <p>
+            Analysis of Alternative Development as a long-term strategy
+            addressing illicit crop cultivation, drawing on evidence from
+            international programmes and rural development interventions.
+          </p>
+
+        </article>
+
+
+        <!-- RESEARCH 3 -->
+
+        <article class="research-card">
+
+          <h3>Strategic Maps for Decision-Making</h3>
+
+          <a
+            href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf"
+            target="_blank"
+          >
+
+            <img
+              src="images/strategic-map.jpg"
+              alt="Spatial econometric strategic map"
+            >
+
+          </a>
+
+          <p>
+            Spatial econometric modelling of opium poppy cultivation
+            likelihood across Afghanistan, examining accessibility,
+            population, climatic variables, and other potential drivers.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <!-- ADDITIONAL RESEARCH -->
+
+      <details class="more-content">
+
+        <summary>Additional Research &amp; UN Publications</summary>
+
+        <div class="expanded-grid">
+
+
+          <article class="expanded-item">
 
             <h3>Sustainable Income from Alternative Development</h3>
 
-            <a href="reports/Brief_income_livelihoods.pdf"
-               target="_blank">
+            <a href="reports/Brief_income_livelihoods.pdf" target="_blank">
 
-              <img src="images/livelihoods.jpg"
-                   alt="Alternative development livelihoods">
+              <img
+                src="images/livelihoods.jpg"
+                alt="Alternative development livelihoods"
+              >
 
             </a>
 
             <p>
-              This report examines how alternative development initiatives can
-              reduce reliance on illicit crop cultivation through improved rural
-              livelihoods, market access, food security, and training.
+              Examines how alternative development initiatives can reduce
+              reliance on illicit crop cultivation through improved rural
+              livelihoods, food security, market access, and training.
             </p>
 
           </article>
 
 
-          <article>
-
-            <h3>UN World Drug Report: Alternative Development</h3>
-
-            <a href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf"
-               target="_blank">
-
-              <img src="images/unodc-report.jpg"
-                   alt="UNODC World Drug Report">
-
-            </a>
-
-            <p>
-              The UN World Drug Report examines Alternative Development as a
-              long-term strategy to address illicit crop cultivation, drawing
-              on data from 53 projects and highlighting both achievements and
-              implementation challenges.
-            </p>
-
-          </article>
-
-
-          <article>
-
-            <h3>Strategic Maps for Decision-Making</h3>
-
-            <a href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf"
-               target="_blank">
-
-              <img src="images/strategic-map.jpg"
-                   alt="Strategic spatial analysis map">
-
-            </a>
-
-            <p>
-              Spatial econometric modelling of opium poppy cultivation
-              likelihood across Afghanistan, examining accessibility,
-              rural population, climatic variables, and other potential drivers.
-            </p>
-
-          </article>
-
-
-          <article>
+          <article class="expanded-item">
 
             <h3>Remote Sensing for Poppy Detection</h3>
 
-            <a href="reports/ProjectReport_13122019.pdf"
-               target="_blank">
+            <a href="reports/ProjectReport_13122019.pdf" target="_blank">
 
-              <img src="images/remote-sensing.jpg"
-                   alt="Remote sensing research">
+              <img
+                src="images/remote-sensing.jpg"
+                alt="Remote sensing research"
+              >
 
             </a>
 
             <p>
-              Evaluation of Landsat 8 imagery for identifying opium poppy crops
-              in Afghanistan, including challenges related to spatial
-              resolution, crop signatures, elevation, and agricultural calendars.
+              Evaluation of Landsat 8 imagery for identifying opium poppy
+              crops in Afghanistan, including spatial resolution and
+              crop-signature challenges.
             </p>
 
           </article>
 
 
-          <article>
+          <article class="expanded-item">
 
             <h3>Global Overview of Alternative Development Projects</h3>
 
-            <a href="reports/Research_brief_Overview_of_AD.pdf"
-               target="_blank">
+            <a
+              href="reports/Research_brief_Overview_of_AD.pdf"
+              target="_blank"
+            >
 
-              <img src="images/alternativedev.jpg"
-                   alt="Alternative development research">
+              <img
+                src="images/alternativedev.jpg"
+                alt="Alternative development research"
+              >
 
             </a>
 
             <p>
               Global analysis of Alternative Development initiatives,
-              highlighting challenges related to coordination, data,
-              project duration, and long-term investments in sustainable
-              rural livelihoods.
+              including coordination, data, project duration, funding,
+              and long-term rural livelihood challenges.
             </p>
 
           </article>
 
 
-          <article>
+          <article class="expanded-item">
 
             <h3>
               Development Barriers in Opium Poppy-Growing Villages
               in Shan State, Myanmar
             </h3>
 
-            <a href="reports/Myanmar_Socio-economic_2019.pdf"
-               target="_blank">
+            <a
+              href="reports/Myanmar_Socio-economic_2019.pdf"
+              target="_blank"
+            >
 
-              <img src="images/shanstate2.jpg"
-                   alt="Alternative development in Myanmar">
+              <img
+                src="images/shanstate2.jpg"
+                alt="Alternative development in Myanmar"
+              >
 
             </a>
 
             <p>
-              Analysis of infrastructure, governance, environmental pressures,
-              food security, market access, and livelihood vulnerability in
-              opium poppy-growing areas of Shan State.
+              Analysis of infrastructure, governance, food security,
+              market access, environmental pressures, and livelihood
+              vulnerability in Shan State.
             </p>
 
           </article>
 
 
-          <article>
+          <article class="expanded-item">
 
             <h3>
-              Understanding the Sustainable Development Challenges
-              of Opium Poppy Cultivation in Afghanistan
+              Sustainable Development Challenges of Opium Poppy
+              Cultivation in Afghanistan
             </h3>
 
-            <a href="reports/Afghanistan_SocioEconomic2016.pdf"
-               target="_blank">
+            <a
+              href="reports/Afghanistan_SocioEconomic2016.pdf"
+              target="_blank"
+            >
 
-              <img src="images/afghanistan.jpg"
-                   alt="Sustainable development in Afghanistan">
-
-            </a>
-
-            <p>
-              Examines the relationship between opium poppy cultivation,
-              rural livelihoods, and sustainable development challenges
-              in Afghanistan.
-            </p>
-
-          </article>
-
-
-          <article>
-
-            <h3>Socio-Economics of Opium Poppy Cultivation in Shan State</h3>
-
-            <a href="reports/Myanmar_SocioEconomic2016.pdf"
-               target="_blank">
-
-              <img src="images/shanstate.jpg"
-                   alt="Socioeconomics of Myanmar">
+              <img
+                src="images/afghanistan.jpg"
+                alt="Sustainable development in Afghanistan"
+              >
 
             </a>
 
             <p>
-              Analysis of survey data from 591 villages, examining livelihood
-              conditions, infrastructure, health care, market access,
-              and regional differences associated with opium cultivation.
+              Examination of the relationship between opium poppy
+              cultivation, rural livelihoods, and sustainable development
+              challenges in Afghanistan.
             </p>
 
           </article>
 
 
-          <article>
+          <article class="expanded-item">
 
-            <h3>Additional UNODC Illicit Crop Monitoring Reports, 2015–2020</h3>
+            <h3>
+              Socio-Economics of Opium Poppy Cultivation in Shan State
+            </h3>
 
-            <ul>
-              <li><a href="reports/Bolivia_Coca_2020.pdf" target="_blank">Bolivia 2020</a></li>
-              <li><a href="reports/Colombia_Coca_2020.pdf" target="_blank">Colombia 2020</a></li>
-              <li><a href="reports/Bolivia_Coca_2019.pdf" target="_blank">Bolivia 2019</a></li>
-              <li><a href="reports/Colombia_Coca_2019.pdf" target="_blank">Colombia 2019</a></li>
-              <li><a href="reports/Bolivia_Coca_2018.pdf" target="_blank">Bolivia 2018</a></li>
-              <li><a href="reports/Bolivia_Informe_Monitoreo_Coca_2017_final.pdf" target="_blank">Bolivia 2017</a></li>
-              <li><a href="reports/Myanmar_Opium_Survey_2017_web.pdf" target="_blank">Myanmar 2017</a></li>
-              <li><a href="reports/Peru_Monitoreo_de_Cultivos_de_Coca_2017_web.pdf" target="_blank">Peru 2017</a></li>
-              <li><a href="reports/Afghanistan_Opium_2016.pdf" target="_blank">Afghanistan 2016</a></li>
-              <li><a href="reports/2016_Bolivia_Informe_Monitoreo_Coca.pdf" target="_blank">Bolivia 2016</a></li>
-              <li><a href="reports/Colombia_Coca_2016.pdf" target="_blank">Colombia 2016</a></li>
-              <li><a href="reports/Peru_Monitoreo_de_coca_2016_web.pdf" target="_blank">Peru 2016</a></li>
-              <li><a href="reports/Bolivia_Coca_2015.pdf" target="_blank">Bolivia 2015</a></li>
-              <li><a href="reports/Colombia_Coca_2015.pdf" target="_blank">Colombia 2015</a></li>
-              <li><a href="reports/Peru_Coca_2015.pdf" target="_blank">Peru 2015</a></li>
-            </ul>
+            <a
+              href="reports/Myanmar_SocioEconomic2016.pdf"
+              target="_blank"
+            >
+
+              <img
+                src="images/shanstate.jpg"
+                alt="Socioeconomics of Myanmar"
+              >
+
+            </a>
+
+            <p>
+              Survey-based analysis of livelihood conditions,
+              infrastructure, health care, markets, and regional differences
+              associated with opium cultivation.
+            </p>
 
           </article>
 
         </div>
 
-      </section>
+
+        <h3 style="margin-top: 2.5em;">
+          Additional UNODC Illicit Crop Monitoring Reports, 2015–2020
+        </h3>
+
+        <ul class="report-list">
+
+          <li>
+            <a href="reports/Bolivia_Coca_2020.pdf" target="_blank">
+              Bolivia 2020
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Colombia_Coca_2020.pdf" target="_blank">
+              Colombia 2020
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Bolivia_Coca_2019.pdf" target="_blank">
+              Bolivia 2019
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Colombia_Coca_2019.pdf" target="_blank">
+              Colombia 2019
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Bolivia_Coca_2018.pdf" target="_blank">
+              Bolivia 2018
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Bolivia_Informe_Monitoreo_Coca_2017_final.pdf"
+              target="_blank"
+            >
+              Bolivia 2017
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Myanmar_Opium_Survey_2017_web.pdf"
+              target="_blank"
+            >
+              Myanmar 2017
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Peru_Monitoreo_de_Cultivos_de_Coca_2017_web.pdf"
+              target="_blank"
+            >
+              Peru 2017
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Afghanistan_Opium_2016.pdf" target="_blank">
+              Afghanistan 2016
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/2016_Bolivia_Informe_Monitoreo_Coca.pdf"
+              target="_blank"
+            >
+              Bolivia 2016
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Colombia_Coca_2016.pdf" target="_blank">
+              Colombia 2016
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="reports/Peru_Monitoreo_de_coca_2016_web.pdf"
+              target="_blank"
+            >
+              Peru 2016
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Bolivia_Coca_2015.pdf" target="_blank">
+              Bolivia 2015
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Colombia_Coca_2015.pdf" target="_blank">
+              Colombia 2015
+            </a>
+          </li>
+
+          <li>
+            <a href="reports/Peru_Coca_2015.pdf" target="_blank">
+              Peru 2015
+            </a>
+          </li>
+
+        </ul>
+
+      </details>
+
+    </section>
 
 
-      <!-- MORE INFORMATION -->
+    <!-- =========================
+         CV & LINKS
+         ========================= -->
 
-      <section class="more-info-section section-anchor" id="info">
+    <section class="links-section section-anchor" id="cv">
 
-        <div class="more-info-image">
-          <img src="ForestYanachaga2.jpg"
-               alt="Jackie Garcia-Yi in Yanachaga-Chemillén">
+      <h2 class="section-title">CV &amp; Professional Links</h2>
+
+      <p>
+        For additional information on my professional experience,
+        research, and current work.
+      </p>
+
+      <div class="link-buttons">
+
+        <a
+          class="link-button"
+          href="CV_JGY.pdf"
+          target="_blank"
+        >
+          View CV
+        </a>
+
+        <a
+          class="link-button"
+          href="https://www.linkedin.com/in/jaqueline-garcia-yi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="link-button"
+          href="mailto:jackiejgarciayi@gmail.com"
+        >
+          Email
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+         ========================= -->
+
+    <section class="contact section-anchor" id="contact">
+
+      <h2 class="section-title">Contact</h2>
+
+      <p class="section-subtitle">
+        For collaboration, research, consulting, partnership,
+        or speaking enquiries, please get in touch.
+      </p>
+
+
+      <form
+        action="https://formsubmit.co/jgaryi@hotmail.com"
+        method="POST"
+      >
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-field">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          >
         </div>
 
-        <div class="more-info-content">
+        <div class="form-field">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          >
+        </div>
 
-          <h2 style="color:#111; font-size:2em; margin-top:0;">
-            CV &amp; Links
-          </h2>
+        <div class="form-field">
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+          >
+        </div>
 
-          <details>
-            <summary>Contact Information</summary>
-            <p>
-              Email: jackiejgarciayi@gmail.com<br>
-              Phone/WhatsApp: +43-6701889288
-            </p>
-          </details>
+        <div class="form-field">
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            required
+          ></textarea>
+        </div>
 
-          <details>
-            <summary>CV</summary>
-            <p>
-              <a href="CV_JGY.pdf" target="_blank">
-                Download CV (PDF)
-              </a>
-            </p>
-          </details>
+        <div class="form-actions">
 
-          <details>
-            <summary>LinkedIn</summary>
-            <p>
-              <a href="https://www.linkedin.com/in/jaqueline-garcia-yi/"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                View LinkedIn Profile
-              </a>
-            </p>
-          </details>
+          <button
+            type="submit"
+            class="button-primary"
+          >
+            Send Message
+          </button>
+
+          <button
+            type="reset"
+            class="button-secondary"
+          >
+            Reset
+          </button>
 
         </div>
 
-      </section>
+      </form>
 
-
-      <!-- CONTACT -->
-
-      <section class="contact-section section-anchor" id="contact">
-
-        <h2 class="section-title">Contact Me</h2>
-
-        <div class="contact-form">
-
-          <form action="https://formsubmit.co/jgaryi@hotmail.com"
-                method="POST">
-
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-
-            <div class="form-field">
-              <input type="text"
-                     name="name"
-                     placeholder="Your Name"
-                     required>
-            </div>
-
-            <div class="form-field">
-              <input type="email"
-                     name="email"
-                     placeholder="Your Email"
-                     required>
-            </div>
-
-            <div class="form-field">
-              <input type="text"
-                     name="subject"
-                     placeholder="Subject">
-            </div>
-
-            <div class="form-field">
-              <textarea name="message"
-                        placeholder="Your Message"
-                        rows="6"
-                        required></textarea>
-            </div>
-
-            <div class="form-actions">
-
-              <button type="submit" class="button-primary">
-                Send Message
-              </button>
-
-              <button type="reset" class="button-secondary">
-                Reset
-              </button>
-
-            </div>
-
-          </form>
-
-        </div>
-
-      </section>
-
-    </article>
+    </section>
 
   </main>
 
 
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
   <footer id="footer">
 
-    <p class="copyright">
+    <p>
       &copy; Jackie Garcia-Yi
-      &bull;
+      &nbsp;&middot;&nbsp;
+
       <a href="mailto:jackiejgarciayi@gmail.com">
         jackiejgarciayi@gmail.com
       </a>
-      &bull;
-      <a href="https://www.linkedin.com/in/jaqueline-garcia-yi/"
-         target="_blank"
-         rel="noopener noreferrer">
+
+      &nbsp;&middot;&nbsp;
+
+      <a
+        href="https://www.linkedin.com/in/jaqueline-garcia-yi/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         LinkedIn
       </a>
     </p>
 
   </footer>
 
-</div>
-
 </body>
+
 </html>
