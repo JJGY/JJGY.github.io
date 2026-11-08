@@ -3,7 +3,7 @@
 
 <head>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKWS8SSE4G"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -22,25 +22,29 @@
     content="Jackie Garcia-Yi is an Environmental Economist and Co-Founder of Ecosonus, working at the intersection of biodiversity, artificial intelligence, data science, and environmental decision-making."
   >
 
+  <!-- Fonts -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap"
     rel="stylesheet"
   >
 
   <style>
 
     :root {
-      --green: #49bf9d;
-      --green-dark: #34977d;
-      --text: #222;
-      --muted: #6a6a6a;
-      --light: #f7f8f8;
-      --border: #e5e7e7;
-      --black: #111;
-      --white: #fff;
+      --ink: #1f2924;
+      --forest: #315b4d;
+      --forest-dark: #23473a;
+      --sage: #77877f;
+      --cream: #f7f6f1;
+      --soft: #fbfbf8;
+      --muted: #68736d;
+      --line: #e3e6e2;
+      --white: #ffffff;
     }
 
-    * {
+    * ,
+    *::before,
+    *::after {
       box-sizing: border-box;
     }
 
@@ -51,24 +55,43 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Source Sans Pro', sans-serif;
-      color: var(--text);
+      width: 100%;
+      overflow-x: hidden;
+
+      font-family: 'Inter', sans-serif;
+      color: var(--ink);
       background: var(--white);
-      line-height: 1.6;
+
+      font-size: 16px;
+      line-height: 1.7;
     }
 
     img {
+      display: block;
       max-width: 100%;
       height: auto;
-      display: block;
     }
 
     a {
-      color: var(--green-dark);
+      color: var(--forest);
+      text-decoration: none;
     }
 
     a:hover {
-      color: var(--green);
+      color: var(--forest-dark);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Source Serif 4', serif;
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.02rem;
+      line-height: 1.75;
     }
 
     .section-anchor {
@@ -76,18 +99,24 @@
     }
 
 
-    /* =========================
+    /* ========================================
        NAVIGATION
-       ========================= */
+       ======================================== */
 
     #topbar {
       position: fixed;
       top: 0;
       left: 0;
+
       width: 100%;
       z-index: 1000;
-      background: #000;
-      padding: 1em;
+
+      padding: 0.95rem 1.5rem;
+
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+
+      backdrop-filter: blur(8px);
     }
 
     #topbar nav {
@@ -95,404 +124,526 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 0.4em 1.8em;
+
+      gap: 0.35rem 1.8rem;
     }
 
     #topbar a {
-      color: white;
-      text-decoration: none;
-      font-size: 0.98em;
-      font-weight: 400;
+      color: #39433e;
+
+      font-size: 0.88rem;
+      font-weight: 500;
+
+      letter-spacing: 0.015em;
+
       transition: color 0.2s ease;
     }
 
     #topbar a:hover {
-      color: var(--green);
+      color: var(--forest);
     }
 
 
-    /* =========================
-       GENERAL
-       ========================= */
+    /* ========================================
+       MAIN
+       ======================================== */
 
     #main {
       width: 100%;
-      max-width: 1120px;
+      max-width: 1100px;
+
       margin: 0 auto;
-      padding: 5em 3em 2em;
+      padding: 4.8rem 3rem 2rem;
     }
 
     section {
-      margin-bottom: 6em;
+      margin-bottom: 5.8rem;
     }
 
     .section-title {
-      color: var(--black);
-      font-size: 2.15em;
-      line-height: 1.2;
-      margin: 0 0 0.65em;
-      font-weight: 700;
+      margin: 0 0 0.9rem;
+
+      font-size: 2.3rem;
+      line-height: 1.15;
+
+      letter-spacing: -0.02em;
     }
 
     .section-subtitle {
       max-width: 720px;
+
+      margin: 0 0 2.7rem;
+
       color: var(--muted);
-      font-size: 1.08em;
-      margin: 0 0 2.5em;
-    }
 
-    p {
-      font-size: 1.12em;
-      line-height: 1.75;
+      font-size: 0.98rem;
+      line-height: 1.65;
     }
 
 
-    /* =========================
+    /* ========================================
        HERO
-       ========================= */
+       ======================================== */
 
     .hero {
-      min-height: 520px;
+      min-height: 390px;
+
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+
       text-align: center;
-      margin-bottom: 2em;
-      padding: 5em 1em 4em;
+
+      padding: 4.5rem 1rem 3rem;
+      margin-bottom: 4rem;
     }
 
     .hero h1 {
-      color: var(--black);
-      font-size: 4.1em;
+      margin: 0 0 0.8rem;
+
+      font-size: 4rem;
       line-height: 1;
-      margin: 0 0 0.35em;
-      font-weight: 700;
+
+      letter-spacing: -0.035em;
     }
 
     .hero-role {
-      color: var(--black);
-      font-size: 1.55em;
+      margin: 0 0 0.7rem;
+
+      color: #354039;
+
+      font-size: 1.28rem;
       font-weight: 500;
-      margin: 0 0 0.45em;
     }
 
     .hero-focus {
-      color: var(--muted);
-      font-size: 1em;
-      letter-spacing: 0.13em;
       margin: 0;
+
+      color: var(--sage);
+
+      font-size: 0.82rem;
+      font-weight: 500;
+
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
     }
 
     .hero::after {
       content: "";
+
       display: block;
-      width: 58px;
-      height: 3px;
-      background: var(--green);
-      margin-top: 2.2em;
+
+      width: 48px;
+      height: 2px;
+
+      margin-top: 1.9rem;
+
+      background: var(--forest);
     }
 
 
-    /* =========================
+    /* ========================================
        ABOUT
-       ========================= */
+       ======================================== */
 
     .about {
       display: flex;
       align-items: center;
-      gap: 4.5em;
+
+      gap: 4.5rem;
+
+      max-width: 970px;
+      margin: 0 auto 6rem;
     }
 
     .about-photo {
-      flex: 0 0 270px;
+      flex: 0 0 255px;
     }
 
     .about-photo img {
-      width: 270px;
-      height: 270px;
+      width: 255px;
+      height: 255px;
+
       object-fit: cover;
+
+      border-radius: 2px;
     }
 
     .about-content {
       flex: 1;
-      max-width: 690px;
+      max-width: 640px;
     }
 
     .about-content p {
-      margin-top: 0;
-      margin-bottom: 1.1em;
+      margin: 0 0 1rem;
     }
 
 
-    /* =========================
+    /* ========================================
        ECOSONUS
-       ========================= */
+       ======================================== */
 
     .ecosonus {
-      border-left: 4px solid var(--green);
-      padding: 0.5em 0 0.5em 2.4em;
+      position: relative;
+
+      padding: 3rem 3.5rem;
+
+      background: var(--cream);
+
+      border-left: 4px solid var(--forest);
     }
 
     .ecosonus h2 {
       margin-top: 0;
+      margin-bottom: 0.3rem;
+    }
+
+    .ecosonus-tagline {
+      margin: 0 0 1.5rem;
+
+      color: var(--forest);
+
+      font-size: 0.95rem;
+      font-weight: 600;
+
+      letter-spacing: 0.02em;
     }
 
     .ecosonus-description {
       max-width: 800px;
     }
 
-    .ecosonus-tagline {
-      color: var(--green-dark);
-      font-size: 1.1em;
-      font-weight: 600;
-      margin-top: -0.25em;
-      margin-bottom: 1.5em;
+    .ecosonus-description p {
+      margin: 0 0 1rem;
     }
 
     .recognition {
-      margin-top: 2.5em;
       max-width: 850px;
+
+      margin-top: 2.3rem;
     }
 
     .recognition h3 {
-      color: var(--black);
-      font-size: 1.35em;
-      margin-bottom: 0.8em;
+      margin: 0 0 1rem;
+
+      font-size: 1.35rem;
     }
 
     .recognition ul {
-      padding-left: 1.25em;
       margin: 0;
+      padding-left: 1.25rem;
     }
 
     .recognition li {
-      margin-bottom: 0.75em;
+      margin-bottom: 0.7rem;
+
+      color: #3e4943;
+
+      font-size: 0.96rem;
       line-height: 1.55;
-      font-size: 1.03em;
     }
 
 
-    /* =========================
+    /* ========================================
        CURRENT ROLES
-       ========================= */
+       ======================================== */
 
     .roles {
-      margin-top: -1em;
+      margin-bottom: 6rem;
     }
 
-    .role-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75em;
+    .role-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 2.6rem;
     }
 
-    .role-item {
-      background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 0.65em 1.1em;
-      font-size: 0.98em;
-      color: #444;
+    .role-card {
+      padding-top: 1.3rem;
+
+      border-top: 2px solid var(--forest);
     }
 
-    .role-item strong {
-      color: var(--black);
+    .role-card h3 {
+      margin: 0 0 0.3rem;
+
+      font-size: 1.25rem;
+    }
+
+    .role-card .organization {
+      margin-bottom: 0.75rem;
+
+      color: var(--forest);
+
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .role-card p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 0.92rem;
+      line-height: 1.6;
     }
 
 
-    /* =========================
-       FEATURED WORK
-       ========================= */
+    /* ========================================
+       SELECTED WORK
+       ======================================== */
 
     .featured-grid {
       display: grid;
+
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 2.5em;
+
+      gap: 3rem;
     }
 
     .feature-card {
-      border-top: 3px solid var(--green);
-      padding-top: 1.5em;
+      padding-top: 1.4rem;
+
+      border-top: 2px solid var(--forest);
     }
 
     .feature-card h3 {
-      font-size: 1.4em;
+      margin: 0 0 1rem;
+
+      font-size: 1.42rem;
       line-height: 1.3;
-      color: var(--black);
-      margin: 0 0 1em;
     }
 
     .feature-card img {
       width: 100%;
-      height: 265px;
+      height: 245px;
+
+      margin-bottom: 1.3rem;
+
       object-fit: contain;
-      margin-bottom: 1.3em;
-      background: #fff;
+
+      background: var(--soft);
+    }
+
+    .feature-card a img {
+      transition: opacity 0.25s ease;
+    }
+
+    .feature-card a img:hover {
+      opacity: 0.84;
     }
 
     .feature-card p {
-      font-size: 1.04em;
+      margin: 0 0 0.8rem;
+
+      color: #48534d;
+
+      font-size: 0.95rem;
       line-height: 1.65;
     }
 
     .feature-card ul {
-      padding-left: 1.25em;
-      font-size: 1.02em;
+      padding-left: 1.25rem;
+
+      color: #48534d;
+
+      font-size: 0.94rem;
       line-height: 1.65;
     }
 
-    .feature-card a {
-      text-decoration: none;
-    }
 
-    .feature-card a img:hover {
-      opacity: 0.85;
-      transition: opacity 0.25s ease;
-    }
-
-
-    /* =========================
+    /* ========================================
        RESEARCH
-       ========================= */
+       ======================================== */
 
     .research-grid {
       display: grid;
+
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 2em;
+
+      gap: 2.5rem;
     }
 
     .research-card {
-      border-top: 1px solid var(--border);
-      padding-top: 1.4em;
+      padding-top: 1.2rem;
+
+      border-top: 1px solid var(--line);
     }
 
     .research-card h3 {
-      color: var(--black);
-      line-height: 1.35;
-      margin-top: 0;
+      margin: 0 0 0.9rem;
+
+      font-size: 1.23rem;
+      line-height: 1.3;
     }
 
     .research-card img {
       width: 100%;
-      height: 200px;
+      height: 185px;
+
+      margin-bottom: 1rem;
+
       object-fit: contain;
-      margin: 1em 0;
+
+      background: var(--soft);
     }
 
     .research-card p {
-      font-size: 1em;
+      margin: 0;
+
+      color: #4b554f;
+
+      font-size: 0.9rem;
       line-height: 1.6;
     }
 
 
-    /* =========================
+    /* ========================================
        COLLAPSIBLE CONTENT
-       ========================= */
+       ======================================== */
 
     details.more-content {
-      margin-top: 2.5em;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 1.3em 0;
+      margin-top: 2.6rem;
+
+      padding: 1.2rem 0;
+
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
 
     details.more-content summary {
       cursor: pointer;
-      color: var(--black);
+
+      color: var(--ink);
+
+      font-size: 0.98rem;
       font-weight: 600;
-      font-size: 1.1em;
-      list-style-position: outside;
     }
 
     details.more-content summary:hover {
-      color: var(--green-dark);
+      color: var(--forest);
     }
 
     .expanded-grid {
       display: grid;
+
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 2em;
-      margin-top: 2em;
+
+      gap: 2.5rem;
+
+      margin-top: 2rem;
     }
 
     .expanded-item {
-      padding-bottom: 1.5em;
-      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+
+      border-bottom: 1px solid var(--line);
     }
 
     .expanded-item h3 {
-      color: var(--black);
-      line-height: 1.35;
       margin-top: 0;
+
+      font-size: 1.15rem;
+      line-height: 1.35;
     }
 
     .expanded-item img {
       width: 100%;
-      height: 210px;
+      height: 190px;
+
+      margin: 1rem 0;
+
       object-fit: contain;
-      margin: 1em 0;
     }
 
     .expanded-item p {
-      font-size: 1em;
+      font-size: 0.9rem;
       line-height: 1.6;
     }
 
     .report-list {
-      margin-top: 2em;
+      margin-top: 1.5rem;
+
       columns: 2;
-      column-gap: 3em;
+      column-gap: 3rem;
     }
 
     .report-list li {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.45rem;
+
       break-inside: avoid;
+
+      font-size: 0.92rem;
     }
 
 
-    /* =========================
+    /* ========================================
        CV & LINKS
-       ========================= */
+       ======================================== */
 
     .links-section {
-      background: var(--light);
-      padding: 3em;
-      border-radius: 8px;
+      padding: 3.2rem;
+
       text-align: center;
+
+      background: var(--cream);
+    }
+
+    .links-section .section-title {
+      margin-bottom: 0.7rem;
+    }
+
+    .links-section p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 0.95rem;
     }
 
     .link-buttons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1em;
-      margin-top: 2em;
+      flex-wrap: wrap;
+
+      gap: 0.8rem;
+
+      margin-top: 1.8rem;
     }
 
     .link-button {
       display: inline-block;
-      border: 1px solid var(--green-dark);
-      color: var(--green-dark);
-      text-decoration: none;
-      padding: 0.7em 1.4em;
-      border-radius: 4px;
+
+      padding: 0.68rem 1.3rem;
+
+      color: var(--forest);
+
+      font-size: 0.88rem;
+      font-weight: 500;
+
+      border: 1px solid var(--forest);
+      border-radius: 2px;
+
       transition: all 0.2s ease;
     }
 
     .link-button:hover {
-      background: var(--green);
-      border-color: var(--green);
       color: white;
+
+      background: var(--forest);
     }
 
 
-    /* =========================
+    /* ========================================
        CONTACT
-       ========================= */
+       ======================================== */
 
     .contact {
-      max-width: 680px;
+      max-width: 650px;
+
       margin-left: auto;
       margin-right: auto;
     }
@@ -505,123 +656,154 @@
     }
 
     .form-field {
-      margin-bottom: 1em;
+      margin-bottom: 0.9rem;
     }
 
     .contact input,
     .contact textarea {
       width: 100%;
-      padding: 0.9em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 1em;
+
+      padding: 0.85rem 1rem;
+
+      color: var(--ink);
+
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+
       background: white;
+
+      border: 1px solid #d5d9d6;
+      border-radius: 2px;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
     .contact input:focus,
     .contact textarea:focus {
       outline: none;
-      border-color: var(--green);
+
+      border-color: var(--forest);
+
+      box-shadow: 0 0 0 3px rgba(49, 91, 77, 0.08);
     }
 
     .form-actions {
       display: flex;
       justify-content: center;
-      gap: 1em;
-      margin-top: 1.2em;
+
+      gap: 0.8rem;
+
+      margin-top: 1.3rem;
     }
 
     button {
-      border: none;
-      padding: 0.8em 1.6em;
-      border-radius: 4px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 1em;
+      padding: 0.72rem 1.4rem;
+
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+
+      border-radius: 2px;
+
       cursor: pointer;
     }
 
     .button-primary {
-      background: var(--green);
       color: white;
+
+      background: var(--forest);
+
+      border: 1px solid var(--forest);
     }
 
     .button-primary:hover {
-      background: var(--green-dark);
+      background: var(--forest-dark);
     }
 
     .button-secondary {
-      background: #888;
-      color: white;
+      color: #555;
+
+      background: white;
+
+      border: 1px solid #aaa;
     }
 
 
-    /* =========================
+    /* ========================================
        FOOTER
-       ========================= */
+       ======================================== */
 
     #footer {
-      margin-top: 5em;
-      padding: 2.3em 1em;
+      margin-top: 6rem;
+
+      padding: 2.3rem 1rem;
+
       text-align: center;
-      background: #f2f2f2;
-      color: #555;
+
+      background: var(--cream);
+
+      border-top: 1px solid var(--line);
     }
 
     #footer p {
       margin: 0;
-      font-size: 0.95em;
+
+      color: var(--muted);
+
+      font-size: 0.82rem;
     }
 
     #footer a {
-      color: #555;
-      text-decoration: none;
+      color: var(--muted);
     }
 
     #footer a:hover {
-      color: var(--green-dark);
+      color: var(--forest);
     }
 
 
-    /* =========================
-       MOBILE
-       ========================= */
+    /* ========================================
+       TABLET / MOBILE
+       ======================================== */
 
     @media screen and (max-width: 850px) {
 
       #main {
-        padding: 5em 1.4em 2em;
+        padding: 4.8rem 1.4rem 2rem;
       }
 
       section {
-        margin-bottom: 4.5em;
+        margin-bottom: 4.5rem;
       }
 
       .hero {
-        min-height: 460px;
-        padding: 4em 0.5em 3em;
+        min-height: 360px;
+
+        padding: 3.5rem 1rem 2.5rem;
+
+        margin-bottom: 3rem;
       }
 
       .hero h1 {
-        font-size: 3em;
+        font-size: 3rem;
       }
 
       .hero-role {
-        font-size: 1.3em;
+        font-size: 1.12rem;
       }
 
       .hero-focus {
-        font-size: 0.95em;
-        line-height: 1.8;
+        font-size: 0.75rem;
       }
 
       .about {
         flex-direction: column;
-        gap: 2.2em;
-      }
 
-      .about-photo {
-        flex: none;
+        gap: 2.3rem;
+
+        margin-bottom: 5rem;
       }
 
       .about-content {
@@ -633,7 +815,13 @@
       }
 
       .ecosonus {
-        padding-left: 1.5em;
+        padding: 2.5rem 2rem;
+      }
+
+      .role-grid {
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
       }
 
       .featured-grid {
@@ -653,7 +841,7 @@
       }
 
       .links-section {
-        padding: 2em 1.2em;
+        padding: 2.5rem 1.5rem;
       }
     }
 
@@ -661,32 +849,36 @@
     @media screen and (max-width: 560px) {
 
       #topbar {
-        padding: 0.8em 0.6em;
+        padding: 0.75rem 0.5rem;
       }
 
       #topbar nav {
-        gap: 0.25em 0.85em;
+        gap: 0.3rem 0.85rem;
       }
 
       #topbar a {
-        font-size: 0.88em;
+        font-size: 0.78rem;
       }
 
       .hero h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
       }
 
       .hero-role {
-        font-size: 1.15em;
+        font-size: 1rem;
       }
 
       .hero-focus {
-        letter-spacing: 0.07em;
+        letter-spacing: 0.08em;
       }
 
-      .role-item {
-        width: 100%;
-        border-radius: 5px;
+      .about-photo img {
+        width: 225px;
+        height: 225px;
+      }
+
+      .ecosonus {
+        padding: 2rem 1.4rem;
       }
 
       .form-actions {
@@ -705,29 +897,35 @@
 
 <body>
 
-  <!-- =========================
+  <!-- ========================================
        NAVIGATION
-       ========================= -->
+       ======================================== -->
 
   <header id="topbar">
+
     <nav>
+
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#ecosonus">Ecosonus</a>
       <a href="#work">Work</a>
       <a href="#research">Research</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
+
     </nav>
+
   </header>
 
 
   <main id="main">
 
-    <!-- =========================
-         HERO
-         ========================= -->
 
-    <header class="hero" id="home">
+    <!-- ========================================
+         HERO
+         ======================================== -->
+
+    <header class="hero section-anchor" id="home">
 
       <h1>Jackie Garcia-Yi</h1>
 
@@ -742,19 +940,27 @@
     </header>
 
 
-    <!-- =========================
+    <!-- ========================================
          ABOUT
-         ========================= -->
+         ======================================== -->
 
     <section class="about section-anchor" id="about">
 
       <div class="about-photo">
-        <img src="profile-pic.png" alt="Jackie Garcia-Yi">
+
+        <img
+          src="profile-pic.png"
+          alt="Jackie Garcia-Yi"
+        >
+
       </div>
+
 
       <div class="about-content">
 
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">
+          About Me
+        </h2>
 
         <p>
           I am an Environmental Economist and Co-Founder of Ecosonus,
@@ -783,17 +989,23 @@
     </section>
 
 
-    <!-- =========================
+    <!-- ========================================
          ECOSONUS
-         ========================= -->
+         ======================================== -->
 
-    <section class="ecosonus section-anchor" id="ecosonus">
+    <section
+      class="ecosonus section-anchor"
+      id="ecosonus"
+    >
 
-      <h2 class="section-title">Ecosonus</h2>
+      <h2 class="section-title">
+        Ecosonus
+      </h2>
 
       <p class="ecosonus-tagline">
         Nature Tech for biodiversity monitoring and environmental intelligence
       </p>
+
 
       <div class="ecosonus-description">
 
@@ -815,19 +1027,21 @@
 
       <div class="recognition">
 
-        <h3>Recognition &amp; Funding</h3>
+        <h3>
+          Recognition &amp; Funding
+        </h3>
 
         <ul>
 
           <li>
-            Awarded funding from <strong>WILDLABS</strong>, a global
-            conservation technology network — July 2026.
+            Awarded funding from <strong>WILDLABS</strong>,
+            a global conservation technology network — July 2026.
           </li>
 
           <li>
             <strong>Second Place, e-Tourism Competition</strong>,
-            organized by Incubagraria and MINCETUR, including seed funding
-            — July 2026.
+            organized by Incubagraria and MINCETUR,
+            including seed funding — July 2026.
           </li>
 
           <li>
@@ -836,10 +1050,10 @@
           </li>
 
           <li>
-            Selected as one of 20 startups to participate in the
-            <strong>Social Innovation Lab</strong>, organized by the
-            University of Pennsylvania and the University of Oxford
-            — November 2025.
+            Selected as one of 20 startups for the
+            <strong>Social Innovation Lab</strong>,
+            organized by the University of Pennsylvania
+            and the University of Oxford — November 2025.
           </li>
 
           <li>
@@ -850,8 +1064,8 @@
           <li>
             Selected among the leading submissions to the
             <strong>United Nations AI for Good – EW4All Innovation Challenge</strong>,
-            resulting in a feature in the Solutions Spotlight of the
-            EW4All AI Subgroup — August 2025.
+            resulting in a feature in the Solutions Spotlight
+            of the EW4All AI Subgroup — August 2025.
           </li>
 
         </ul>
@@ -861,61 +1075,112 @@
     </section>
 
 
-    <!-- =========================
-         CURRENT / RECENT ROLES
-         ========================= -->
+    <!-- ========================================
+         CURRENT ROLES
+         ======================================== -->
 
     <section class="roles">
 
-      <h2 class="section-title">Current &amp; Recent Roles</h2>
+      <h2 class="section-title">
+        Current &amp; Recent Roles
+      </h2>
 
-      <div class="role-strip">
 
-        <div class="role-item">
-          <strong>Co-Founder</strong> · Ecosonus
-        </div>
+      <div class="role-grid">
 
-        <div class="role-item">
-          <strong>Senior Fellow</strong> · fAIr LAC Responsible AI Network
-        </div>
 
-        <div class="role-item">
-          <strong>MBA Professor</strong> · Universidad de Lima
-        </div>
+        <article class="role-card">
 
-        <div class="role-item">
-          <strong>Former UN Programme Manager</strong> · UNEP &amp; UNODC
-        </div>
+          <h3>
+            Senior Fellow – Responsible AI
+          </h3>
+
+          <div class="organization">
+            fAIr LAC Network
+          </div>
+
+          <p>
+            Lead Junior Fellows in responsible AI assessments for startups,
+            including AI governance, risk assessment, data practices,
+            evaluation, monitoring, and implementation roadmaps.
+          </p>
+
+        </article>
+
+
+        <article class="role-card">
+
+          <h3>
+            MBA Professor
+          </h3>
+
+          <div class="organization">
+            Universidad de Lima
+          </div>
+
+          <p>
+            Teach Ethics &amp; Sustainable Development, integrating
+            sustainability strategy, ESG, climate and nature-related risks,
+            biodiversity, impact assessment, and responsible AI.
+          </p>
+
+        </article>
+
+
+        <article class="role-card">
+
+          <h3>
+            Former UN Programme Manager
+          </h3>
+
+          <div class="organization">
+            UNEP &amp; UNODC
+          </div>
+
+          <p>
+            Managed international environmental and development programmes,
+            multi-million-dollar portfolios, resource mobilization,
+            research, impact assessment, and policy engagement.
+          </p>
+
+        </article>
+
 
       </div>
 
     </section>
 
 
-    <!-- =========================
+    <!-- ========================================
          SELECTED WORK
-         ========================= -->
+         ======================================== -->
 
-    <section class="section-anchor" id="work">
+    <section
+      class="section-anchor"
+      id="work"
+    >
 
-      <h2 class="section-title">Selected Work</h2>
+      <h2 class="section-title">
+        Selected Work
+      </h2>
 
       <p class="section-subtitle">
-        Selected projects at the intersection of biodiversity, climate,
-        artificial intelligence, geospatial analysis, and environmental
-        decision-making.
+        Selected projects at the intersection of biodiversity,
+        climate, artificial intelligence, geospatial analysis,
+        and environmental decision-making.
       </p>
 
 
       <div class="featured-grid">
 
-        <!-- FEATURE 1 -->
+
+        <!-- PROJECT 1 -->
 
         <article class="feature-card">
 
           <h3>
-            Strengthening Climate Resilience through Forest-Based
-            Risk Reduction in Peru
+            Strengthening Climate Resilience through
+            Forest-Based Risk Reduction in Peru
           </h3>
 
           <a
@@ -938,21 +1203,23 @@
           </p>
 
           <p>
-            Using Google AlphaEarth and Sentinel satellite data, it identifies
-            and monitors forest areas that help reduce landslide and flood risks
-            and integrates ecosystem and risk information into decision-support
-            tools.
+            Using Google AlphaEarth and Sentinel satellite data,
+            it identifies and monitors forest areas that help reduce
+            landslide and flood risks and integrates ecosystem and
+            risk information into decision-support tools.
           </p>
 
           <p>
-            <strong>Second Place, 2nd Copernicus Latin America Hackathon,
-            European Union — 2025.</strong>
+            <strong>
+              Second Place, 2nd Copernicus Latin America Hackathon,
+              European Union — 2025.
+            </strong>
           </p>
 
         </article>
 
 
-        <!-- FEATURE 2 -->
+        <!-- PROJECT 2 -->
 
         <article class="feature-card">
 
@@ -974,9 +1241,9 @@
           </a>
 
           <p>
-            A multimodal AI application designed to support biodiversity
-            conservation and nature-based tourism in remote,
-            species-rich environments.
+            A multimodal AI application designed to support
+            biodiversity conservation and nature-based tourism
+            in remote, species-rich environments.
           </p>
 
           <ul>
@@ -992,11 +1259,14 @@
       </div>
 
 
-      <!-- EARLIER DATA SCIENCE PROJECTS -->
+      <!-- EARLIER PROJECTS -->
 
       <details class="more-content">
 
-        <summary>Earlier Data Science Projects</summary>
+        <summary>
+          Earlier Data Science Projects
+        </summary>
+
 
         <div class="expanded-grid">
 
@@ -1007,7 +1277,10 @@
               Time Series Prediction of Outbreaks of Infectious Diseases
             </h3>
 
-            <a href="projects/Project1.html" target="_blank">
+            <a
+              href="projects/Project1.html"
+              target="_blank"
+            >
 
               <img
                 src="images/project1-image.jpg"
@@ -1023,8 +1296,8 @@
             </p>
 
             <p>
-              Deep learning models outperformed traditional baselines in
-              forecasting COVID-19 cases.
+              Deep learning models outperformed traditional baselines
+              in forecasting COVID-19 cases.
             </p>
 
           </article>
@@ -1032,9 +1305,14 @@
 
           <article class="expanded-item">
 
-            <h3>Impact of COVID-19 on Education</h3>
+            <h3>
+              Impact of COVID-19 on Education
+            </h3>
 
-            <a href="projects/Project2.html" target="_blank">
+            <a
+              href="projects/Project2.html"
+              target="_blank"
+            >
 
               <img
                 src="images/project2-image.jpg"
@@ -1056,6 +1334,7 @@
 
           </article>
 
+
         </div>
 
       </details>
@@ -1063,27 +1342,36 @@
     </section>
 
 
-    <!-- =========================
+    <!-- ========================================
          RESEARCH
-         ========================= -->
+         ======================================== -->
 
-    <section class="section-anchor" id="research">
+    <section
+      class="section-anchor"
+      id="research"
+    >
 
-      <h2 class="section-title">Selected Research &amp; Publications</h2>
+      <h2 class="section-title">
+        Selected Research &amp; Publications
+      </h2>
 
       <p class="section-subtitle">
-        Selected research spanning biodiversity, spatial econometrics,
-        rural development, remote sensing, and international policy.
+        Selected research spanning biodiversity,
+        spatial econometrics, rural development,
+        remote sensing, and international policy.
       </p>
 
 
       <div class="research-grid">
 
+
         <!-- RESEARCH 1 -->
 
         <article class="research-card">
 
-          <h3>NLP for UN Biodiversity Speeches</h3>
+          <h3>
+            NLP for UN Biodiversity Speeches
+          </h3>
 
           <a
             href="reports/FinalProjectReport_JGarciaYi.pdf"
@@ -1099,8 +1387,9 @@
 
           <p>
             Structural Topic Modeling and NLP applied to more than
-            5,000 pages of UN biodiversity policy speeches, identifying
-            thematic shifts and regional variation from 1994 to 2024.
+            5,000 pages of UN biodiversity policy speeches,
+            identifying thematic shifts and regional variation
+            from 1994 to 2024.
           </p>
 
         </article>
@@ -1110,7 +1399,9 @@
 
         <article class="research-card">
 
-          <h3>UN World Drug Report: Alternative Development</h3>
+          <h3>
+            UN World Drug Report: Alternative Development
+          </h3>
 
           <a
             href="reports/Garcia-Yi_UN_WorldDrugReport-1.pdf"
@@ -1126,8 +1417,8 @@
 
           <p>
             Analysis of Alternative Development as a long-term strategy
-            addressing illicit crop cultivation, drawing on evidence from
-            international programmes and rural development interventions.
+            addressing illicit crop cultivation, drawing on evidence
+            from international programmes and rural development interventions.
           </p>
 
         </article>
@@ -1137,7 +1428,9 @@
 
         <article class="research-card">
 
-          <h3>Strategic Maps for Decision-Making</h3>
+          <h3>
+            Strategic Maps for Decision-Making
+          </h3>
 
           <a
             href="reports/Draft04052020_StrategicMapsbasedonRegressions.pdf"
@@ -1159,6 +1452,7 @@
 
         </article>
 
+
       </div>
 
 
@@ -1166,16 +1460,24 @@
 
       <details class="more-content">
 
-        <summary>Additional Research &amp; UN Publications</summary>
+        <summary>
+          Additional Research &amp; UN Publications
+        </summary>
+
 
         <div class="expanded-grid">
 
 
           <article class="expanded-item">
 
-            <h3>Sustainable Income from Alternative Development</h3>
+            <h3>
+              Sustainable Income from Alternative Development
+            </h3>
 
-            <a href="reports/Brief_income_livelihoods.pdf" target="_blank">
+            <a
+              href="reports/Brief_income_livelihoods.pdf"
+              target="_blank"
+            >
 
               <img
                 src="images/livelihoods.jpg"
@@ -1195,9 +1497,14 @@
 
           <article class="expanded-item">
 
-            <h3>Remote Sensing for Poppy Detection</h3>
+            <h3>
+              Remote Sensing for Poppy Detection
+            </h3>
 
-            <a href="reports/ProjectReport_13122019.pdf" target="_blank">
+            <a
+              href="reports/ProjectReport_13122019.pdf"
+              target="_blank"
+            >
 
               <img
                 src="images/remote-sensing.jpg"
@@ -1217,7 +1524,9 @@
 
           <article class="expanded-item">
 
-            <h3>Global Overview of Alternative Development Projects</h3>
+            <h3>
+              Global Overview of Alternative Development Projects
+            </h3>
 
             <a
               href="reports/Research_brief_Overview_of_AD.pdf"
@@ -1316,18 +1625,20 @@
 
             <p>
               Survey-based analysis of livelihood conditions,
-              infrastructure, health care, markets, and regional differences
-              associated with opium cultivation.
+              infrastructure, health care, markets,
+              and regional differences associated with opium cultivation.
             </p>
 
           </article>
 
+
         </div>
 
 
-        <h3 style="margin-top: 2.5em;">
+        <h3 style="margin-top: 2.5rem;">
           Additional UNODC Illicit Crop Monitoring Reports, 2015–2020
         </h3>
+
 
         <ul class="report-list">
 
@@ -1389,7 +1700,10 @@
           </li>
 
           <li>
-            <a href="reports/Afghanistan_Opium_2016.pdf" target="_blank">
+            <a
+              href="reports/Afghanistan_Opium_2016.pdf"
+              target="_blank"
+            >
               Afghanistan 2016
             </a>
           </li>
@@ -1404,7 +1718,10 @@
           </li>
 
           <li>
-            <a href="reports/Colombia_Coca_2016.pdf" target="_blank">
+            <a
+              href="reports/Colombia_Coca_2016.pdf"
+              target="_blank"
+            >
               Colombia 2016
             </a>
           </li>
@@ -1419,19 +1736,28 @@
           </li>
 
           <li>
-            <a href="reports/Bolivia_Coca_2015.pdf" target="_blank">
+            <a
+              href="reports/Bolivia_Coca_2015.pdf"
+              target="_blank"
+            >
               Bolivia 2015
             </a>
           </li>
 
           <li>
-            <a href="reports/Colombia_Coca_2015.pdf" target="_blank">
+            <a
+              href="reports/Colombia_Coca_2015.pdf"
+              target="_blank"
+            >
               Colombia 2015
             </a>
           </li>
 
           <li>
-            <a href="reports/Peru_Coca_2015.pdf" target="_blank">
+            <a
+              href="reports/Peru_Coca_2015.pdf"
+              target="_blank"
+            >
               Peru 2015
             </a>
           </li>
@@ -1443,18 +1769,24 @@
     </section>
 
 
-    <!-- =========================
-         CV & LINKS
-         ========================= -->
+    <!-- ========================================
+         CV & PROFESSIONAL LINKS
+         ======================================== -->
 
-    <section class="links-section section-anchor" id="cv">
+    <section
+      class="links-section section-anchor"
+      id="cv"
+    >
 
-      <h2 class="section-title">CV &amp; Professional Links</h2>
+      <h2 class="section-title">
+        CV &amp; Professional Links
+      </h2>
 
       <p>
-        For additional information on my professional experience,
+        Additional information on my professional experience,
         research, and current work.
       </p>
+
 
       <div class="link-buttons">
 
@@ -1487,17 +1819,23 @@
     </section>
 
 
-    <!-- =========================
+    <!-- ========================================
          CONTACT
-         ========================= -->
+         ======================================== -->
 
-    <section class="contact section-anchor" id="contact">
+    <section
+      class="contact section-anchor"
+      id="contact"
+    >
 
-      <h2 class="section-title">Contact</h2>
+      <h2 class="section-title">
+        Contact
+      </h2>
 
       <p class="section-subtitle">
-        For collaboration, research, consulting, partnership,
-        or speaking enquiries, please get in touch.
+        For collaboration, research, consulting,
+        partnership, or speaking enquiries,
+        please get in touch.
       </p>
 
 
@@ -1506,43 +1844,65 @@
         method="POST"
       >
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
+        <input
+          type="hidden"
+          name="_captcha"
+          value="false"
+        >
+
+        <input
+          type="hidden"
+          name="_template"
+          value="table"
+        >
+
 
         <div class="form-field">
+
           <input
             type="text"
             name="name"
             placeholder="Your Name"
             required
           >
+
         </div>
 
+
         <div class="form-field">
+
           <input
             type="email"
             name="email"
             placeholder="Your Email"
             required
           >
+
         </div>
 
+
         <div class="form-field">
+
           <input
             type="text"
             name="subject"
             placeholder="Subject"
           >
+
         </div>
 
+
         <div class="form-field">
+
           <textarea
             name="message"
             placeholder="Your Message"
             rows="6"
             required
           ></textarea>
+
         </div>
+
 
         <div class="form-actions">
 
@@ -1566,17 +1926,20 @@
 
     </section>
 
+
   </main>
 
 
-  <!-- =========================
+  <!-- ========================================
        FOOTER
-       ========================= -->
+       ======================================== -->
 
   <footer id="footer">
 
     <p>
+
       &copy; Jackie Garcia-Yi
+
       &nbsp;&middot;&nbsp;
 
       <a href="mailto:jackiejgarciayi@gmail.com">
@@ -1592,9 +1955,11 @@
       >
         LinkedIn
       </a>
+
     </p>
 
   </footer>
+
 
 </body>
 
